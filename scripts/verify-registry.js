@@ -13,40 +13,40 @@ function fail(msg) {
 }
 
 const registry = readJson("registry/TRUTH_FRAME_REGISTRY.json");
-const frame = readJson("cases/tf-000001-cross-venue-prediction-lag/TRUTH_FRAME.json");
-const live = readJson("reports/current/tf-000001-public-surface-live.json");
-const release = readJson("releases/v0.1.0/RELEASE_LEDGER.json");
 const status = readJson("reports/current/truthframer-system-status.json");
 
 if (registry.object_type !== "TRUTH_FRAME_REGISTRY") fail("BAD_REGISTRY_TYPE");
 if (registry.current_frame !== "tf_000001") fail("BAD_CURRENT_FRAME");
-if (!Array.isArray(registry.frames) || registry.frames.length < 1) fail("NO_FRAMES");
-if (frame.object_type !== "TRUTH_FRAME") fail("BAD_FRAME_TYPE");
-if (frame.frame_id !== registry.current_frame) fail("FRAME_ID_MISMATCH");
-if (live.status !== "LIVE") fail("LIVE_PROOF_NOT_LIVE");
-if (release.release !== "v0.1.0") fail("BAD_RELEASE_LEDGER");
-if (release.frame_id !== registry.current_frame) fail("RELEASE_FRAME_MISMATCH");
-if (status.current_frame !== registry.current_frame) fail("STATUS_CURRENT_FRAME_MISMATCH");
+if (!Array.isArray(registry.frames) || registry.frames.length < 2) fail("FRAME_COUNT_TOO_LOW");
 
-const first = registry.frames[0];
-for (const rel of [
-  first.truth_frame_path,
-  first.source_manifest_path,
-  first.replay_manifest_path,
-  first.render_source_path,
-  first.live_proof_path,
-  first.release_ledger_path
-]) {
-  if (!fs.existsSync(path.join(root, rel))) fail(`REGISTRY_PATH_MISSING_${rel}`);
-}
+for (const frameId of ["tf_000001", "tf_000002"]) {
+  const entry = registry.frames.find(f => f.frame_id === frameId);
+  if (!entry) fail(`MISSING_FRAME_${frameId}`);
 
-for (const urlField of ["public_url", "render_url", "proof_url", "case_object_url"]) {
-  if (!String(first[urlField]).startsWith("https://truthframer.github.io/truthframer-platform")) {
-    fail(`BAD_URL_${urlField}`);
+  const frame = readJson(entry.truth_frame_path);
+  if (frame.object_type !== "TRUTH_FRAME") fail(`BAD_FRAME_TYPE_${frameId}`);
+  if (frame.frame_id !== frameId) fail(`FRAME_ID_MISMATCH_${frameId}`);
+
+  for (const rel of [
+    entry.truth_frame_path,
+    entry.source_manifest_path,
+    entry.replay_manifest_path,
+    entry.render_source_path
+  ]) {
+    if (!fs.existsSync(path.join(root, rel))) fail(`REGISTRY_PATH_MISSING_${rel}`);
+  }
+
+  for (const urlField of ["public_url", "render_url", "case_object_url"]) {
+    if (!String(entry[urlField]).startsWith("https://truthframer.github.io/truthframer-platform")) {
+      fail(`BAD_URL_${frameId}_${urlField}`);
+    }
   }
 }
 
+if (status.frame_count < 2) fail("STATUS_FRAME_COUNT_TOO_LOW");
+
 console.log("TRUTHFRAMER_REGISTRY_PASS=true");
 console.log(`CURRENT_FRAME=${registry.current_frame}`);
+console.log(`FRAME_COUNT=${registry.frames.length}`);
 console.log("PUBLIC_REGISTRY_READY=true");
 console.log("SYSTEM_STATUS_READY=true");

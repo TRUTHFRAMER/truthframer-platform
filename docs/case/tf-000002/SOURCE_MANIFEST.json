@@ -1,0 +1,22 @@
+{
+  "object_type": "SOURCE_MANIFEST",
+  "frame_id": "tf_000002",
+  "sources": [
+    {
+      "source_type": "level_1_quote",
+      "venue": "NASDAQ",
+      "status": "sample_fixture"
+    },
+    {
+      "source_type": "market_depth",
+      "venue": "NASDAQ",
+      "status": "sample_fixture"
+    },
+    {
+      "source_type": "level_3_order_events",
+      "venue": "NASDAQ",
+      "status": "sample_fixture"
+    }
+  ],
+  "boundary": "sample fixtures only; not live market data"
+}

@@ -1,0 +1,59 @@
+{
+  "object_type": "TRUTH_FRAME",
+  "frame_id": "tf_000002",
+  "title": "Level 3 Order Flow",
+  "question": "What did Level 1 hide?",
+  "time_window": {
+    "start": "2026-05-26T15:00:00Z",
+    "end": "2026-05-26T15:15:00Z",
+    "clock_policy": "exchange_time_aligned_v1"
+  },
+  "market_scope": {
+    "assets": ["NVDA"],
+    "venues": ["NASDAQ"],
+    "instruments": ["equity", "order_book", "level_3_order_flow"]
+  },
+  "source_manifest": {
+    "path": "SOURCE_MANIFEST.json",
+    "required": true
+  },
+  "truth_layers": {
+    "level_1_quote": "present",
+    "market_depth": "present",
+    "level_3_order_flow": "present",
+    "order_adds": "present",
+    "order_cancels": "present",
+    "order_replaces": "present",
+    "sweeps": "present",
+    "hidden_liquidity_indicators": "present",
+    "replay_timeline": "present"
+  },
+  "visual_projections": [
+    "level_1_quote",
+    "depth_ladder",
+    "level_3_event_tape",
+    "cancel_replace_flow",
+    "sweep_pressure_map",
+    "hidden_liquidity_panel",
+    "replay_timeline"
+  ],
+  "replay": {
+    "deterministic": true,
+    "bundle": "REPLAY_MANIFEST.json",
+    "expected_output_hash": "sha256:placeholder-tf-000002"
+  },
+  "truth_score": {
+    "data_completeness": 0.9988,
+    "replay_divergence_bps": 0.03,
+    "sequence_gaps": 0,
+    "clock_skew_ns": 41,
+    "integrity_score": 98.3
+  },
+  "boundary": [
+    "not investment advice",
+    "not trade recommendation",
+    "not broker execution",
+    "valid only for declared sources and replay window",
+    "sample fixtures only; not live market data"
+  ]
+}

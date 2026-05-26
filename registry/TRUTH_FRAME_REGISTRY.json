@@ -23,16 +23,17 @@
     {
       "frame_id": "tf_000002",
       "title": "Level 3 Order Flow",
-      "status": "LOCAL_RENDERED_TRUTH_FRAME",
+      "status": "LIVE_PUBLIC_TRUTH_FRAME",
       "truth_frame_path": "cases/tf-000002-level3-order-flow/TRUTH_FRAME.json",
       "source_manifest_path": "cases/tf-000002-level3-order-flow/SOURCE_MANIFEST.json",
       "replay_manifest_path": "cases/tf-000002-level3-order-flow/REPLAY_MANIFEST.json",
       "render_source_path": "apps/terminal/tf-000002.html",
       "public_url": "https://truthframer.github.io/truthframer-platform/",
       "render_url": "https://truthframer.github.io/truthframer-platform/render/tf-000002/",
-      "proof_url": null,
+      "proof_url": "https://truthframer.github.io/truthframer-platform/proof/tf-000002/PUBLIC_SURFACE_PROOF.json",
       "case_object_url": "https://truthframer.github.io/truthframer-platform/case/tf-000002/TRUTH_FRAME.json",
-      "release": null
+      "release": null,
+      "live_proof_path": "reports/current/tf-000002-public-surface-live.json"
     }
   ],
   "boundary": [
