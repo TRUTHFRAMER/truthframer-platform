@@ -1,0 +1,87 @@
+
+# Architecture
+
+```text
+RAW MARKET SIGNALS
+→ SOURCE MANIFEST
+→ CLOCK / SEQUENCE TRUTH
+→ MARKET STATE GRAPH
+→ STRUCTURAL ENGINES
+→ TRUTH_FRAME
+→ VISUAL PROJECTION
+→ REPLAY / EXPORT / API
+```
+
+## Structural engines
+
+1. Order flow
+2. Market depth
+3. Level 3 order activity
+4. Cross-venue mispricing
+5. Prediction-market probability
+6. Options-implied distribution
+7. Correlation structure
+8. Machine-learning attention
+9. Latency boundary
+10. Replay and truth score
+    EOF
+
+cat > truthframer-platform/cases/tf-000001-cross-venue-prediction-lag/TRUTH_FRAME.json <<'EOF'
+{
+"object_type": "TRUTH_FRAME",
+"frame_id": "tf_000001",
+"title": "Cross-Venue Prediction Lag",
+"time_window": {
+"start": "2026-05-26T14:30:00Z",
+"end": "2026-05-26T14:45:00Z",
+"clock_policy": "exchange_time_aligned_v1"
+},
+"market_scope": {
+"assets": ["NVDA", "AAPL", "MSFT", "GOOGL", "TSLA"],
+"venues": ["NASDAQ", "CBOE", "Polymarket", "Kalshi"],
+"instruments": ["equity", "option", "event_contract", "order_book"]
+},
+"source_manifest": {
+"path": "SOURCE_MANIFEST.json",
+"required": true
+},
+"truth_layers": {
+"order_flow": "present",
+"market_depth": "present",
+"level_3_order_flow": "present",
+"cross_venue_state": "present",
+"prediction_probability": "present",
+"options_distribution": "planned",
+"correlation_regime": "present",
+"ml_attention": "planned",
+"latency_boundary": "present"
+},
+"visual_projections": [
+"order_book",
+"time_and_sales",
+"depth_chart",
+"cross_venue_table",
+"prediction_probability_curve",
+"correlation_matrix",
+"latency_pipeline",
+"replay_timeline"
+],
+"replay": {
+"deterministic": true,
+"bundle": "REPLAY_MANIFEST.json",
+"expected_output_hash": "sha256:placeholder"
+},
+"truth_score": {
+"data_completeness": 0.9992,
+"replay_divergence_bps": 0.02,
+"sequence_gaps": 0,
+"clock_skew_ns": 35,
+"integrity_score": 98.7
+},
+"boundaries": [
+"not investment advice",
+"not trade recommendation",
+"not broker execution",
+"valid only for declared sources and replay window"
+]
+}

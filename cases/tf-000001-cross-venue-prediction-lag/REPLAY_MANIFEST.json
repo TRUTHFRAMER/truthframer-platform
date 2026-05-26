@@ -1,0 +1,9 @@
+{
+  "object_type": "REPLAY_MANIFEST",
+  "frame_id": "tf_000001",
+  "deterministic": true,
+  "replay_command": "npm run verify",
+  "expected_outputs": [
+    "TRUTH_FRAME.json"
+  ]
+}

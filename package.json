@@ -1,0 +1,11 @@
+{
+"name": "truthframer-platform",
+"version": "0.1.0",
+"private": true,
+"description": "The object spine for TRUTHFRAMER: replayable visual truth frames for market reality.",
+"scripts": {
+"test": "node scripts/verify-truthframer.js",
+"verify": "node scripts/verify-truthframer.js"
+},
+"license": "Apache-2.0"
+}

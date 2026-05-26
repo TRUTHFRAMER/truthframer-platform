@@ -1,0 +1,22 @@
+{
+  "object_type": "SOURCE_MANIFEST",
+  "frame_id": "tf_000001",
+  "sources": [
+    {
+      "source_type": "equity_reference",
+      "venue": "NASDAQ",
+      "status": "sample_fixture"
+    },
+    {
+      "source_type": "prediction_market_probability",
+      "venue": "Polymarket",
+      "status": "sample_fixture"
+    },
+    {
+      "source_type": "options_reference",
+      "venue": "CBOE",
+      "status": "sample_fixture"
+    }
+  ],
+  "boundary": "sample fixtures only; not live market data"
+}
