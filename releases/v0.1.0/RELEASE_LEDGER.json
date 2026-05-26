@@ -1,0 +1,29 @@
+{
+  "object_type": "TRUTHFRAMER_RELEASE_LEDGER",
+  "release": "v0.1.0",
+  "title": "First Public Truth Frame",
+  "tag_sha": "c0180736c2022ff1de4eafb2f2663b224fa7e561",
+  "main_sha_at_ledger": "c0180736c2022ff1de4eafb2f2663b224fa7e561",
+  "pages_sha": "98021d8c222f11e39b2f69d9fbc78ad5dafd4b7a",
+  "frame_id": "tf_000001",
+  "truth_frame": "cases/tf-000001-cross-venue-prediction-lag/TRUTH_FRAME.json",
+  "source_manifest": "cases/tf-000001-cross-venue-prediction-lag/SOURCE_MANIFEST.json",
+  "replay_manifest": "cases/tf-000001-cross-venue-prediction-lag/REPLAY_MANIFEST.json",
+  "render_source": "apps/terminal/tf-000001.html",
+  "public_url": "https://truthframer.github.io/truthframer-platform/",
+  "render_url": "https://truthframer.github.io/truthframer-platform/render/",
+  "proof_url": "https://truthframer.github.io/truthframer-platform/proof/PUBLIC_SURFACE_PROOF.json",
+  "case_object_url": "https://truthframer.github.io/truthframer-platform/case/tf-000001/TRUTH_FRAME.json",
+  "verification": {
+    "truthframer_verify": true,
+    "render_verify": true,
+    "public_surface_ready": true,
+    "public_surface_live": true
+  },
+  "boundary": [
+    "not investment advice",
+    "not trade recommendation",
+    "not broker execution",
+    "valid only for declared sources and replay window"
+  ]
+}
