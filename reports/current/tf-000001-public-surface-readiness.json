@@ -1,0 +1,23 @@
+{
+  "object_type": "PUBLIC_SURFACE_READINESS",
+  "frame_id": "tf_000001",
+  "status": "READY_FOR_GITHUB_PAGES",
+  "source_object": "cases/tf-000001-cross-venue-prediction-lag/TRUTH_FRAME.json",
+  "rendered_surface": "apps/terminal/tf-000001.html",
+  "docs_index": "docs/index.html",
+  "docs_render": "docs/render/index.html",
+  "checks": {
+    "truth_frame_present": true,
+    "source_manifest_present": true,
+    "replay_manifest_present": true,
+    "terminal_render_present": true,
+    "docs_surface_present": true,
+    "boundary_present": true
+  },
+  "boundary": [
+    "not investment advice",
+    "not trade recommendation",
+    "not broker execution",
+    "valid only for declared sources and replay window"
+  ]
+}

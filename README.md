@@ -81,3 +81,39 @@ TRUTHFRAMER is not a broker, trading bot, investment adviser, signal seller, exe
 TRUTHFRAMER does not tell users what to trade.
 
 TRUTHFRAMER shows replayable market structure.
+
+## First public surface
+
+```text
+TF-000001_PUBLIC_SURFACE_READY=true
+```
+
+Rendered source:
+
+```text
+apps/terminal/tf-000001.html
+```
+
+Public docs surface:
+
+```text
+docs/render/index.html
+```
+
+Readiness object:
+
+```text
+reports/current/tf-000001-public-surface-readiness.json
+```
+
+Closed loop:
+
+```text
+TRUTH_FRAME object
+→ visual surface
+→ render verification
+→ public docs surface
+→ CI verification
+→ GitHub Pages deployment
+```
+
