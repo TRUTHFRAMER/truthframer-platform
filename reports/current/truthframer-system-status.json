@@ -1,0 +1,19 @@
+{
+  "object_type": "TRUTHFRAMER_SYSTEM_STATUS",
+  "status": "LIVE_WITH_FIRST_PUBLIC_TRUTH_FRAME",
+  "current_frame": "tf_000001",
+  "latest_release": "v0.1.0",
+  "main_sha": "a16b81d3de20dc1ee174b687460bcd57669b1da7",
+  "tag_sha": "c0180736c2022ff1de4eafb2f2663b224fa7e561",
+  "pages_sha": "98021d8c222f11e39b2f69d9fbc78ad5dafd4b7a",
+  "public_root": "https://truthframer.github.io/truthframer-platform/",
+  "public_render": "https://truthframer.github.io/truthframer-platform/render/",
+  "public_registry": "https://truthframer.github.io/truthframer-platform/registry/TRUTH_FRAME_REGISTRY.json",
+  "public_status": "https://truthframer.github.io/truthframer-platform/status/truthframer-system-status.json",
+  "verification": [
+    "TRUTHFRAMER_VERIFY_PASS",
+    "TF-000001_RENDER_PASS",
+    "TF-000001_PUBLIC_SURFACE_READY",
+    "TF-000001_PUBLIC_SURFACE_LIVE"
+  ]
+}

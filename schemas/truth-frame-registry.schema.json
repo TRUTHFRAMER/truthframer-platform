@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TRUTHFRAMER TRUTH_FRAME Registry",
+  "type": "object",
+  "required": [
+    "object_type",
+    "schema_version",
+    "current_frame",
+    "frames",
+    "boundary"
+  ],
+  "properties": {
+    "object_type": { "const": "TRUTH_FRAME_REGISTRY" },
+    "schema_version": { "type": "string" },
+    "current_frame": { "type": "string" },
+    "frames": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "frame_id",
+          "title",
+          "status",
+          "truth_frame_path",
+          "render_url",
+          "proof_url",
+          "release"
+        ]
+      }
+    },
+    "boundary": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}
