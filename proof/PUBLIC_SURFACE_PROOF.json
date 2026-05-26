@@ -1,0 +1,16 @@
+{
+  "object_type": "PUBLIC_SURFACE_PROOF",
+  "frame_id": "tf_000001",
+  "status": "PUBLISHED_STATIC_SURFACE",
+  "public_url": "https://truthframer.github.io/truthframer-platform/",
+  "render_url": "https://truthframer.github.io/truthframer-platform/render/",
+  "source_object": "case/tf-000001/TRUTH_FRAME.json",
+  "source_manifest": "case/tf-000001/SOURCE_MANIFEST.json",
+  "replay_manifest": "case/tf-000001/REPLAY_MANIFEST.json",
+  "boundary": [
+    "not investment advice",
+    "not trade recommendation",
+    "not broker execution",
+    "valid only for declared sources and replay window"
+  ]
+}

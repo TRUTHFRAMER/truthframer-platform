@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TRUTHFRAMER · TF-000001</title>
+  <style>
+    :root {
+      --bg: #05070b;
+      --panel: #0c111a;
+      --panel2: #101827;
+      --line: #223044;
+      --text: #e8f0ff;
+      --muted: #7f8da3;
+      --green: #39ff9f;
+      --red: #ff4f6d;
+      --cyan: #49d9ff;
+      --amber: #ffbd4a;
+      --violet: #a78bfa;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 20% 0%, rgba(73,217,255,.12), transparent 28%),
+        radial-gradient(circle at 80% 10%, rgba(167,139,250,.10), transparent 32%),
+        var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .wrap {
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 28px;
+    }
+
+    .top {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: start;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 38px;
+      letter-spacing: .08em;
+      margin: 0 0 8px;
+      font-weight: 800;
+    }
+
+    .sub {
+      color: var(--muted);
+      font-size: 14px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .badgebar {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      gap: 10px;
+    }
+
+    .badge {
+      border: 1px solid var(--line);
+      background: rgba(12,17,26,.82);
+      border-radius: 14px;
+      padding: 10px 12px;
+      min-width: 135px;
+    }
+
+    .badge small {
+      color: var(--muted);
+      display: block;
+      font-size: 10px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .badge b {
+      font-size: 18px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1.05fr 1.35fr 1fr;
+      gap: 14px;
+    }
+
+    .panel {
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(16,24,39,.96), rgba(8,12,20,.96));
+      border-radius: 18px;
+      padding: 16px;
+      min-height: 180px;
+      box-shadow: 0 18px 60px rgba(0,0,0,.28);
+    }
+
+    .panel h2 {
+      margin: 0 0 14px;
+      font-size: 12px;
+      color: #dbeafe;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .span2 { grid-column: span 2; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+    }
+
+    th {
+      color: var(--muted);
+      text-align: left;
+      font-size: 10px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: 6px 4px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    td {
+      padding: 6px 4px;
+      border-bottom: 1px solid rgba(34,48,68,.55);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .green { color: var(--green); }
+    .red { color: var(--red); }
+    .cyan { color: var(--cyan); }
+    .amber { color: var(--amber); }
+    .violet { color: var(--violet); }
+
+    .depth {
+      height: 170px;
+      display: flex;
+      align-items: end;
+      gap: 4px;
+      border-bottom: 1px solid var(--line);
+      padding-top: 10px;
+    }
+
+    .bar {
+      flex: 1;
+      border-radius: 6px 6px 0 0;
+      opacity: .9;
+    }
+
+    .gbar { background: linear-gradient(180deg, var(--green), rgba(57,255,159,.2)); }
+    .rbar { background: linear-gradient(180deg, var(--red), rgba(255,79,109,.2)); }
+
+    .heat {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      gap: 3px;
+    }
+
+    .cell {
+      aspect-ratio: 1;
+      border-radius: 5px;
+      background: rgba(73,217,255,.14);
+    }
+
+    .timeline {
+      height: 160px;
+      position: relative;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, transparent 0 9%, rgba(255,255,255,.04) 10%, transparent 11%),
+        repeating-linear-gradient(90deg, transparent 0 65px, rgba(255,255,255,.04) 66px),
+        rgba(5,7,11,.42);
+    }
+
+    svg { width: 100%; height: 100%; display: block; }
+
+    .law {
+      display: grid;
+      gap: 8px;
+      font-size: 13px;
+      color: #cbd5e1;
+    }
+
+    .law div {
+      border: 1px solid rgba(34,48,68,.75);
+      border-radius: 12px;
+      padding: 9px 10px;
+      background: rgba(5,7,11,.28);
+    }
+
+    .footer {
+      margin-top: 14px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 14px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .frame {
+      color: var(--cyan);
+      font-weight: 800;
+      letter-spacing: .08em;
+    }
+
+    @media (max-width: 1050px) {
+      .grid, .top { grid-template-columns: 1fr; }
+      .span2 { grid-column: span 1; }
+      .badgebar { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="top">
+      <div>
+        <h1>TRUTHFRAMER</h1>
+        <div class="sub">TF-000001 · Cross-Venue Prediction Lag · One replayable TRUTH_FRAME</div>
+      </div>
+      <div class="badgebar">
+        <div class="badge"><small>Truth score</small><b class="green">98.7</b></div>
+        <div class="badge"><small>Data complete</small><b class="green">99.92%</b></div>
+        <div class="badge"><small>Replay divergence</small><b class="cyan">0.02 bps</b></div>
+        <div class="badge"><small>Clock skew</small><b class="amber">35 ns</b></div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="panel">
+        <h2>01 · Source / Venue State</h2>
+        <table>
+          <thead><tr><th>Source</th><th>Venue</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Equity reference</td><td>NASDAQ</td><td class="green">sample fixture</td></tr>
+            <tr><td>Prediction probability</td><td>Polymarket</td><td class="green">sample fixture</td></tr>
+            <tr><td>Options reference</td><td>CBOE</td><td class="green">sample fixture</td></tr>
+            <tr><td>Event market</td><td>Kalshi</td><td class="amber">declared scope</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="panel span2">
+        <h2>02 · Replay Timeline</h2>
+        <div class="timeline">
+          <svg viewBox="0 0 900 160" preserveAspectRatio="none">
+            <path d="M0 108 C90 95 115 120 180 82 S285 52 350 66 S475 128 550 72 S670 42 740 58 S830 112 900 70" fill="none" stroke="#49d9ff" stroke-width="3"/>
+            <path d="M0 126 C120 126 210 118 300 108 S520 84 620 62 S760 50 900 44" fill="none" stroke="#39ff9f" stroke-width="3"/>
+            <path d="M0 138 C140 136 240 134 370 132 S520 116 600 92 S740 72 900 66" fill="none" stroke="#ff4f6d" stroke-width="2" opacity=".85"/>
+            <line x1="630" y1="0" x2="630" y2="160" stroke="#ffbd4a" stroke-width="2" stroke-dasharray="6 6"/>
+            <text x="642" y="22" fill="#ffbd4a" font-size="13">lag window</text>
+          </svg>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>03 · Order Book / Depth</h2>
+        <div class="depth">
+          <div class="bar gbar" style="height:42%"></div>
+          <div class="bar gbar" style="height:58%"></div>
+          <div class="bar gbar" style="height:72%"></div>
+          <div class="bar gbar" style="height:88%"></div>
+          <div class="bar gbar" style="height:66%"></div>
+          <div class="bar rbar" style="height:61%"></div>
+          <div class="bar rbar" style="height:78%"></div>
+          <div class="bar rbar" style="height:92%"></div>
+          <div class="bar rbar" style="height:55%"></div>
+          <div class="bar rbar" style="height:39%"></div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>04 · Cross-Venue State</h2>
+        <table>
+          <thead><tr><th>Venue</th><th>Mid</th><th>Δ bps</th></tr></thead>
+          <tbody>
+            <tr><td>NASDAQ</td><td>5286.38</td><td>—</td></tr>
+            <tr><td>CBOE</td><td>5286.50</td><td class="green">+2.3</td></tr>
+            <tr><td>Polymarket</td><td>62.3%</td><td class="amber">lag</td></tr>
+            <tr><td>Kalshi</td><td>61.8%</td><td class="red">-5.0</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="panel">
+        <h2>05 · Correlation Structure</h2>
+        <div class="heat" id="heat"></div>
+      </div>
+
+      <div class="panel">
+        <h2>06 · Boundary</h2>
+        <div class="law">
+          <div>No investment advice</div>
+          <div>No trade recommendation</div>
+          <div>No broker execution</div>
+          <div>Valid only for declared sources and replay window</div>
+        </div>
+      </div>
+
+      <div class="panel span2">
+        <h2>07 · Operating Law</h2>
+        <div class="law">
+          <div>No visual without source.</div>
+          <div>No source without clock.</div>
+          <div>No clock without replay.</div>
+          <div>No replay without boundary.</div>
+          <div>No boundary without TRUTH_FRAME.</div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>08 · Frame Identity</h2>
+        <table>
+          <tbody>
+            <tr><td>Object</td><td class="frame">TRUTH_FRAME</td></tr>
+            <tr><td>Frame</td><td>tf_000001</td></tr>
+            <tr><td>Replay</td><td class="green">deterministic</td></tr>
+            <tr><td>Visual</td><td class="cyan">rendered</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div>TRUTHFRAMER converts fragmented market signals into one replayable TRUTH_FRAME.</div>
+      <div class="frame">TF-000001_RENDER_SURFACE</div>
+    </section>
+  </main>
+
+  <script>
+    const heat = document.getElementById("heat");
+    for (let i = 0; i < 100; i++) {
+      const c = document.createElement("div");
+      c.className = "cell";
+      const v = Math.abs(Math.sin(i * 1.73));
+      c.style.background = `rgba(${Math.round(73 + 182*v)}, ${Math.round(120 + 95*v)}, ${Math.round(255 - 120*v)}, ${0.18 + v * 0.72})`;
+      heat.appendChild(c);
+    }
+  </script>
+</body>
+</html>
