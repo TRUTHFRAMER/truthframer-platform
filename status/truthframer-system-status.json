@@ -1,6 +1,6 @@
 {
   "object_type": "TRUTHFRAMER_SYSTEM_STATUS",
-  "status": "LIVE_WITH_FIRST_PUBLIC_TRUTH_FRAME",
+  "status": "LIVE_WITH_MULTIPLE_PUBLIC_TRUTH_FRAMES",
   "current_frame": "tf_000001",
   "latest_release": "v0.1.0",
   "main_sha": "a16b81d3de20dc1ee174b687460bcd57669b1da7",
@@ -15,5 +15,7 @@
     "TF-000001_RENDER_PASS",
     "TF-000001_PUBLIC_SURFACE_READY",
     "TF-000001_PUBLIC_SURFACE_LIVE"
-  ]
+  ],
+  "frame_count": 2,
+  "public_tf000002_render": "https://truthframer.github.io/truthframer-platform/render/tf-000002/"
 }
