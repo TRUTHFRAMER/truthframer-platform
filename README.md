@@ -1,49 +1,63 @@
+# TRUTHFRAMER
 
-# truthframer-platform
+TRUTHFRAMER is the visual truth engine for market reality.
 
-`truthframer-platform` is the first implementation spine of TRUTHFRAMER.
+It converts fragmented market signals into one replayable `TRUTH_FRAME`.
 
-It builds the object layer behind the visual truth engine for market reality.
+```text
+TRUTHFRAMER turns markets into evidence.
+````
 
-## Root sentence
+## Live public system
 
-TRUTHFRAMER converts fragmented market signals into one replayable `TRUTH_FRAME`.
+| Surface              | URL                                                                                                                                                                                  |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Visual surface       | [https://truthframer.github.io/truthframer-platform/render/](https://truthframer.github.io/truthframer-platform/render/)                                                             |
+| Frame index          | [https://truthframer.github.io/truthframer-platform/frames/](https://truthframer.github.io/truthframer-platform/frames/)                                                             |
+| TRUTH_FRAME registry | [https://truthframer.github.io/truthframer-platform/registry/TRUTH_FRAME_REGISTRY.json](https://truthframer.github.io/truthframer-platform/registry/TRUTH_FRAME_REGISTRY.json)       |
+| System status        | [https://truthframer.github.io/truthframer-platform/status/truthframer-system-status.json](https://truthframer.github.io/truthframer-platform/status/truthframer-system-status.json) |
+| Public proof         | [https://truthframer.github.io/truthframer-platform/proof/PUBLIC_SURFACE_PROOF.json](https://truthframer.github.io/truthframer-platform/proof/PUBLIC_SURFACE_PROOF.json)             |
+| Case object          | [https://truthframer.github.io/truthframer-platform/case/tf-000001/TRUTH_FRAME.json](https://truthframer.github.io/truthframer-platform/case/tf-000001/TRUTH_FRAME.json)             |
 
-## What this repo owns
+## Current frame
 
-This repo owns the first executable structure for:
+```text
+tf_000001 — Cross-Venue Prediction Lag
+```
 
-* `TRUTH_FRAME` objects
-* source manifests
-* clock and sequence policies
-* market-state graph construction
-* order-flow projections
-* market-depth projections
-* level 3 order-flow projections
-* cross-venue mispricing views
-* prediction-market probability views
-* options-implied distribution views
-* correlation matrix views
-* ML attention views
-* latency-boundary views
-* deterministic replay
-* truth-score calculation
-* visual projection contracts
+Status:
 
-## What this repo does not own
+```text
+LIVE_PUBLIC_TRUTH_FRAME
+```
 
-TRUTHFRAMER is not:
+Release:
 
-* a broker
-* a trading bot
-* an investment adviser
-* a signal seller
-* an execution system
-* a prediction-market exchange
-* a portfolio manager
-* a Bloomberg clone
-* a TradingView clone
-* an AI content toy
+```text
+v0.1.0 — First Public Truth Frame
+```
+
+## Core object
+
+```text
+TRUTH_FRAME
+```
+
+A `TRUTH_FRAME` binds source manifests, clock alignment, venue state, order flow, market depth, cross-venue dislocation, prediction probability, correlation structure, latency boundaries, replay evidence, and visual projection boundaries.
+
+## Closed public loop
+
+```text
+TRUTH_FRAME object
+→ local visual render
+→ render verifier
+→ public readiness verifier
+→ static public surface
+→ live proof object
+→ release ledger
+→ public registry
+→ system status
+```
 
 ## Operating law
 
@@ -55,65 +69,42 @@ No replay without boundary.
 No boundary without TRUTH_FRAME.
 ```
 
-## First case
+## Verification
 
-```text
-TF-000001 — Cross-Venue Prediction Lag
+Run:
+
+```bash
+npm run verify:all
 ```
 
-Question:
+Expected:
 
 ```text
-Which venue absorbed information late, under the declared replay window and liquidity boundary?
+TRUTHFRAMER_VERIFY_PASS=true
+TF-000001_RENDER_PASS=true
+TF-000001_PUBLIC_SURFACE_READY=true
+TRUTHFRAMER_REGISTRY_PASS=true
+TRUTHFRAMER_README_PUBLIC_ENTRY_PASS=true
 ```
 
-Output:
+## Object paths
 
 ```text
 cases/tf-000001-cross-venue-prediction-lag/TRUTH_FRAME.json
+cases/tf-000001-cross-venue-prediction-lag/SOURCE_MANIFEST.json
+cases/tf-000001-cross-venue-prediction-lag/REPLAY_MANIFEST.json
+apps/terminal/tf-000001.html
+registry/TRUTH_FRAME_REGISTRY.json
+reports/current/truthframer-system-status.json
+reports/current/tf-000001-public-surface-live.json
+reports/current/truthframer-registry-live-proof.json
+releases/v0.1.0/RELEASE_LEDGER.json
 ```
-
 
 ## Boundary
 
-TRUTHFRAMER is not a broker, trading bot, investment adviser, signal seller, execution platform, prediction-market exchange, or portfolio manager.
+TRUTHFRAMER is not a broker, trading bot, investment adviser, signal seller, prediction-market exchange, or execution platform.
 
 TRUTHFRAMER does not tell users what to trade.
 
 TRUTHFRAMER shows replayable market structure.
-
-## First public surface
-
-```text
-TF-000001_PUBLIC_SURFACE_READY=true
-```
-
-Rendered source:
-
-```text
-apps/terminal/tf-000001.html
-```
-
-Public docs surface:
-
-```text
-docs/render/index.html
-```
-
-Readiness object:
-
-```text
-reports/current/tf-000001-public-surface-readiness.json
-```
-
-Closed loop:
-
-```text
-TRUTH_FRAME object
-→ visual surface
-→ render verification
-→ public docs surface
-→ CI verification
-→ GitHub Pages deployment
-```
-

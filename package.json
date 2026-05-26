@@ -8,8 +8,9 @@
     "verify": "node scripts/verify-truthframer.js",
     "verify:render": "node scripts/verify-render.js",
     "verify:public": "node scripts/verify-public-surface.js",
-    "verify:all": "npm run verify && npm run verify:render && npm run verify:public && npm run verify:registry",
-    "verify:registry": "node scripts/verify-registry.js"
+    "verify:all": "npm run verify && npm run verify:render && npm run verify:public && npm run verify:registry && npm run verify:readme",
+    "verify:registry": "node scripts/verify-registry.js",
+    "verify:readme": "node scripts/verify-readme-public-entry.js"
   },
   "license": "Apache-2.0"
 }
