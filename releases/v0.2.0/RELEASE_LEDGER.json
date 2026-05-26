@@ -1,0 +1,43 @@
+{
+  "object_type": "TRUTHFRAMER_RELEASE_LEDGER",
+  "release": "v0.2.0",
+  "title": "Multi-Frame Public Registry",
+  "main_sha_at_release_candidate": "66850217e9bbc7b65479c598d25efa8b4570c836",
+  "pages_sha": "41106e40e010d675c114dd775eb9f4a7e3f780f5",
+  "frame_count": 2,
+  "frames": [
+    {
+      "frame_id": "tf_000001",
+      "title": "Cross-Venue Prediction Lag",
+      "render_url": "https://truthframer.github.io/truthframer-platform/render/",
+      "case_object_url": "https://truthframer.github.io/truthframer-platform/case/tf-000001/TRUTH_FRAME.json",
+      "proof_url": "https://truthframer.github.io/truthframer-platform/proof/PUBLIC_SURFACE_PROOF.json"
+    },
+    {
+      "frame_id": "tf_000002",
+      "title": "Level 3 Order Flow",
+      "render_url": "https://truthframer.github.io/truthframer-platform/render/tf-000002/",
+      "case_object_url": "https://truthframer.github.io/truthframer-platform/case/tf-000002/TRUTH_FRAME.json",
+      "proof_url": "https://truthframer.github.io/truthframer-platform/proof/tf-000002/PUBLIC_SURFACE_PROOF.json"
+    }
+  ],
+  "registry_url": "https://truthframer.github.io/truthframer-platform/registry/TRUTH_FRAME_REGISTRY.json",
+  "system_status_url": "https://truthframer.github.io/truthframer-platform/status/truthframer-system-status.json",
+  "frames_url": "https://truthframer.github.io/truthframer-platform/frames/",
+  "verification": {
+    "truthframer_verify": true,
+    "render_verify": true,
+    "public_surface_ready": true,
+    "registry_verify": true,
+    "readme_verify": true,
+    "tf000002_verify": true,
+    "public_live_urls_checked": true
+  },
+  "boundary": [
+    "not investment advice",
+    "not trade recommendation",
+    "not broker execution",
+    "valid only for declared sources and replay windows",
+    "sample fixtures only; not live market data"
+  ]
+}
