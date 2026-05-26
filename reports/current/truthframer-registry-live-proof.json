@@ -1,0 +1,9 @@
+{
+  "object_type": "TRUTHFRAMER_REGISTRY_LIVE_PROOF",
+  "status": "LIVE",
+  "current_frame": "tf_000001",
+  "registry_url": "https://truthframer.github.io/truthframer-platform/registry/TRUTH_FRAME_REGISTRY.json",
+  "status_url": "https://truthframer.github.io/truthframer-platform/status/truthframer-system-status.json",
+  "frames_url": "https://truthframer.github.io/truthframer-platform/frames/",
+  "pages_sha": "113bcc813470ea8083545648a026d50009d078d4"
+}
