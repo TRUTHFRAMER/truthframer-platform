@@ -1,0 +1,30 @@
+{
+  "object_type": "TRUTH_FRAME_REGISTRY",
+  "schema_version": "1.0.0",
+  "current_frame": "tf_000001",
+  "frames": [
+    {
+      "frame_id": "tf_000001",
+      "title": "Cross-Venue Prediction Lag",
+      "status": "LIVE_PUBLIC_TRUTH_FRAME",
+      "truth_frame_path": "cases/tf-000001-cross-venue-prediction-lag/TRUTH_FRAME.json",
+      "source_manifest_path": "cases/tf-000001-cross-venue-prediction-lag/SOURCE_MANIFEST.json",
+      "replay_manifest_path": "cases/tf-000001-cross-venue-prediction-lag/REPLAY_MANIFEST.json",
+      "render_source_path": "apps/terminal/tf-000001.html",
+      "live_proof_path": "reports/current/tf-000001-public-surface-live.json",
+      "release_ledger_path": "releases/v0.1.0/RELEASE_LEDGER.json",
+      "public_url": "https://truthframer.github.io/truthframer-platform/",
+      "render_url": "https://truthframer.github.io/truthframer-platform/render/",
+      "proof_url": "https://truthframer.github.io/truthframer-platform/proof/PUBLIC_SURFACE_PROOF.json",
+      "case_object_url": "https://truthframer.github.io/truthframer-platform/case/tf-000001/TRUTH_FRAME.json",
+      "release": "v0.1.0",
+      "release_url": "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.1.0"
+    }
+  ],
+  "boundary": [
+    "not investment advice",
+    "not trade recommendation",
+    "not broker execution",
+    "valid only for declared sources and replay window"
+  ]
+}
