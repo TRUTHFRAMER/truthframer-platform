@@ -1,0 +1,11 @@
+{
+  "object_type": "TRUTHFRAMER_RELEASE_LEDGER",
+  "release": "v0.4.1",
+  "title": "Public System Audit Seal",
+  "main_sha_at_release_candidate": "0e0e24b7bec68c2bfb7d66991ca7af72bef621d5",
+  "pages_sha": "30f223125846969e1d34d74a3e47ec401f726be2",
+  "audit_seal_path": "audits/v0.4.1/PUBLIC_SYSTEM_AUDIT_SEAL.json",
+  "audit_seal_url": "https://truthframer.github.io/truthframer-platform/audit/PUBLIC_SYSTEM_AUDIT_SEAL.json",
+  "frame_count": 4,
+  "status": "SEALED_PUBLIC_SYSTEM"
+}
