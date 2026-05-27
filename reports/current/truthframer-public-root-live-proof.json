@@ -1,0 +1,18 @@
+{
+  "object_type": "TRUTHFRAMER_PUBLIC_ROOT_LIVE_PROOF",
+  "status": "LIVE",
+  "public_root": "https://truthframer.github.io/truthframer-platform/",
+  "frames_url": "https://truthframer.github.io/truthframer-platform/frames/",
+  "registry_url": "https://truthframer.github.io/truthframer-platform/registry/TRUTH_FRAME_REGISTRY.json",
+  "system_status_url": "https://truthframer.github.io/truthframer-platform/status/truthframer-system-status.json",
+  "frame_count": 4,
+  "main_commit": "8e6fc273bac352440d5c3bfc827a15559f649572",
+  "pages_commit": "058a0972a249eb46bcdfb030bf6a7296ee2e494b",
+  "boundary": [
+    "not investment advice",
+    "not trade recommendation",
+    "not broker execution",
+    "valid only for declared sources and replay windows",
+    "sample fixtures only; not live market data"
+  ]
+}
