@@ -1,0 +1,27 @@
+{
+  "object_type": "SOURCE_MANIFEST",
+  "frame_id": "tf_000003",
+  "sources": [
+    {
+      "source_type": "market_data_packet_timestamps",
+      "venue": "NASDAQ",
+      "status": "sample_fixture"
+    },
+    {
+      "source_type": "fpga_pipeline_trace",
+      "venue": "local_fixture",
+      "status": "sample_fixture"
+    },
+    {
+      "source_type": "cpu_pipeline_trace",
+      "venue": "local_fixture",
+      "status": "sample_fixture"
+    },
+    {
+      "source_type": "gateway_handoff_trace",
+      "venue": "local_fixture",
+      "status": "sample_fixture"
+    }
+  ],
+  "boundary": "sample fixtures only; not live infrastructure data"
+}

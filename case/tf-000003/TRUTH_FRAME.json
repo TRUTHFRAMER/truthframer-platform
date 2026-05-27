@@ -1,0 +1,61 @@
+{
+  "object_type": "TRUTH_FRAME",
+  "frame_id": "tf_000003",
+  "title": "FPGA vs CPU Latency Boundary",
+  "question": "Where did decision latency accumulate?",
+  "time_window": {
+    "start": "2026-05-26T15:30:00Z",
+    "end": "2026-05-26T15:45:00Z",
+    "clock_policy": "nanosecond_aligned_pipeline_v1"
+  },
+  "market_scope": {
+    "assets": ["NVDA"],
+    "venues": ["NASDAQ"],
+    "instruments": ["equity", "order_book", "latency_pipeline"]
+  },
+  "source_manifest": {
+    "path": "SOURCE_MANIFEST.json",
+    "required": true
+  },
+  "truth_layers": {
+    "market_data_ingest": "present",
+    "packet_decode": "present",
+    "feature_extraction": "present",
+    "decision_boundary": "present",
+    "risk_check": "present",
+    "order_encode": "present",
+    "gateway_handoff": "present",
+    "fpga_path": "present",
+    "cpu_path": "present",
+    "latency_delta": "present",
+    "replay_timeline": "present"
+  },
+  "visual_projections": [
+    "fpga_cpu_pipeline",
+    "latency_waterfall",
+    "decision_boundary_map",
+    "jitter_distribution",
+    "gateway_handoff_panel",
+    "replay_timeline"
+  ],
+  "replay": {
+    "deterministic": true,
+    "bundle": "REPLAY_MANIFEST.json",
+    "expected_output_hash": "sha256:placeholder-tf-000003"
+  },
+  "truth_score": {
+    "data_completeness": 0.9979,
+    "replay_divergence_bps": 0.01,
+    "sequence_gaps": 0,
+    "clock_skew_ns": 12,
+    "integrity_score": 98.9
+  },
+  "boundary": [
+    "not investment advice",
+    "not trade recommendation",
+    "not broker execution",
+    "valid only for declared sources and replay window",
+    "sample fixtures only; not live market data",
+    "does not claim production infrastructure performance"
+  ]
+}
