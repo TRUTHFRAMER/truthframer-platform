@@ -38,16 +38,17 @@
     {
       "frame_id": "tf_000003",
       "title": "FPGA vs CPU Latency Boundary",
-      "status": "LOCAL_RENDERED_TRUTH_FRAME",
+      "status": "LIVE_PUBLIC_TRUTH_FRAME",
       "truth_frame_path": "cases/tf-000003-fpga-vs-cpu-latency-boundary/TRUTH_FRAME.json",
       "source_manifest_path": "cases/tf-000003-fpga-vs-cpu-latency-boundary/SOURCE_MANIFEST.json",
       "replay_manifest_path": "cases/tf-000003-fpga-vs-cpu-latency-boundary/REPLAY_MANIFEST.json",
       "render_source_path": "apps/terminal/tf-000003.html",
       "public_url": "https://truthframer.github.io/truthframer-platform/",
       "render_url": "https://truthframer.github.io/truthframer-platform/render/tf-000003/",
-      "proof_url": null,
+      "proof_url": "https://truthframer.github.io/truthframer-platform/proof/tf-000003/PUBLIC_SURFACE_PROOF.json",
       "case_object_url": "https://truthframer.github.io/truthframer-platform/case/tf-000003/TRUTH_FRAME.json",
-      "release": null
+      "release": null,
+      "live_proof_path": "reports/current/tf-000003-public-surface-live.json"
     }
   ],
   "boundary": [
