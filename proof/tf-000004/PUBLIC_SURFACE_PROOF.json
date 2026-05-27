@@ -1,0 +1,18 @@
+{
+  "object_type": "PUBLIC_SURFACE_PROOF",
+  "frame_id": "tf_000004",
+  "status": "PUBLISHED_STATIC_SURFACE",
+  "public_url": "https://truthframer.github.io/truthframer-platform/",
+  "render_url": "https://truthframer.github.io/truthframer-platform/render/tf-000004/",
+  "source_object": "https://truthframer.github.io/truthframer-platform/case/tf-000004/TRUTH_FRAME.json",
+  "source_manifest": "https://truthframer.github.io/truthframer-platform/case/tf-000004/SOURCE_MANIFEST.json",
+  "replay_manifest": "https://truthframer.github.io/truthframer-platform/case/tf-000004/REPLAY_MANIFEST.json",
+  "boundary": [
+    "not investment advice",
+    "not trade recommendation",
+    "not broker execution",
+    "valid only for declared sources and replay window",
+    "sample fixtures only; not live market data",
+    "correlation does not imply causation"
+  ]
+}

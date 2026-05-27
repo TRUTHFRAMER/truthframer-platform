@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>TRUTHFRAMER · TF-000004</title>
+<style>
+:root{--bg:#05070b;--panel:#0c111a;--line:#223044;--text:#e8f0ff;--muted:#7f8da3;--green:#39ff9f;--red:#ff4f6d;--cyan:#49d9ff;--amber:#ffbd4a;--violet:#a78bfa}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at 12% 0%,rgba(167,139,250,.13),transparent 32%),radial-gradient(circle at 86% 8%,rgba(73,217,255,.11),transparent 34%),var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif}
+main{max-width:1540px;margin:0 auto;padding:28px}
+.top{display:grid;grid-template-columns:1fr auto;gap:24px;margin-bottom:18px}
+h1{margin:0;font-size:38px;letter-spacing:.08em}
+.sub{color:var(--muted);font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin-top:8px}
+.badges{display:grid;grid-template-columns:repeat(4,auto);gap:10px}
+.badge{border:1px solid var(--line);background:#0c111add;border-radius:14px;padding:10px 12px;min-width:130px}
+.badge small{display:block;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.12em}
+.badge b{font-size:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr 1.1fr;gap:14px}
+.panel{border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,#101827f0,#070b12f5);padding:16px;min-height:190px;box-shadow:0 18px 60px #0006}
+.span2{grid-column:span 2}
+h2{margin:0 0 14px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#dbeafe}
+.matrix{display:grid;grid-template-columns:repeat(8,1fr);gap:3px}
+.cell{aspect-ratio:1;border-radius:5px;background:#49d9ff33;display:flex;align-items:center;justify-content:center;font-size:9px;color:#e8f0ffcc}
+table{width:100%;border-collapse:collapse;font-size:12px}
+td,th{padding:7px 4px;border-bottom:1px solid #22304488;font-variant-numeric:tabular-nums}
+th{color:var(--muted);text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:.08em}
+.green{color:var(--green)}.red{color:var(--red)}.cyan{color:var(--cyan)}.amber{color:var(--amber)}.violet{color:var(--violet)}
+.law{display:grid;gap:8px;color:#cbd5e1;font-size:13px}
+.law div{border:1px solid #223044bb;border-radius:12px;padding:9px 10px;background:#05070b55}
+svg{width:100%;height:210px;display:block;border:1px solid var(--line);border-radius:14px;background:#05070b77}
+@media(max-width:1050px){.grid,.top{grid-template-columns:1fr}.span2{grid-column:span 1}.badges{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<main>
+<section class="top">
+  <div>
+    <h1>TRUTHFRAMER</h1>
+    <div class="sub">TF-000004 · Correlation Regime Break · Which relationships changed?</div>
+  </div>
+  <div class="badges">
+    <div class="badge"><small>Truth score</small><b class="green">98.1</b></div>
+    <div class="badge"><small>Assets</small><b class="cyan">8</b></div>
+    <div class="badge"><small>Regime Δ</small><b class="amber">0.37</b></div>
+    <div class="badge"><small>Sequence gaps</small><b class="green">0</b></div>
+  </div>
+</section>
+
+<section class="grid">
+  <div class="panel">
+    <h2>01 · Pre-Regime Matrix</h2>
+    <div class="matrix" id="pre"></div>
+  </div>
+
+  <div class="panel">
+    <h2>02 · Post-Regime Matrix</h2>
+    <div class="matrix" id="post"></div>
+  </div>
+
+  <div class="panel">
+    <h2>03 · Dependency Breaks</h2>
+    <table>
+      <thead><tr><th>Pair</th><th>Before</th><th>After</th><th>Δ</th></tr></thead>
+      <tbody>
+        <tr><td>NVDA / AMD</td><td>.82</td><td>.44</td><td class="red">-.38</td></tr>
+        <tr><td>NVDA / SMH</td><td>.91</td><td>.71</td><td class="amber">-.20</td></tr>
+        <tr><td>AAPL / MSFT</td><td>.66</td><td>.88</td><td class="green">+.22</td></tr>
+        <tr><td>TSLA / QQQ</td><td>.58</td><td>.29</td><td class="red">-.29</td></tr>
+        <tr><td>GOOGL / QQQ</td><td>.76</td><td>.84</td><td class="green">+.08</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="panel span2">
+    <h2>04 · Regime Timeline</h2>
+    <svg viewBox="0 0 920 210" preserveAspectRatio="none">
+      <path d="M0 150 C120 140 210 126 320 132 S490 154 590 82 S750 44 920 66" fill="none" stroke="#49d9ff" stroke-width="3"/>
+      <path d="M0 98 C140 94 250 102 360 88 S520 58 650 116 S800 152 920 128" fill="none" stroke="#a78bfa" stroke-width="3"/>
+      <line x1="560" y1="0" x2="560" y2="210" stroke="#ffbd4a" stroke-width="2" stroke-dasharray="7 7"/>
+      <text x="574" y="28" fill="#ffbd4a" font-size="13">regime break window</text>
+    </svg>
+  </div>
+
+  <div class="panel">
+    <h2>05 · Cluster Shift</h2>
+    <div class="law">
+      <div>Semiconductor cluster weakened.</div>
+      <div>Mega-cap software cluster tightened.</div>
+      <div>TSLA detached from broad QQQ movement.</div>
+      <div>NVDA retained partial SMH dependency but lost AMD lockstep.</div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>06 · Boundary</h2>
+    <div class="law">
+      <div>No investment advice</div>
+      <div>No trade recommendation</div>
+      <div>No broker execution</div>
+      <div>Correlation does not imply causation</div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>07 · Frame Identity</h2>
+    <table>
+      <tr><td>Object</td><td class="cyan">TRUTH_FRAME</td></tr>
+      <tr><td>Frame</td><td>tf_000004</td></tr>
+      <tr><td>Replay</td><td class="green">deterministic</td></tr>
+      <tr><td>Question</td><td>Which relationships changed?</td></tr>
+    </table>
+  </div>
+</section>
+</main>
+<script>
+const vals=[.99,.82,.64,.70,.48,.77,.91,.61,.82,.99,.66,.58,.42,.63,.72,.55,.64,.66,.99,.76,.36,.69,.74,.52,.70,.58,.76,.99,.45,.71,.80,.62,.48,.42,.36,.45,.99,.41,.49,.58,.77,.63,.69,.71,.41,.99,.88,.67,.91,.72,.74,.80,.49,.88,.99,.73,.61,.55,.52,.62,.58,.67,.73,.99];
+const vals2=[.99,.44,.71,.84,.29,.74,.71,.52,.44,.99,.88,.62,.33,.59,.61,.49,.71,.88,.99,.84,.39,.73,.79,.57,.84,.62,.84,.99,.37,.69,.82,.64,.29,.33,.39,.37,.99,.34,.42,.41,.74,.59,.73,.69,.34,.99,.81,.70,.71,.61,.79,.82,.42,.81,.99,.77,.52,.49,.57,.64,.41,.70,.77,.99];
+function fill(id,arr){
+ const el=document.getElementById(id);
+ arr.forEach(v=>{
+  const c=document.createElement("div");
+  c.className="cell";
+  const hot=Math.max(0,Math.min(1,v));
+  c.style.background=`rgba(${Math.round(255*hot)},${Math.round(70+170*(1-hot))},${Math.round(255-180*hot)},${.22+hot*.66})`;
+  c.textContent=v.toFixed(2);
+  el.appendChild(c);
+ });
+}
+fill("pre",vals); fill("post",vals2);
+</script>
+</body>
+</html>

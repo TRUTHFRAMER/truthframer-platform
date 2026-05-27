@@ -49,6 +49,21 @@
       "case_object_url": "https://truthframer.github.io/truthframer-platform/case/tf-000003/TRUTH_FRAME.json",
       "release": null,
       "live_proof_path": "reports/current/tf-000003-public-surface-live.json"
+    },
+    {
+      "frame_id": "tf_000004",
+      "title": "Correlation Regime Break",
+      "status": "LIVE_PUBLIC_TRUTH_FRAME",
+      "truth_frame_path": "cases/tf-000004-correlation-regime-break/TRUTH_FRAME.json",
+      "source_manifest_path": "cases/tf-000004-correlation-regime-break/SOURCE_MANIFEST.json",
+      "replay_manifest_path": "cases/tf-000004-correlation-regime-break/REPLAY_MANIFEST.json",
+      "render_source_path": "apps/terminal/tf-000004.html",
+      "public_url": "https://truthframer.github.io/truthframer-platform/",
+      "render_url": "https://truthframer.github.io/truthframer-platform/render/tf-000004/",
+      "proof_url": "https://truthframer.github.io/truthframer-platform/proof/tf-000004/PUBLIC_SURFACE_PROOF.json",
+      "case_object_url": "https://truthframer.github.io/truthframer-platform/case/tf-000004/TRUTH_FRAME.json",
+      "release": null,
+      "live_proof_path": "reports/current/tf-000004-public-surface-live.json"
     }
   ],
   "boundary": [
