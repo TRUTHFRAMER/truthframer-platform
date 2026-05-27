@@ -8,12 +8,13 @@
     "verify": "node scripts/verify-truthframer.js",
     "verify:render": "node scripts/verify-render.js",
     "verify:public": "node scripts/verify-public-surface.js",
-    "verify:all": "npm run verify && npm run verify:render && npm run verify:public && npm run verify:registry && npm run verify:readme && npm run verify:tf000002 && npm run verify:tf000003 && npm run verify:tf000004",
+    "verify:all": "npm run verify && npm run verify:render && npm run verify:public && npm run verify:registry && npm run verify:readme && npm run verify:tf000002 && npm run verify:tf000003 && npm run verify:tf000004 && npm run verify:root",
     "verify:registry": "node scripts/verify-registry.js",
     "verify:readme": "node scripts/verify-readme-public-entry.js",
     "verify:tf000002": "node scripts/verify-tf-000002.js",
     "verify:tf000003": "node scripts/verify-tf-000003.js",
-    "verify:tf000004": "node scripts/verify-tf-000004.js"
+    "verify:tf000004": "node scripts/verify-tf-000004.js",
+    "verify:root": "node scripts/verify-public-root.js"
   },
   "license": "Apache-2.0"
 }
