@@ -1,0 +1,25 @@
+{
+  "object_type": "PUBLIC_SURFACE_LIVE_PROOF",
+  "frame_id": "tf_000004",
+  "status": "LIVE",
+  "render_url": "https://truthframer.github.io/truthframer-platform/render/tf-000004/",
+  "proof_url": "https://truthframer.github.io/truthframer-platform/proof/tf-000004/PUBLIC_SURFACE_PROOF.json",
+  "case_object_url": "https://truthframer.github.io/truthframer-platform/case/tf-000004/TRUTH_FRAME.json",
+  "registry_url": "https://truthframer.github.io/truthframer-platform/registry/TRUTH_FRAME_REGISTRY.json",
+  "frames_url": "https://truthframer.github.io/truthframer-platform/frames/",
+  "main_commit": "d52c2d06504cdfffb65b1d2f6bf146f7a47afa40",
+  "pages_commit": "706e8d4ebc1a63cc11c0666f88452194d53f2d76",
+  "published_branch": "gh-pages",
+  "verification": [
+    "TF-000004_VERIFY_PASS",
+    "TRUTHFRAMER_REGISTRY_PASS"
+  ],
+  "boundary": [
+    "not investment advice",
+    "not trade recommendation",
+    "not broker execution",
+    "valid only for declared sources and replay window",
+    "sample fixtures only; not live market data",
+    "correlation does not imply causation"
+  ]
+}
