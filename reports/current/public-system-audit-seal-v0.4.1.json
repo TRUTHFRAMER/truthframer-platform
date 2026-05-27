@@ -1,0 +1,105 @@
+{
+  "object_type": "TRUTHFRAMER_PUBLIC_SYSTEM_AUDIT_SEAL",
+  "seal_version": "v0.4.1",
+  "status": "SEALED_PUBLIC_SYSTEM",
+  "audited_at_utc": "2026-05-27T21:28:14Z",
+  "repository": "https://github.com/TRUTHFRAMER/truthframer-platform",
+  "public_root": "https://truthframer.github.io/truthframer-platform/",
+  "main_commit": "9263884742b9cec1feaee8c0b1c43d6100b53d03",
+  "pages_commit": "058a0972a249eb46bcdfb030bf6a7296ee2e494b",
+  "frame_count": 4,
+  "frames": [
+    {
+      "frame_id": "tf_000001",
+      "title": "Cross-Venue Prediction Lag",
+      "render_url": "https://truthframer.github.io/truthframer-platform/render/",
+      "case_object_url": "https://truthframer.github.io/truthframer-platform/case/tf-000001/TRUTH_FRAME.json",
+      "proof_url": "https://truthframer.github.io/truthframer-platform/proof/PUBLIC_SURFACE_PROOF.json"
+    },
+    {
+      "frame_id": "tf_000002",
+      "title": "Level 3 Order Flow",
+      "render_url": "https://truthframer.github.io/truthframer-platform/render/tf-000002/",
+      "case_object_url": "https://truthframer.github.io/truthframer-platform/case/tf-000002/TRUTH_FRAME.json",
+      "proof_url": "https://truthframer.github.io/truthframer-platform/proof/tf-000002/PUBLIC_SURFACE_PROOF.json"
+    },
+    {
+      "frame_id": "tf_000003",
+      "title": "FPGA vs CPU Latency Boundary",
+      "render_url": "https://truthframer.github.io/truthframer-platform/render/tf-000003/",
+      "case_object_url": "https://truthframer.github.io/truthframer-platform/case/tf-000003/TRUTH_FRAME.json",
+      "proof_url": "https://truthframer.github.io/truthframer-platform/proof/tf-000003/PUBLIC_SURFACE_PROOF.json"
+    },
+    {
+      "frame_id": "tf_000004",
+      "title": "Correlation Regime Break",
+      "render_url": "https://truthframer.github.io/truthframer-platform/render/tf-000004/",
+      "case_object_url": "https://truthframer.github.io/truthframer-platform/case/tf-000004/TRUTH_FRAME.json",
+      "proof_url": "https://truthframer.github.io/truthframer-platform/proof/tf-000004/PUBLIC_SURFACE_PROOF.json"
+    }
+  ],
+  "machine_readable_surfaces": {
+    "registry_url": "https://truthframer.github.io/truthframer-platform/registry/TRUTH_FRAME_REGISTRY.json",
+    "system_status_url": "https://truthframer.github.io/truthframer-platform/status/truthframer-system-status.json",
+    "frames_url": "https://truthframer.github.io/truthframer-platform/frames/"
+  },
+  "release_chain": [
+    {
+      "release": "v0.1.0",
+      "meaning": "First Public Truth Frame"
+    },
+    {
+      "release": "v0.2.0",
+      "meaning": "Multi-Frame Public Registry"
+    },
+    {
+      "release": "v0.3.0",
+      "meaning": "Three Public Truth Frames"
+    },
+    {
+      "release": "v0.4.0",
+      "meaning": "Four Public Truth Frames and Public Root Control Surface"
+    }
+  ],
+  "content_hashes_sha256": {
+    "registry": "b122b25e72562bd8cbdeb3e9ca6653a525f11cecfcefa50ec74299408d295d39",
+    "system_status": "f7386490882ad0f574cb0aaa1333bace265d1b8e3c6e3a7711bf776e2132c067",
+    "public_root_html": "4697244816711690e5035d4eaf23dbd819812e92b30c2329f0399696ace70573"
+  },
+  "verifier_passes": [
+    "TRUTHFRAMER_VERIFY_PASS",
+    "TF-000001_RENDER_PASS",
+    "TF-000001_PUBLIC_SURFACE_READY",
+    "TRUTHFRAMER_REGISTRY_PASS",
+    "TRUTHFRAMER_README_PUBLIC_ENTRY_PASS",
+    "TF-000002_VERIFY_PASS",
+    "TF-000003_VERIFY_PASS",
+    "TF-000004_VERIFY_PASS",
+    "TRUTHFRAMER_PUBLIC_ROOT_PASS"
+  ],
+  "public_url_checks": [
+    "public_root",
+    "frames",
+    "registry",
+    "system_status",
+    "tf000001_render",
+    "tf000002_render",
+    "tf000003_render",
+    "tf000004_render",
+    "tf000001_case",
+    "tf000002_case",
+    "tf000003_case",
+    "tf000004_case",
+    "tf000001_proof",
+    "tf000002_proof",
+    "tf000003_proof",
+    "tf000004_proof"
+  ],
+  "boundary": [
+    "not investment advice",
+    "not trade recommendation",
+    "not broker execution",
+    "valid only for declared sources and replay windows",
+    "sample fixtures only; not live market data"
+  ]
+}
