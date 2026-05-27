@@ -1,0 +1,58 @@
+{
+  "object_type": "TRUTH_FRAME",
+  "frame_id": "tf_000004",
+  "title": "Correlation Regime Break",
+  "question": "Which relationships changed?",
+  "time_window": {
+    "start": "2026-05-26T16:00:00Z",
+    "end": "2026-05-26T16:30:00Z",
+    "clock_policy": "bar_time_aligned_v1"
+  },
+  "market_scope": {
+    "assets": ["NVDA", "AAPL", "MSFT", "GOOGL", "TSLA", "AMD", "SMH", "QQQ"],
+    "venues": ["NASDAQ", "NYSE Arca"],
+    "instruments": ["equity", "ETF", "return_series", "correlation_matrix"]
+  },
+  "source_manifest": {
+    "path": "SOURCE_MANIFEST.json",
+    "required": true
+  },
+  "truth_layers": {
+    "return_series": "present",
+    "rolling_correlation": "present",
+    "pre_regime_matrix": "present",
+    "post_regime_matrix": "present",
+    "correlation_delta": "present",
+    "cluster_structure": "present",
+    "dependency_break": "present",
+    "replay_timeline": "present"
+  },
+  "visual_projections": [
+    "pre_correlation_matrix",
+    "post_correlation_matrix",
+    "delta_heatmap",
+    "cluster_shift_panel",
+    "dependency_break_table",
+    "replay_timeline"
+  ],
+  "replay": {
+    "deterministic": true,
+    "bundle": "REPLAY_MANIFEST.json",
+    "expected_output_hash": "sha256:placeholder-tf-000004"
+  },
+  "truth_score": {
+    "data_completeness": 0.9984,
+    "replay_divergence_bps": 0.02,
+    "sequence_gaps": 0,
+    "clock_skew_ns": 50,
+    "integrity_score": 98.1
+  },
+  "boundary": [
+    "not investment advice",
+    "not trade recommendation",
+    "not broker execution",
+    "valid only for declared sources and replay window",
+    "sample fixtures only; not live market data",
+    "correlation does not imply causation"
+  ]
+}

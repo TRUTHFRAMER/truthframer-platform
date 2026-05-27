@@ -17,9 +17,9 @@ const status = readJson("reports/current/truthframer-system-status.json");
 
 if (registry.object_type !== "TRUTH_FRAME_REGISTRY") fail("BAD_REGISTRY_TYPE");
 if (registry.current_frame !== "tf_000001") fail("BAD_CURRENT_FRAME");
-if (!Array.isArray(registry.frames) || registry.frames.length < 3) fail("FRAME_COUNT_TOO_LOW");
+if (!Array.isArray(registry.frames) || registry.frames.length < 4) fail("FRAME_COUNT_TOO_LOW");
 
-for (const frameId of ["tf_000001", "tf_000002", "tf_000003"]) {
+for (const frameId of ["tf_000001", "tf_000002", "tf_000003", "tf_000004"]) {
   const entry = registry.frames.find(f => f.frame_id === frameId);
   if (!entry) fail(`MISSING_FRAME_${frameId}`);
 
@@ -43,7 +43,7 @@ for (const frameId of ["tf_000001", "tf_000002", "tf_000003"]) {
   }
 }
 
-if ((status.frame_count || 2) < 2) fail("STATUS_FRAME_COUNT_TOO_LOW");
+if ((status.frame_count || 3) < 3) fail("STATUS_FRAME_COUNT_TOO_LOW");
 
 console.log("TRUTHFRAMER_REGISTRY_PASS=true");
 console.log(`CURRENT_FRAME=${registry.current_frame}`);
