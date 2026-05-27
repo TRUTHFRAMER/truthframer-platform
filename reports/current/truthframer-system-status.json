@@ -1,6 +1,6 @@
 {
   "object_type": "TRUTHFRAMER_SYSTEM_STATUS",
-  "status": "LIVE_WITH_THREE_PUBLIC_TRUTH_FRAMES",
+  "status": "LIVE_WITH_FOUR_PUBLIC_TRUTH_FRAMES",
   "current_frame": "tf_000001",
   "latest_release": "v0.1.0",
   "main_sha": "a16b81d3de20dc1ee174b687460bcd57669b1da7",
@@ -16,7 +16,8 @@
     "TF-000001_PUBLIC_SURFACE_READY",
     "TF-000001_PUBLIC_SURFACE_LIVE"
   ],
-  "frame_count": 3,
+  "frame_count": 4,
   "public_tf000002_render": "https://truthframer.github.io/truthframer-platform/render/tf-000002/",
-  "public_tf000003_render": "https://truthframer.github.io/truthframer-platform/render/tf-000003/"
+  "public_tf000003_render": "https://truthframer.github.io/truthframer-platform/render/tf-000003/",
+  "public_tf000004_render": "https://truthframer.github.io/truthframer-platform/render/tf-000004/"
 }
