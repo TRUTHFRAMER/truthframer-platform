@@ -1,0 +1,53 @@
+{
+  "object_type": "TRUTHFRAMER_RELEASE_LEDGER",
+  "release": "v0.4.0",
+  "title": "Four Public Truth Frames and Public Root Control Surface",
+  "main_sha_at_release_candidate": "af465ad4f9180f366d899b8938c1a5db17806435",
+  "pages_sha": "058a0972a249eb46bcdfb030bf6a7296ee2e494b",
+  "frame_count": 4,
+  "public_root": "https://truthframer.github.io/truthframer-platform/",
+  "registry_url": "https://truthframer.github.io/truthframer-platform/registry/TRUTH_FRAME_REGISTRY.json",
+  "system_status_url": "https://truthframer.github.io/truthframer-platform/status/truthframer-system-status.json",
+  "frames_url": "https://truthframer.github.io/truthframer-platform/frames/",
+  "frames": [
+    {
+      "frame_id": "tf_000001",
+      "title": "Cross-Venue Prediction Lag",
+      "render_url": "https://truthframer.github.io/truthframer-platform/render/"
+    },
+    {
+      "frame_id": "tf_000002",
+      "title": "Level 3 Order Flow",
+      "render_url": "https://truthframer.github.io/truthframer-platform/render/tf-000002/"
+    },
+    {
+      "frame_id": "tf_000003",
+      "title": "FPGA vs CPU Latency Boundary",
+      "render_url": "https://truthframer.github.io/truthframer-platform/render/tf-000003/"
+    },
+    {
+      "frame_id": "tf_000004",
+      "title": "Correlation Regime Break",
+      "render_url": "https://truthframer.github.io/truthframer-platform/render/tf-000004/"
+    }
+  ],
+  "verification": {
+    "truthframer_verify": true,
+    "render_verify": true,
+    "public_surface_ready": true,
+    "registry_verify": true,
+    "readme_verify": true,
+    "tf000002_verify": true,
+    "tf000003_verify": true,
+    "tf000004_verify": true,
+    "public_root_verify": true,
+    "public_root_live": true
+  },
+  "boundary": [
+    "not investment advice",
+    "not trade recommendation",
+    "not broker execution",
+    "valid only for declared sources and replay windows",
+    "sample fixtures only; not live market data"
+  ]
+}
