@@ -1,0 +1,43 @@
+{
+  "object_type": "TRUTHFRAMER_REPOSITORY_HARDENING_SEAL",
+  "seal_version": "v0.4.2",
+  "status": "PROTECTED_PUBLIC_SYSTEM",
+  "repository": "https://github.com/TRUTHFRAMER/truthframer-platform",
+  "public_root": "https://truthframer.github.io/truthframer-platform/",
+  "main_commit": "575942c0ea9de4762257b7d4da998086d7dcc2f3",
+  "pages_commit": "30f223125846969e1d34d74a3e47ec401f726be2",
+  "default_branch": "main",
+  "branch_protection": {
+    "required_status_checks": true,
+    "strict_status_checks": true,
+    "required_contexts": ["verify"],
+    "enforce_admins": true,
+    "required_pull_request_reviews": true,
+    "required_approving_review_count": 1,
+    "required_linear_history": true,
+    "allow_force_pushes": false,
+    "allow_deletions": false,
+    "required_conversation_resolution": true
+  },
+  "pages": {
+    "source_branch": "gh-pages",
+    "source_path": "/",
+    "html_url": "https://truthframer.github.io/truthframer-platform/"
+  },
+  "release_chain": [
+    "v0.1.0",
+    "v0.2.0",
+    "v0.3.0",
+    "v0.4.0",
+    "v0.4.1"
+  ],
+  "audit_seal_url": "https://truthframer.github.io/truthframer-platform/audit/PUBLIC_SYSTEM_AUDIT_SEAL.json",
+  "frame_count": 4,
+  "boundary": [
+    "not investment advice",
+    "not trade recommendation",
+    "not broker execution",
+    "valid only for declared sources and replay windows",
+    "sample fixtures only; not live market data"
+  ]
+}
