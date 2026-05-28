@@ -1,0 +1,12 @@
+{
+  "object_type": "TRUTHFRAMER_RELEASE_LEDGER",
+  "release": "v0.4.2",
+  "title": "Protected Public System",
+  "release_candidate_sha": "acb4203d6f69655e73a474bb05b5649c714bd54e",
+  "pages_sha": "9fcc79d0c648af7d8eaa724b771f162ee0e6cb8a",
+  "hardening_seal_path": "hardening/v0.4.2/REPOSITORY_HARDENING_SEAL.json",
+  "hardening_seal_url": "https://truthframer.github.io/truthframer-platform/audit/REPOSITORY_HARDENING_SEAL.json",
+  "audit_seal_url": "https://truthframer.github.io/truthframer-platform/audit/PUBLIC_SYSTEM_AUDIT_SEAL.json",
+  "frame_count": 4,
+  "status": "PROTECTED_PUBLIC_SYSTEM"
+}
