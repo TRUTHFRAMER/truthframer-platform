@@ -101,6 +101,23 @@ reports/current/truthframer-registry-live-proof.json
 releases/v0.1.0/RELEASE_LEDGER.json
 ```
 
+
+## Public network verification
+
+TRUTHFRAMER includes a public network verifier.
+
+```bash
+npm run verify:network
+```
+
+It checks the public root, registry, system status, rendered truth frames, proof objects, audit seal, repository hardening seal, and release chain from public URLs.
+
+Public verification page:
+
+```text
+https://truthframer.github.io/truthframer-platform/verification/
+```
+
 ## Boundary
 
 TRUTHFRAMER is not a broker, trading bot, investment adviser, signal seller, prediction-market exchange, or execution platform.
