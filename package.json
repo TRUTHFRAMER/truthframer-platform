@@ -16,7 +16,8 @@
     "verify:tf000004": "node scripts/verify-tf-000004.js",
     "verify:root": "node scripts/verify-public-root.js",
     "verify:audit": "node scripts/verify-audit-seal.js",
-    "verify:hardening": "node scripts/verify-hardening-seal.js"
+    "verify:hardening": "node scripts/verify-hardening-seal.js",
+    "verify:network": "node scripts/verify-public-network.js"
   },
   "license": "Apache-2.0"
 }
