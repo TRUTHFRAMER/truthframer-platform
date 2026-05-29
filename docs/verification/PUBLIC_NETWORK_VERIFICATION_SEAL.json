@@ -1,0 +1,33 @@
+{
+  "object_type": "TRUTHFRAMER_PUBLIC_NETWORK_VERIFICATION_SEAL",
+  "seal_version": "v0.5.1",
+  "status": "PUBLIC_NETWORK_VERIFIABLE",
+  "base_main_sha": "4b5debb71d65e1dacec854fc7894c0f12a64f14e",
+  "pages_sha_at_seal": "a234dec1138b8c54363e8e97faabc44a51745357",
+  "public_root": "https://truthframer.github.io/truthframer-platform/",
+  "verification_page": "https://truthframer.github.io/truthframer-platform/verification/",
+  "network_verifier": "scripts/verify-public-network.js",
+  "verified_release_chain": [
+    "v0.1.0",
+    "v0.2.0",
+    "v0.3.0",
+    "v0.4.0",
+    "v0.4.1",
+    "v0.4.2",
+    "v0.5.0"
+  ],
+  "verified_public_surfaces": [
+    "public root",
+    "TRUTH_FRAME registry",
+    "system status",
+    "TF-000001 render/case/proof",
+    "TF-000002 render/case/proof",
+    "TF-000003 render/case/proof",
+    "TF-000004 render/case/proof",
+    "public audit seal",
+    "repository hardening seal",
+    "public network verification page"
+  ],
+  "required_command": "npm run verify:network",
+  "boundary": "TRUTHFRAMER is not a broker, trading bot, investment adviser, signal seller, prediction-market exchange, or execution platform."
+}

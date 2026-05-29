@@ -118,6 +118,21 @@ Public verification page:
 https://truthframer.github.io/truthframer-platform/verification/
 ```
 
+
+## Public network verification seal
+
+The public verifier is sealed by a machine-readable verification seal.
+
+```text
+https://truthframer.github.io/truthframer-platform/verification/PUBLIC_NETWORK_VERIFICATION_SEAL.json
+```
+
+Local seal check:
+
+```bash
+npm run verify:network-seal
+```
+
 ## Boundary
 
 TRUTHFRAMER is not a broker, trading bot, investment adviser, signal seller, prediction-market exchange, or execution platform.
