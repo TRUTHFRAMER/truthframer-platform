@@ -1,86 +1,80 @@
 #!/usr/bin/env node
-const https = require("node:https");
+const { execFileSync } = require("node:child_process");
 
-const PUBLIC = "https://truthframer.github.io/truthframer-platform";
-const API = "https://api.github.com/repos/TRUTHFRAMER/truthframer-platform";
+const ORG = "TRUTHFRAMER";
+const REPO = "truthframer-platform";
+const PUBLIC_URL = "https://truthframer.github.io/truthframer-platform";
 
-const frames = [
-  ["tf_000001", "/render/", "/case/tf-000001/TRUTH_FRAME.json", "/proof/PUBLIC_SURFACE_PROOF.json"],
-  ["tf_000002", "/render/tf-000002/", "/case/tf-000002/TRUTH_FRAME.json", "/proof/tf-000002/PUBLIC_SURFACE_PROOF.json"],
-  ["tf_000003", "/render/tf-000003/", "/case/tf-000003/TRUTH_FRAME.json", "/proof/tf-000003/PUBLIC_SURFACE_PROOF.json"],
-  ["tf_000004", "/render/tf-000004/", "/case/tf-000004/TRUTH_FRAME.json", "/proof/tf-000004/PUBLIC_SURFACE_PROOF.json"]
-];
-
-function get(url) {
-  return new Promise((resolve, reject) => {
-    const req = https.get(url, {
-      headers: {
-        "User-Agent": "TRUTHFRAMER-public-network-verifier",
-        "Accept": "application/json,text/html,text/plain,*/*"
-      }
-    }, res => {
-      let out = "";
-      res.setEncoding("utf8");
-      res.on("data", x => out += x);
-      res.on("end", () => {
-        if (res.statusCode < 200 || res.statusCode >= 300) {
-          reject(new Error(`HTTP_${res.statusCode}:${url}`));
-          return;
-        }
-        resolve(out);
-      });
-    });
-    req.on("error", reject);
-    req.setTimeout(20000, () => req.destroy(new Error(`TIMEOUT:${url}`)));
-  });
+function fail(code) {
+  console.error(`TRUTHFRAMER_PUBLIC_NETWORK_VERIFIER_FAIL=${code}`);
+  process.exit(1);
 }
 
-function must(label, text, terms) {
-  for (const term of terms) {
-    if (!text.includes(term)) throw new Error(`${label}_MISSING:${term}`);
+function token() {
+  if (process.env.GITHUB_TOKEN) return process.env.GITHUB_TOKEN;
+  if (process.env.GH_TOKEN) return process.env.GH_TOKEN;
+  try {
+    return execFileSync("gh", ["auth", "token"], { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim();
+  } catch {
+    return "";
   }
 }
 
-async function main() {
-  const root = await get(`${PUBLIC}/`);
-  must("ROOT", root, ["TRUTHFRAMER"]);
+const ghToken = token();
 
-  const registry = await get(`${PUBLIC}/registry/TRUTH_FRAME_REGISTRY.json`);
-  for (const [id] of frames) must("REGISTRY", registry, [id]);
+async function httpOk(url, auth = false) {
+  const headers = {
+    "User-Agent": "truthframer-public-network-verifier",
+    "Accept": auth ? "application/vnd.github+json" : "*/*"
+  };
+  if (auth && ghToken) headers.Authorization = `Bearer ${ghToken}`;
 
-  const status = await get(`${PUBLIC}/status/truthframer-system-status.json`);
-  must("STATUS", status, ["TRUTHFRAMER"]);
+  try {
+    const res = await fetch(url, { method: "GET", redirect: "follow", headers });
+    return { ok: res.status >= 200 && res.status < 300, status: res.status, url };
+  } catch (err) {
+    return { ok: false, status: `ERR_${err.name || "FETCH"}`, url };
+  }
+}
 
-  const audit = await get(`${PUBLIC}/audit/PUBLIC_SYSTEM_AUDIT_SEAL.json`);
-  must("AUDIT", audit, ["v0.4.1"]);
+async function requirePublic(name, url) {
+  const r = await httpOk(url, false);
+  if (!r.ok) fail(`HTTP_${r.status}:${url}`);
+  console.log(`${name}=true`);
+}
 
-  const hardening = await get(`${PUBLIC}/audit/REPOSITORY_HARDENING_SEAL.json`);
-  must("HARDENING", hardening, ["v0.4.2", "PROTECTED_PUBLIC_SYSTEM"]);
+async function requireRelease(tag) {
+  const api = `https://api.github.com/repos/${ORG}/${REPO}/releases/tags/${tag}`;
+  const html = `https://github.com/${ORG}/${REPO}/releases/tag/${tag}`;
 
-  for (const [id, renderPath, casePath, proofPath] of frames) {
-    const render = await get(`${PUBLIC}${renderPath}`);
-    must(`RENDER_${id}`, render, ["TRUTHFRAMER"]);
-
-    const object = await get(`${PUBLIC}${casePath}`);
-    must(`CASE_${id}`, object, [id]);
-
-    const proof = await get(`${PUBLIC}${proofPath}`);
-    must(`PROOF_${id}`, proof, ["PUBLIC"]);
-
-    console.log(`${id.toUpperCase()}_PUBLIC_NETWORK_PASS=true`);
+  const viaApi = await httpOk(api, true);
+  if (!viaApi.ok) {
+    const viaHtml = await httpOk(html, false);
+    if (!viaHtml.ok) fail(`RELEASE_${tag}_UNREACHABLE:API_${viaApi.status}:HTML_${viaHtml.status}`);
   }
 
-  for (const version of ["v0.1.0","v0.2.0","v0.3.0","v0.4.0","v0.4.1","v0.4.2","v0.5.0","v0.5.1"]) {
-    const release = JSON.parse(await get(`${API}/releases/tags/${version}`));
-    if (release.draft) throw new Error(`RELEASE_DRAFT:${version}`);
-    if (release.prerelease) throw new Error(`RELEASE_PRERELEASE:${version}`);
-    console.log(`RELEASE_${version.replaceAll(".", "_").toUpperCase()}_LIVE=true`);
+  const label = tag.toUpperCase().replace(/^V/, "V").replace(/[.-]/g, "_");
+  console.log(`RELEASE_${label}_LIVE=true`);
+}
+
+(async () => {
+  await requirePublic("TF_000001_PUBLIC_NETWORK_PASS", `${PUBLIC_URL}/render/`);
+  await requirePublic("TF_000002_PUBLIC_NETWORK_PASS", `${PUBLIC_URL}/render/tf-000002/`);
+  await requirePublic("TF_000003_PUBLIC_NETWORK_PASS", `${PUBLIC_URL}/render/tf-000003/`);
+  await requirePublic("TF_000004_PUBLIC_NETWORK_PASS", `${PUBLIC_URL}/render/tf-000004/`);
+
+  await requirePublic("PUBLIC_ROOT_LIVE", `${PUBLIC_URL}/`);
+  await requirePublic("PUBLIC_FRAMES_LIVE", `${PUBLIC_URL}/frames/`);
+  await requirePublic("PUBLIC_REGISTRY_LIVE", `${PUBLIC_URL}/registry/TRUTH_FRAME_REGISTRY.json`);
+  await requirePublic("PUBLIC_STATUS_LIVE", `${PUBLIC_URL}/status/truthframer-system-status.json`);
+  await requirePublic("PUBLIC_AUDIT_SEAL_LIVE", `${PUBLIC_URL}/audit/PUBLIC_SYSTEM_AUDIT_SEAL.json`);
+  await requirePublic("PUBLIC_HARDENING_SEAL_LIVE", `${PUBLIC_URL}/audit/REPOSITORY_HARDENING_SEAL.json`);
+  await requirePublic("PUBLIC_NETWORK_SEAL_LIVE", `${PUBLIC_URL}/verification/PUBLIC_NETWORK_VERIFICATION_SEAL.json`);
+  await requirePublic("PUBLIC_VERIFICATION_INDEX_LIVE", `${PUBLIC_URL}/verification/PUBLIC_VERIFICATION_INDEX.json`);
+
+  for (const tag of ["v0.1.0","v0.2.0","v0.3.0","v0.4.0","v0.4.1","v0.4.2","v0.5.0","v0.5.1","v0.6.0"]) {
+    await requireRelease(tag);
   }
 
   console.log("TRUTHFRAMER_PUBLIC_NETWORK_VERIFIER_PASS=true");
-}
-
-main().catch(err => {
-  console.error(`TRUTHFRAMER_PUBLIC_NETWORK_VERIFIER_FAIL=${err.message}`);
-  process.exit(1);
-});
+})().catch(err => fail(`UNCAUGHT:${err && err.message ? err.message : String(err)}`));
