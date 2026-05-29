@@ -8,7 +8,7 @@
     "verify": "node scripts/verify-truthframer.js",
     "verify:render": "node scripts/verify-render.js",
     "verify:public": "node scripts/verify-public-surface.js",
-    "verify:all": "npm run verify && npm run verify:render && npm run verify:public && npm run verify:registry && npm run verify:readme && npm run verify:tf000002 && npm run verify:tf000003 && npm run verify:tf000004 && npm run verify:root && npm run verify:audit && npm run verify:hardening",
+    "verify:all": "npm run verify && npm run verify:render && npm run verify:public && npm run verify:registry && npm run verify:readme && npm run verify:tf000002 && npm run verify:tf000003 && npm run verify:tf000004 && npm run verify:root && npm run verify:audit && npm run verify:hardening && npm run verify:network-seal",
     "verify:registry": "node scripts/verify-registry.js",
     "verify:readme": "node scripts/verify-readme-public-entry.js",
     "verify:tf000002": "node scripts/verify-tf-000002.js",
@@ -17,7 +17,8 @@
     "verify:root": "node scripts/verify-public-root.js",
     "verify:audit": "node scripts/verify-audit-seal.js",
     "verify:hardening": "node scripts/verify-hardening-seal.js",
-    "verify:network": "node scripts/verify-public-network.js"
+    "verify:network": "node scripts/verify-public-network.js",
+    "verify:network-seal": "node scripts/verify-network-seal.js"
   },
   "license": "Apache-2.0"
 }

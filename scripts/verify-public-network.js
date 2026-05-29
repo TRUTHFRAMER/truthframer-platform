@@ -70,7 +70,7 @@ async function main() {
     console.log(`${id.toUpperCase()}_PUBLIC_NETWORK_PASS=true`);
   }
 
-  for (const version of ["v0.1.0","v0.2.0","v0.3.0","v0.4.0","v0.4.1","v0.4.2"]) {
+  for (const version of ["v0.1.0","v0.2.0","v0.3.0","v0.4.0","v0.4.1","v0.4.2","v0.5.0"]) {
     const release = JSON.parse(await get(`${API}/releases/tags/${version}`));
     if (release.draft) throw new Error(`RELEASE_DRAFT:${version}`);
     if (release.prerelease) throw new Error(`RELEASE_PRERELEASE:${version}`);
