@@ -1,0 +1,16 @@
+{
+  "object_type": "TRUTHFRAMER_RELEASE_LEDGER",
+  "version": "v0.6.0",
+  "release_title": "TRUTHFRAMER v0.6.0 — Public Verification Index",
+  "main_sha": "89baa6ed0ca86109744480e1de9ae29d711708f6",
+  "pages_sha": "e966c99cfaba246934cc53bd03422ede53861aca",
+  "public_url": "https://truthframer.github.io/truthframer-platform/",
+  "verification_index_url": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_VERIFICATION_INDEX.json",
+  "verification": [
+    "TRUTHFRAMER_PUBLIC_VERIFICATION_INDEX_PASS=true",
+    "TRUTHFRAMER_PUBLIC_NETWORK_VERIFIER_PASS=true",
+    "TRUTHFRAMER_NETWORK_VERIFICATION_SEAL_PASS=true",
+    "TRUTHFRAMER_HARDENING_SEAL_PASS=true"
+  ],
+  "boundary": "TRUTHFRAMER is not a broker, trading bot, investment adviser, signal seller, prediction-market exchange, or execution platform."
+}
