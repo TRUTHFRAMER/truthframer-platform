@@ -1,0 +1,38 @@
+{
+  "object_type": "TRUTHFRAMER_PUBLIC_VERIFICATION_INDEX_SEAL",
+  "seal_version": "v0.6.1",
+  "status": "PUBLIC_VERIFICATION_INDEX_SEALED",
+  "sealed_index_version": "v0.6.0",
+  "sealed_index_status": "PUBLIC_VERIFICATION_INDEXED",
+  "sealed_index_sha256": "3824614634006e339b2fecce4f70380a9205af66f92979d7b95a5527ad146f7b",
+  "sealed_index_url": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_VERIFICATION_INDEX.json",
+  "seal_url": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_VERIFICATION_INDEX_SEAL.json",
+  "base_main_sha": "25e7b11dade9381f8f3fbc8746b5b9030952603a",
+  "pages_sha_at_seal": "e966c99cfaba246934cc53bd03422ede53861aca",
+  "public_root": "https://truthframer.github.io/truthframer-platform/",
+  "verification_page": "https://truthframer.github.io/truthframer-platform/verification/",
+  "network_verification_seal_url": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_NETWORK_VERIFICATION_SEAL.json",
+  "registry_url": "https://truthframer.github.io/truthframer-platform/registry/TRUTH_FRAME_REGISTRY.json",
+  "system_status_url": "https://truthframer.github.io/truthframer-platform/status/truthframer-system-status.json",
+  "audit_seal_url": "https://truthframer.github.io/truthframer-platform/audit/PUBLIC_SYSTEM_AUDIT_SEAL.json",
+  "hardening_seal_url": "https://truthframer.github.io/truthframer-platform/audit/REPOSITORY_HARDENING_SEAL.json",
+  "verified_release_chain": [
+    "v0.1.0",
+    "v0.2.0",
+    "v0.3.0",
+    "v0.4.0",
+    "v0.4.1",
+    "v0.4.2",
+    "v0.5.0",
+    "v0.5.1",
+    "v0.6.0"
+  ],
+  "required_commands": [
+    "npm run verify:all",
+    "npm run verify:network",
+    "npm run verify:network-seal",
+    "npm run verify:verification-index",
+    "npm run verify:index-seal"
+  ],
+  "boundary": "TRUTHFRAMER is not a broker, trading bot, investment adviser, signal seller, prediction-market exchange, or execution platform."
+}

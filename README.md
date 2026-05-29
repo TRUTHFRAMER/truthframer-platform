@@ -147,6 +147,20 @@ Local index check:
 npm run verify:verification-index
 ```
 
+## Public verification index seal
+
+TRUTHFRAMER exposes a public verification index seal that binds the public verification index to the release chain and verification perimeter.
+
+```text
+https://truthframer.github.io/truthframer-platform/verification/PUBLIC_VERIFICATION_INDEX_SEAL.json
+```
+
+Local seal check:
+
+```bash
+npm run verify:index-seal
+```
+
 ## Boundary
 
 TRUTHFRAMER is not a broker, trading bot, investment adviser, signal seller, prediction-market exchange, or execution platform.
