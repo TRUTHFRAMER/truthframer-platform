@@ -1,0 +1,73 @@
+{
+  "object_type": "TRUTHFRAMER_PUBLIC_VERIFICATION_INDEX",
+  "index_version": "v0.6.0",
+  "status": "PUBLIC_VERIFICATION_INDEXED",
+  "base_main_sha": "1f1f711aa5c216ae95323efb510e18eebe004a9d",
+  "pages_sha_at_index": "4701aa30849a15c3e932d05671bc9770c8d484cc",
+  "public_root": "https://truthframer.github.io/truthframer-platform/",
+  "verification_page": "https://truthframer.github.io/truthframer-platform/verification/",
+  "verification_index_url": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_VERIFICATION_INDEX.json",
+  "network_verification_seal_url": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_NETWORK_VERIFICATION_SEAL.json",
+  "registry_url": "https://truthframer.github.io/truthframer-platform/registry/TRUTH_FRAME_REGISTRY.json",
+  "system_status_url": "https://truthframer.github.io/truthframer-platform/status/truthframer-system-status.json",
+  "frames_url": "https://truthframer.github.io/truthframer-platform/frames/",
+  "audit_seal_url": "https://truthframer.github.io/truthframer-platform/audit/PUBLIC_SYSTEM_AUDIT_SEAL.json",
+  "hardening_seal_url": "https://truthframer.github.io/truthframer-platform/audit/REPOSITORY_HARDENING_SEAL.json",
+  "verified_release_chain": [
+    "v0.1.0",
+    "v0.2.0",
+    "v0.3.0",
+    "v0.4.0",
+    "v0.4.1",
+    "v0.4.2",
+    "v0.5.0",
+    "v0.5.1"
+  ],
+  "public_surfaces": {
+    "truth_frames": [
+      {
+        "id": "tf_000001",
+        "render": "https://truthframer.github.io/truthframer-platform/render/",
+        "case": "https://truthframer.github.io/truthframer-platform/case/tf-000001/TRUTH_FRAME.json",
+        "proof": "https://truthframer.github.io/truthframer-platform/proof/PUBLIC_SURFACE_PROOF.json"
+      },
+      {
+        "id": "tf_000002",
+        "render": "https://truthframer.github.io/truthframer-platform/render/tf-000002/",
+        "case": "https://truthframer.github.io/truthframer-platform/case/tf-000002/TRUTH_FRAME.json",
+        "proof": "https://truthframer.github.io/truthframer-platform/proof/tf-000002/PUBLIC_SURFACE_PROOF.json"
+      },
+      {
+        "id": "tf_000003",
+        "render": "https://truthframer.github.io/truthframer-platform/render/tf-000003/",
+        "case": "https://truthframer.github.io/truthframer-platform/case/tf-000003/TRUTH_FRAME.json",
+        "proof": "https://truthframer.github.io/truthframer-platform/proof/tf-000003/PUBLIC_SURFACE_PROOF.json"
+      },
+      {
+        "id": "tf_000004",
+        "render": "https://truthframer.github.io/truthframer-platform/render/tf-000004/",
+        "case": "https://truthframer.github.io/truthframer-platform/case/tf-000004/TRUTH_FRAME.json",
+        "proof": "https://truthframer.github.io/truthframer-platform/proof/tf-000004/PUBLIC_SURFACE_PROOF.json"
+      }
+    ],
+    "controls": [
+      "https://truthframer.github.io/truthframer-platform/",
+      "https://truthframer.github.io/truthframer-platform/frames/",
+      "https://truthframer.github.io/truthframer-platform/registry/TRUTH_FRAME_REGISTRY.json",
+      "https://truthframer.github.io/truthframer-platform/status/truthframer-system-status.json",
+      "https://truthframer.github.io/truthframer-platform/verification/"
+    ],
+    "seals": [
+      "https://truthframer.github.io/truthframer-platform/audit/PUBLIC_SYSTEM_AUDIT_SEAL.json",
+      "https://truthframer.github.io/truthframer-platform/audit/REPOSITORY_HARDENING_SEAL.json",
+      "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_NETWORK_VERIFICATION_SEAL.json"
+    ]
+  },
+  "required_commands": [
+    "npm run verify:all",
+    "npm run verify:network",
+    "npm run verify:network-seal",
+    "npm run verify:verification-index"
+  ],
+  "boundary": "TRUTHFRAMER is not a broker, trading bot, investment adviser, signal seller, prediction-market exchange, or execution platform."
+}
