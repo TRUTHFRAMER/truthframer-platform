@@ -133,6 +133,20 @@ Local seal check:
 npm run verify:network-seal
 ```
 
+## Public verification index
+
+TRUTHFRAMER exposes a public machine-readable verification index binding the public root, frame registry, system status, truth-frame surfaces, release chain, audit seals, hardening seal, network verifier, and network verification seal.
+
+```text
+https://truthframer.github.io/truthframer-platform/verification/PUBLIC_VERIFICATION_INDEX.json
+```
+
+Local index check:
+
+```bash
+npm run verify:verification-index
+```
+
 ## Boundary
 
 TRUTHFRAMER is not a broker, trading bot, investment adviser, signal seller, prediction-market exchange, or execution platform.
