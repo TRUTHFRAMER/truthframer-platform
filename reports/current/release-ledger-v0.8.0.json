@@ -1,0 +1,37 @@
+{
+  "object_type": "TRUTHFRAMER_RELEASE_LEDGER",
+  "version": "v0.8.0",
+  "release_name": "TRUTHFRAMER v0.8.0 — Total Public Stack Closure",
+  "status": "TOTAL_PUBLIC_STACK_CLOSURE_RELEASED",
+  "main_feature_sha": "45bd0b8c3f706bf80d8fd2d08a4bc9b4582e4f41",
+  "pages_sha": "d16bbe45d3ff453327836d7a12a70389be445720",
+  "public_urls": {
+    "closure": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_STACK_CLOSURE.json",
+    "closure_seal": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_STACK_CLOSURE_SEAL.json",
+    "verification_page": "https://truthframer.github.io/truthframer-platform/verification/"
+  },
+  "closed_chain": {
+    "frames": [
+      "tf_000001",
+      "tf_000002",
+      "tf_000003",
+      "tf_000004"
+    ],
+    "releases_closed_through": "v0.7.0",
+    "closure_release": "v0.8.0"
+  },
+  "closure_boundary": [
+    "all four public truth frames",
+    "all case objects and proof objects",
+    "public root, frames, registry, status",
+    "audit seal and hardening seal",
+    "network seal",
+    "verification index and index seal",
+    "verification atlas and atlas seal",
+    "stack closure and stack closure seal",
+    "branch protection readback",
+    "Pages readback",
+    "source-controlled verification gates",
+    "release chain through v0.7.0"
+  ]
+}
