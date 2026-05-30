@@ -1,0 +1,18 @@
+{
+  "object_type": "TRUTHFRAMER_PUBLIC_STACK_CLOSURE_SEAL",
+  "seal_version": "v0.8.0",
+  "status": "TOTAL_PUBLIC_STACK_CLOSURE_SEALED",
+  "public_root": "https://truthframer.github.io/truthframer-platform",
+  "closure_url": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_STACK_CLOSURE.json",
+  "closure_seal_url": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_STACK_CLOSURE_SEAL.json",
+  "sealed_closure_sha256": "02794a3a3d9189d23bf75ee22e6b025b2f2c98339e4d584a76e00dbe9eabff51",
+  "sealed_frame_count": 4,
+  "sealed_release_count": 11,
+  "sealed_total_public_artifact_count": 45,
+  "sealed_gate_script_count": 21,
+  "sealed_governance_report_count": 3,
+  "sealed_atlas_sha256": "46e038e149626e9220aa2c1ab9c30968fe1c8e47487ac03a28e8d2903f51a31c",
+  "sealed_atlas_seal_sha256": "437391848285a913363143836f86ae99a71f2090ca7572347b91ee877824ba98",
+  "sealed_branch_protection_readback_sha256": "530eb2f7d699598f7a8181450816a953052fee908924b98b99d15264f93e213e",
+  "sealed_pages_readback_sha256": "2fbdf5c74a7846740b701aa819dbd05c16d5a2591c89b066c937daec9f5b52ba"
+}
