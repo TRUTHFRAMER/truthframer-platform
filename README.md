@@ -196,3 +196,13 @@ Atlas seal:
 
 https://truthframer.github.io/truthframer-platform/verification/PUBLIC_VERIFICATION_ATLAS_SEAL.json
 
+
+
+## Total Public Stack Closure
+
+TRUTHFRAMER publishes a total public stack closure:
+
+- Closure: https://truthframer.github.io/truthframer-platform/verification/PUBLIC_STACK_CLOSURE.json
+- Closure seal: https://truthframer.github.io/truthframer-platform/verification/PUBLIC_STACK_CLOSURE_SEAL.json
+
+This closes the public verification stack from the initial truth-frame spine through the v0.7.0 complete public verification atlas.
