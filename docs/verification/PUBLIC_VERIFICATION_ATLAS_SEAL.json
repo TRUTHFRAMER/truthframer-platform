@@ -1,0 +1,20 @@
+{
+  "object_type": "TRUTHFRAMER_PUBLIC_VERIFICATION_ATLAS_SEAL",
+  "seal_version": "v0.7.0",
+  "status": "COMPLETE_PUBLIC_VERIFICATION_ATLAS_SEALED",
+  "public_root": "https://truthframer.github.io/truthframer-platform",
+  "atlas_url": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_VERIFICATION_ATLAS.json",
+  "atlas_seal_url": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_VERIFICATION_ATLAS_SEAL.json",
+  "sealed_atlas_sha256": "46e038e149626e9220aa2c1ab9c30968fe1c8e47487ac03a28e8d2903f51a31c",
+  "sealed_frame_count": 4,
+  "sealed_release_count": 10,
+  "sealed_artifact_count": 42,
+  "sealed_index_version": "v0.6.0",
+  "sealed_index_seal_version": "v0.6.1",
+  "canonical_frame_ids": [
+    "tf_000001",
+    "tf_000002",
+    "tf_000003",
+    "tf_000004"
+  ]
+}

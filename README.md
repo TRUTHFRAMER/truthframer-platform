@@ -168,3 +168,31 @@ TRUTHFRAMER is not a broker, trading bot, investment adviser, signal seller, pre
 TRUTHFRAMER does not tell users what to trade.
 
 TRUTHFRAMER shows replayable market structure.
+
+
+## Complete Public Verification Atlas
+
+TRUTHFRAMER publishes a machine-readable public verification atlas covering all current public artifact classes:
+
+- render surfaces
+- frame case objects
+- replay/source/truth-frame manifests
+- public surface proofs
+- frame index
+- registry
+- system status
+- audit seal
+- repository hardening seal
+- public network verification seal
+- public verification index
+- public verification index seal
+- release ledgers
+
+Atlas:
+
+https://truthframer.github.io/truthframer-platform/verification/PUBLIC_VERIFICATION_ATLAS.json
+
+Atlas seal:
+
+https://truthframer.github.io/truthframer-platform/verification/PUBLIC_VERIFICATION_ATLAS_SEAL.json
+
