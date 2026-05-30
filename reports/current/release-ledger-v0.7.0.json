@@ -1,0 +1,19 @@
+{
+  "object_type": "TRUTHFRAMER_RELEASE_LEDGER",
+  "version": "v0.7.0",
+  "release_name": "TRUTHFRAMER v0.7.0 — Complete Public Verification Atlas",
+  "status": "PUBLIC_VERIFICATION_ATLAS_COMPLETE",
+  "main_feature_sha": "9a055d1006d9071cd552d890d642131c2e4c9e6f",
+  "pages_sha": "b7eb0f0ad08c913bd9b6a91943a554ee75461419",
+  "public_urls": {
+    "atlas": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_VERIFICATION_ATLAS.json",
+    "atlas_seal": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_VERIFICATION_ATLAS_SEAL.json",
+    "verification_page": "https://truthframer.github.io/truthframer-platform/verification/"
+  },
+  "completion_boundary": [
+    "TF-000001 canonical /render/ route preserved",
+    "TF-000002 through TF-000004 explicit render routes enumerated",
+    "public frames, registry, status, audit, hardening, network seal, verification index, index seal, atlas, and atlas seal indexed",
+    "release chain through v0.6.1 enumerated"
+  ]
+}
