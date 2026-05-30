@@ -1,0 +1,295 @@
+{
+  "object_type": "TRUTHFRAMER_PUBLIC_VERIFICATION_ATLAS",
+  "atlas_version": "v0.7.0",
+  "status": "COMPLETE_PUBLIC_VERIFICATION_ATLAS",
+  "public_root": "https://truthframer.github.io/truthframer-platform",
+  "frame_count": 4,
+  "release_count": 10,
+  "artifact_count": 42,
+  "canonical_boundary": "TF-000001 is intentionally represented by /render/; TF-000002+ are represented by /render/<slug>/.",
+  "frames": [
+    {
+      "truth_frame_id": "tf_000001",
+      "slug": "tf-000001",
+      "title": "TF-000001",
+      "render_url": "https://truthframer.github.io/truthframer-platform/render/",
+      "truth_frame_url": "https://truthframer.github.io/truthframer-platform/case/tf-000001/TRUTH_FRAME.json",
+      "source_manifest_url": "https://truthframer.github.io/truthframer-platform/case/tf-000001/SOURCE_MANIFEST.json",
+      "replay_manifest_url": "https://truthframer.github.io/truthframer-platform/case/tf-000001/REPLAY_MANIFEST.json",
+      "public_surface_proof_url": "https://truthframer.github.io/truthframer-platform/proof/PUBLIC_SURFACE_PROOF.json"
+    },
+    {
+      "truth_frame_id": "tf_000002",
+      "slug": "tf-000002",
+      "title": "TF-000002",
+      "render_url": "https://truthframer.github.io/truthframer-platform/render/tf-000002/",
+      "truth_frame_url": "https://truthframer.github.io/truthframer-platform/case/tf-000002/TRUTH_FRAME.json",
+      "source_manifest_url": "https://truthframer.github.io/truthframer-platform/case/tf-000002/SOURCE_MANIFEST.json",
+      "replay_manifest_url": "https://truthframer.github.io/truthframer-platform/case/tf-000002/REPLAY_MANIFEST.json",
+      "public_surface_proof_url": "https://truthframer.github.io/truthframer-platform/proof/tf-000002/PUBLIC_SURFACE_PROOF.json"
+    },
+    {
+      "truth_frame_id": "tf_000003",
+      "slug": "tf-000003",
+      "title": "TF-000003",
+      "render_url": "https://truthframer.github.io/truthframer-platform/render/tf-000003/",
+      "truth_frame_url": "https://truthframer.github.io/truthframer-platform/case/tf-000003/TRUTH_FRAME.json",
+      "source_manifest_url": "https://truthframer.github.io/truthframer-platform/case/tf-000003/SOURCE_MANIFEST.json",
+      "replay_manifest_url": "https://truthframer.github.io/truthframer-platform/case/tf-000003/REPLAY_MANIFEST.json",
+      "public_surface_proof_url": "https://truthframer.github.io/truthframer-platform/proof/tf-000003/PUBLIC_SURFACE_PROOF.json"
+    },
+    {
+      "truth_frame_id": "tf_000004",
+      "slug": "tf-000004",
+      "title": "TF-000004",
+      "render_url": "https://truthframer.github.io/truthframer-platform/render/tf-000004/",
+      "truth_frame_url": "https://truthframer.github.io/truthframer-platform/case/tf-000004/TRUTH_FRAME.json",
+      "source_manifest_url": "https://truthframer.github.io/truthframer-platform/case/tf-000004/SOURCE_MANIFEST.json",
+      "replay_manifest_url": "https://truthframer.github.io/truthframer-platform/case/tf-000004/REPLAY_MANIFEST.json",
+      "public_surface_proof_url": "https://truthframer.github.io/truthframer-platform/proof/tf-000004/PUBLIC_SURFACE_PROOF.json"
+    }
+  ],
+  "releases": [
+    {
+      "version": "v0.1.0",
+      "url": "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.1.0"
+    },
+    {
+      "version": "v0.2.0",
+      "url": "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.2.0"
+    },
+    {
+      "version": "v0.3.0",
+      "url": "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.3.0"
+    },
+    {
+      "version": "v0.4.0",
+      "url": "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.4.0"
+    },
+    {
+      "version": "v0.4.1",
+      "url": "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.4.1"
+    },
+    {
+      "version": "v0.4.2",
+      "url": "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.4.2"
+    },
+    {
+      "version": "v0.5.0",
+      "url": "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.5.0"
+    },
+    {
+      "version": "v0.5.1",
+      "url": "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.5.1"
+    },
+    {
+      "version": "v0.6.0",
+      "url": "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.6.0"
+    },
+    {
+      "version": "v0.6.1",
+      "url": "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.6.1"
+    }
+  ],
+  "artifacts": [
+    {
+      "artifact_type": "public_root",
+      "url": "https://truthframer.github.io/truthframer-platform/"
+    },
+    {
+      "artifact_type": "public_frames_index",
+      "url": "https://truthframer.github.io/truthframer-platform/frames/"
+    },
+    {
+      "artifact_type": "public_registry",
+      "url": "https://truthframer.github.io/truthframer-platform/registry/TRUTH_FRAME_REGISTRY.json"
+    },
+    {
+      "artifact_type": "public_system_status",
+      "url": "https://truthframer.github.io/truthframer-platform/status/truthframer-system-status.json"
+    },
+    {
+      "artifact_type": "public_system_audit_seal",
+      "url": "https://truthframer.github.io/truthframer-platform/audit/PUBLIC_SYSTEM_AUDIT_SEAL.json"
+    },
+    {
+      "artifact_type": "repository_hardening_seal",
+      "url": "https://truthframer.github.io/truthframer-platform/audit/REPOSITORY_HARDENING_SEAL.json"
+    },
+    {
+      "artifact_type": "public_network_verification_page",
+      "url": "https://truthframer.github.io/truthframer-platform/verification/"
+    },
+    {
+      "artifact_type": "public_network_verification_seal",
+      "url": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_NETWORK_VERIFICATION_SEAL.json"
+    },
+    {
+      "artifact_type": "public_verification_index",
+      "url": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_VERIFICATION_INDEX.json"
+    },
+    {
+      "artifact_type": "public_verification_index_seal",
+      "url": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_VERIFICATION_INDEX_SEAL.json"
+    },
+    {
+      "artifact_type": "public_verification_atlas",
+      "url": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_VERIFICATION_ATLAS.json"
+    },
+    {
+      "artifact_type": "public_verification_atlas_seal",
+      "url": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_VERIFICATION_ATLAS_SEAL.json"
+    },
+    {
+      "artifact_type": "truth_frame_render",
+      "truth_frame_id": "tf_000001",
+      "url": "https://truthframer.github.io/truthframer-platform/render/"
+    },
+    {
+      "artifact_type": "truth_frame_object",
+      "truth_frame_id": "tf_000001",
+      "url": "https://truthframer.github.io/truthframer-platform/case/tf-000001/TRUTH_FRAME.json"
+    },
+    {
+      "artifact_type": "source_manifest",
+      "truth_frame_id": "tf_000001",
+      "url": "https://truthframer.github.io/truthframer-platform/case/tf-000001/SOURCE_MANIFEST.json"
+    },
+    {
+      "artifact_type": "replay_manifest",
+      "truth_frame_id": "tf_000001",
+      "url": "https://truthframer.github.io/truthframer-platform/case/tf-000001/REPLAY_MANIFEST.json"
+    },
+    {
+      "artifact_type": "public_surface_proof",
+      "truth_frame_id": "tf_000001",
+      "url": "https://truthframer.github.io/truthframer-platform/proof/PUBLIC_SURFACE_PROOF.json"
+    },
+    {
+      "artifact_type": "truth_frame_render",
+      "truth_frame_id": "tf_000002",
+      "url": "https://truthframer.github.io/truthframer-platform/render/tf-000002/"
+    },
+    {
+      "artifact_type": "truth_frame_object",
+      "truth_frame_id": "tf_000002",
+      "url": "https://truthframer.github.io/truthframer-platform/case/tf-000002/TRUTH_FRAME.json"
+    },
+    {
+      "artifact_type": "source_manifest",
+      "truth_frame_id": "tf_000002",
+      "url": "https://truthframer.github.io/truthframer-platform/case/tf-000002/SOURCE_MANIFEST.json"
+    },
+    {
+      "artifact_type": "replay_manifest",
+      "truth_frame_id": "tf_000002",
+      "url": "https://truthframer.github.io/truthframer-platform/case/tf-000002/REPLAY_MANIFEST.json"
+    },
+    {
+      "artifact_type": "public_surface_proof",
+      "truth_frame_id": "tf_000002",
+      "url": "https://truthframer.github.io/truthframer-platform/proof/tf-000002/PUBLIC_SURFACE_PROOF.json"
+    },
+    {
+      "artifact_type": "truth_frame_render",
+      "truth_frame_id": "tf_000003",
+      "url": "https://truthframer.github.io/truthframer-platform/render/tf-000003/"
+    },
+    {
+      "artifact_type": "truth_frame_object",
+      "truth_frame_id": "tf_000003",
+      "url": "https://truthframer.github.io/truthframer-platform/case/tf-000003/TRUTH_FRAME.json"
+    },
+    {
+      "artifact_type": "source_manifest",
+      "truth_frame_id": "tf_000003",
+      "url": "https://truthframer.github.io/truthframer-platform/case/tf-000003/SOURCE_MANIFEST.json"
+    },
+    {
+      "artifact_type": "replay_manifest",
+      "truth_frame_id": "tf_000003",
+      "url": "https://truthframer.github.io/truthframer-platform/case/tf-000003/REPLAY_MANIFEST.json"
+    },
+    {
+      "artifact_type": "public_surface_proof",
+      "truth_frame_id": "tf_000003",
+      "url": "https://truthframer.github.io/truthframer-platform/proof/tf-000003/PUBLIC_SURFACE_PROOF.json"
+    },
+    {
+      "artifact_type": "truth_frame_render",
+      "truth_frame_id": "tf_000004",
+      "url": "https://truthframer.github.io/truthframer-platform/render/tf-000004/"
+    },
+    {
+      "artifact_type": "truth_frame_object",
+      "truth_frame_id": "tf_000004",
+      "url": "https://truthframer.github.io/truthframer-platform/case/tf-000004/TRUTH_FRAME.json"
+    },
+    {
+      "artifact_type": "source_manifest",
+      "truth_frame_id": "tf_000004",
+      "url": "https://truthframer.github.io/truthframer-platform/case/tf-000004/SOURCE_MANIFEST.json"
+    },
+    {
+      "artifact_type": "replay_manifest",
+      "truth_frame_id": "tf_000004",
+      "url": "https://truthframer.github.io/truthframer-platform/case/tf-000004/REPLAY_MANIFEST.json"
+    },
+    {
+      "artifact_type": "public_surface_proof",
+      "truth_frame_id": "tf_000004",
+      "url": "https://truthframer.github.io/truthframer-platform/proof/tf-000004/PUBLIC_SURFACE_PROOF.json"
+    },
+    {
+      "artifact_type": "github_release",
+      "release_version": "v0.1.0",
+      "url": "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.1.0"
+    },
+    {
+      "artifact_type": "github_release",
+      "release_version": "v0.2.0",
+      "url": "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.2.0"
+    },
+    {
+      "artifact_type": "github_release",
+      "release_version": "v0.3.0",
+      "url": "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.3.0"
+    },
+    {
+      "artifact_type": "github_release",
+      "release_version": "v0.4.0",
+      "url": "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.4.0"
+    },
+    {
+      "artifact_type": "github_release",
+      "release_version": "v0.4.1",
+      "url": "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.4.1"
+    },
+    {
+      "artifact_type": "github_release",
+      "release_version": "v0.4.2",
+      "url": "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.4.2"
+    },
+    {
+      "artifact_type": "github_release",
+      "release_version": "v0.5.0",
+      "url": "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.5.0"
+    },
+    {
+      "artifact_type": "github_release",
+      "release_version": "v0.5.1",
+      "url": "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.5.1"
+    },
+    {
+      "artifact_type": "github_release",
+      "release_version": "v0.6.0",
+      "url": "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.6.0"
+    },
+    {
+      "artifact_type": "github_release",
+      "release_version": "v0.6.1",
+      "url": "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.6.1"
+    }
+  ],
+  "atlas_payload_sha256": "827937deb6d92d8771b96f88fc32b0040faaa6ab492bf2bccecb675aa8f06ad8"
+}
