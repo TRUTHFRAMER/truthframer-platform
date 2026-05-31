@@ -1,0 +1,134 @@
+{
+  "object_type": "TRUTHFRAMER_PUBLIC_CONTINUITY_SENTINEL",
+  "sentinel_version": "v0.9.0",
+  "status": "PUBLIC_CONTINUITY_SENTINEL_ACTIVE",
+  "generated_at_utc": "2026-05-31T10:39:13.648Z",
+  "repository": "TRUTHFRAMER/truthframer-platform",
+  "main_sha": "5b3252946fd13f0b9a443f6e234b7d52c59d19ee",
+  "base_version": "v0.8.0",
+  "base_status": "TOTAL_PUBLIC_STACK_CLOSED",
+  "continuity_model": {
+    "local_object_continuity": true,
+    "public_url_continuity": true,
+    "release_chain_continuity": true,
+    "seal_chain_continuity": true,
+    "protected_main_continuity": true,
+    "pages_publication_continuity": true
+  },
+  "frames": [
+    "tf_000001",
+    "tf_000002",
+    "tf_000003",
+    "tf_000004"
+  ],
+  "releases": [
+    "v0.1.0",
+    "v0.2.0",
+    "v0.3.0",
+    "v0.4.0",
+    "v0.4.1",
+    "v0.4.2",
+    "v0.5.0",
+    "v0.5.1",
+    "v0.6.0",
+    "v0.6.1",
+    "v0.7.0",
+    "v0.8.0"
+  ],
+  "required_local_objects": [
+    {
+      "path": "package.json",
+      "sha256": "0074fa66a3d628687debce76d736a964d0eb74cf5217e1f9ef0f1ac6960fef1c"
+    },
+    {
+      "path": "README.md",
+      "sha256": "2e5f93dabaa63bafaac0d4e9ac2de4219496026ec317766eba4555f76d94603b"
+    },
+    {
+      "path": "docs/render/index.html",
+      "sha256": "3f83c5bfa92f66039d4e1761c79cc53fb7b65c27339262062ee047fc7838ef68"
+    },
+    {
+      "path": "docs/verification/index.html",
+      "sha256": "0e5efbcb126790d544a6255f0ab977231ed2cf989fbfeb03f79d1d9b4a0c5a50"
+    },
+    {
+      "path": "docs/verification/PUBLIC_NETWORK_VERIFICATION_SEAL.json",
+      "sha256": "71dad4118580dee53107f46eb658f177f6382ebc69755768cd5de13266803e3a"
+    },
+    {
+      "path": "docs/verification/PUBLIC_VERIFICATION_INDEX.json",
+      "sha256": "3824614634006e339b2fecce4f70380a9205af66f92979d7b95a5527ad146f7b"
+    },
+    {
+      "path": "docs/verification/PUBLIC_VERIFICATION_INDEX_SEAL.json",
+      "sha256": "17b82ef86dfcd7b6099b41c1807bc6520ee873833410bc59caf56d0dfb5ddf46"
+    },
+    {
+      "path": "docs/verification/PUBLIC_VERIFICATION_ATLAS.json",
+      "sha256": "46e038e149626e9220aa2c1ab9c30968fe1c8e47487ac03a28e8d2903f51a31c"
+    },
+    {
+      "path": "docs/verification/PUBLIC_VERIFICATION_ATLAS_SEAL.json",
+      "sha256": "437391848285a913363143836f86ae99a71f2090ca7572347b91ee877824ba98"
+    },
+    {
+      "path": "docs/verification/PUBLIC_STACK_CLOSURE.json",
+      "sha256": "02794a3a3d9189d23bf75ee22e6b025b2f2c98339e4d584a76e00dbe9eabff51"
+    },
+    {
+      "path": "docs/verification/PUBLIC_STACK_CLOSURE_SEAL.json",
+      "sha256": "f4f2f02889b7f2962956e10346ab064fba9f940ca23cd076583d9bb2fba6c857"
+    },
+    {
+      "path": "reports/current/public-stack-closure-v0.8.0.json",
+      "sha256": "02794a3a3d9189d23bf75ee22e6b025b2f2c98339e4d584a76e00dbe9eabff51"
+    },
+    {
+      "path": "reports/current/public-stack-closure-seal-v0.8.0.json",
+      "sha256": "f4f2f02889b7f2962956e10346ab064fba9f940ca23cd076583d9bb2fba6c857"
+    },
+    {
+      "path": "scripts/verify-public-stack-closure.js",
+      "sha256": "b7aed3a8131b1b5f6c2559ce54ab54881e15c041b64f4d8af8e171cbf2bd9be8"
+    },
+    {
+      "path": "scripts/verify-public-stack-closure-seal.js",
+      "sha256": "b30f59be9f81448b4adcc3484cb7d27c1adadbc7264c8abdf48d1776faf33198"
+    }
+  ],
+  "required_live_urls": [
+    "https://truthframer.github.io/truthframer-platform/",
+    "https://truthframer.github.io/truthframer-platform/render/",
+    "https://truthframer.github.io/truthframer-platform/verification/",
+    "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_NETWORK_VERIFICATION_SEAL.json",
+    "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_VERIFICATION_INDEX.json",
+    "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_VERIFICATION_INDEX_SEAL.json",
+    "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_VERIFICATION_ATLAS.json",
+    "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_VERIFICATION_ATLAS_SEAL.json",
+    "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_STACK_CLOSURE.json",
+    "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_STACK_CLOSURE_SEAL.json"
+  ],
+  "required_release_urls": [
+    "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.1.0",
+    "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.2.0",
+    "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.3.0",
+    "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.4.0",
+    "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.4.1",
+    "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.4.2",
+    "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.5.0",
+    "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.5.1",
+    "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.6.0",
+    "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.6.1",
+    "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.7.0",
+    "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.8.0"
+  ],
+  "counts": {
+    "frame_count": 4,
+    "release_count": 12,
+    "required_local_object_count": 15,
+    "required_live_url_count": 10,
+    "required_release_url_count": 12
+  },
+  "sentinel_sha256": "6c3786d00e84e46b38cb1cda5bb8a434afba69154af5783585ca2b9c50eb044f"
+}
