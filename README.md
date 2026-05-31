@@ -206,3 +206,11 @@ TRUTHFRAMER publishes a total public stack closure:
 - Closure seal: https://truthframer.github.io/truthframer-platform/verification/PUBLIC_STACK_CLOSURE_SEAL.json
 
 This closes the public verification stack from the initial truth-frame spine through the v0.7.0 complete public verification atlas.
+
+
+## Public continuity sentinel
+
+TRUTHFRAMER v0.9.0 adds a public continuity sentinel for the complete public verification stack.
+
+- https://truthframer.github.io/truthframer-platform/verification/PUBLIC_CONTINUITY_SENTINEL.json
+- https://truthframer.github.io/truthframer-platform/verification/PUBLIC_CONTINUITY_SENTINEL_SEAL.json

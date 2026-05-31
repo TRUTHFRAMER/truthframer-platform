@@ -1,0 +1,12 @@
+{
+  "object_type": "TRUTHFRAMER_PUBLIC_CONTINUITY_SENTINEL_SEAL",
+  "seal_version": "v0.9.0",
+  "status": "PUBLIC_CONTINUITY_SENTINEL_SEALED",
+  "generated_at_utc": "2026-05-31T10:39:13.660Z",
+  "repository": "TRUTHFRAMER/truthframer-platform",
+  "main_sha": "5b3252946fd13f0b9a443f6e234b7d52c59d19ee",
+  "sealed_object": "PUBLIC_CONTINUITY_SENTINEL.json",
+  "sealed_sentinel_sha256": "6c3786d00e84e46b38cb1cda5bb8a434afba69154af5783585ca2b9c50eb044f",
+  "base_version": "v0.8.0",
+  "base_status": "TOTAL_PUBLIC_STACK_CLOSED"
+}
