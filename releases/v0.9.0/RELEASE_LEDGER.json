@@ -1,0 +1,43 @@
+{
+  "object_type": "TRUTHFRAMER_RELEASE_LEDGER",
+  "version": "v0.9.0",
+  "status": "PUBLIC_CONTINUITY_SENTINEL_RELEASE_LEDGERED",
+  "recorded_at": "2026-05-31T10:56:40.866900+00:00",
+  "main_feature_sha": "86d5a350a26d610d01e2e3d0bfa0bcef0afce730",
+  "pages_sha": "073ce161c77dbda69dc9de6fea0375487c59e353",
+  "public_urls": {
+    "continuity_sentinel": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_CONTINUITY_SENTINEL.json",
+    "continuity_sentinel_seal": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_CONTINUITY_SENTINEL_SEAL.json",
+    "verification_root": "https://truthframer.github.io/truthframer-platform/verification/",
+    "stack_closure": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_STACK_CLOSURE.json",
+    "stack_closure_seal": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_STACK_CLOSURE_SEAL.json"
+  },
+  "continuity_scope": [
+    "tf_000001",
+    "tf_000002",
+    "tf_000003",
+    "tf_000004",
+    "public root",
+    "frames",
+    "registry",
+    "status",
+    "audit seal",
+    "repository hardening seal",
+    "network verification seal",
+    "verification index",
+    "verification index seal",
+    "verification atlas",
+    "verification atlas seal",
+    "total public stack closure",
+    "total public stack closure seal",
+    "public continuity sentinel",
+    "public continuity sentinel seal",
+    "release chain through v0.8.0"
+  ],
+  "protected_path": {
+    "feature_pr": 14,
+    "required_ci": "verify",
+    "required_review": true,
+    "merge_strategy": "squash"
+  }
+}
