@@ -214,3 +214,11 @@ TRUTHFRAMER v0.9.0 adds a public continuity sentinel for the complete public ver
 
 - https://truthframer.github.io/truthframer-platform/verification/PUBLIC_CONTINUITY_SENTINEL.json
 - https://truthframer.github.io/truthframer-platform/verification/PUBLIC_CONTINUITY_SENTINEL_SEAL.json
+
+
+## Public Release Closure
+
+TRUTHFRAMER v0.9.1 adds a public release self-inclusion closure. It records that v0.9.0 is no longer merely produced by the stack, but is itself included as live public release evidence.
+
+- Public release closure: https://truthframer.github.io/truthframer-platform/verification/PUBLIC_RELEASE_CLOSURE.json
+- Public release closure seal: https://truthframer.github.io/truthframer-platform/verification/PUBLIC_RELEASE_CLOSURE_SEAL.json

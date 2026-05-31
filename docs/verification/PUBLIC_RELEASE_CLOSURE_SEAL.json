@@ -1,0 +1,11 @@
+{
+  "artifact": "PUBLIC_RELEASE_CLOSURE_SEAL",
+  "seal_version": "v0.9.1",
+  "status": "PUBLIC_RELEASE_SELF_INCLUDED_SEALED",
+  "sealed_artifact": "PUBLIC_RELEASE_CLOSURE.json",
+  "sealed_closure_sha256": "b887d1799ee10d7dffa3b47b6c08b98b0eca688d3bc72a62bed1cd88c324e8b6",
+  "included_release": "v0.9.0",
+  "main_sha": "3e783e40e39989e86ce2555d66406ab9fca562cd",
+  "pages_sha_at_generation": "073ce161c77dbda69dc9de6fea0375487c59e353",
+  "created_at_utc": "2026-05-31T11:57:03.815Z"
+}

@@ -1,0 +1,45 @@
+{
+  "artifact": "PUBLIC_RELEASE_CLOSURE",
+  "closure_version": "v0.9.1",
+  "status": "PUBLIC_RELEASE_SELF_INCLUDED",
+  "purpose": "Proves that the previous public continuity sentinel release is itself now live and included in the public verification chain.",
+  "included_release": "v0.9.0",
+  "main_sha": "3e783e40e39989e86ce2555d66406ab9fca562cd",
+  "pages_sha_at_generation": "073ce161c77dbda69dc9de6fea0375487c59e353",
+  "canonical_public_base": "https://truthframer.github.io/truthframer-platform",
+  "frames": [
+    "tf_000001",
+    "tf_000002",
+    "tf_000003",
+    "tf_000004"
+  ],
+  "releases": [
+    "v0.1.0",
+    "v0.2.0",
+    "v0.3.0",
+    "v0.4.0",
+    "v0.4.1",
+    "v0.4.2",
+    "v0.5.0",
+    "v0.5.1",
+    "v0.6.0",
+    "v0.6.1",
+    "v0.7.0",
+    "v0.8.0",
+    "v0.9.0"
+  ],
+  "release_count": 13,
+  "public_continuity_objects": [
+    "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_CONTINUITY_SENTINEL.json",
+    "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_CONTINUITY_SENTINEL_SEAL.json",
+    "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_STACK_CLOSURE.json",
+    "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_STACK_CLOSURE_SEAL.json",
+    "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_VERIFICATION_ATLAS.json",
+    "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_VERIFICATION_ATLAS_SEAL.json",
+    "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_VERIFICATION_INDEX.json",
+    "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_VERIFICATION_INDEX_SEAL.json",
+    "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_NETWORK_VERIFICATION_SEAL.json"
+  ],
+  "included_release_url": "https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.9.0",
+  "created_at_utc": "2026-05-31T11:57:03.810Z"
+}
