@@ -1,0 +1,18 @@
+{
+  "release_version": "v1.0.1",
+  "status": "PUBLIC_LEGAL_PRIVACY_PERIMETER_RELEASE_LEDGERED",
+  "release_title": "TRUTHFRAMER v1.0.1 — Proprietary License and Public Legal Privacy Perimeter",
+  "main_feature_sha": "5b2b46657bf3c8edd7fd6557270e767f2e6ab1f9",
+  "pages_sha": "5543fc0fb2a739a6070028747281c58a9ce3d3f5",
+  "public_artifacts": {
+    "legal_privacy_certificate": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_LEGAL_PRIVACY_PERIMETER_CERTIFICATE.json",
+    "legal_privacy_certificate_seal": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_LEGAL_PRIVACY_PERIMETER_CERTIFICATE_SEAL.json"
+  },
+  "verified_posture": {
+    "package_private": true,
+    "package_license": "UNLICENSED",
+    "license_posture": "PROPRIETARY_SOURCE_AVAILABLE_ALL_RIGHTS_RESERVED",
+    "public_certificate_status": "PUBLIC_LEGAL_PRIVACY_PERIMETER_CERTIFIED",
+    "public_certificate_seal_status": "PUBLIC_LEGAL_PRIVACY_PERIMETER_CERTIFIED_SEALED"
+  }
+}
