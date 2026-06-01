@@ -1,0 +1,10 @@
+{
+  "protocol": "TRUTHFRAMER",
+  "version": "v1.5.0",
+  "status": "PUBLIC_VERIFICATION_CAPSULE_RELEASED",
+  "main_sha": "9ad99200be6e9d529ee0d75a10c1d6568fa5e620",
+  "pages_sha": "438f99bc8be0e688319be8e59bfede016d753fc5",
+  "capsule_sha256": "957b92e87d6e6ca0f341702e367cb454347b66eba143e4046e3f0e4a8489fe17",
+  "public_capsule_url": "https://truthframer.github.io/truthframer-platform/capsule/TRUTHFRAMER_PUBLIC_VERIFICATION_CAPSULE.json",
+  "public_capsule_page_url": "https://truthframer.github.io/truthframer-platform/capsule/"
+}
