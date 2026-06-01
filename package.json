@@ -8,7 +8,7 @@
     "verify": "node scripts/verify-truthframer.js",
     "verify:render": "node scripts/verify-render.js",
     "verify:public": "node scripts/verify-public-surface.js",
-    "verify:all": "npm run verify && npm run verify:render && npm run verify:public && npm run verify:registry && npm run verify:readme && npm run verify:tf000002 && npm run verify:tf000003 && npm run verify:tf000004 && npm run verify:root && npm run verify:audit && npm run verify:hardening && npm run verify:network-seal && npm run verify:verification-index && npm run verify:index-seal && npm run verify:verification-atlas && npm run verify:atlas-seal && npm run verify:stack-closure && npm run verify:stack-closure-seal && npm run verify:continuity-sentinel && npm run verify:continuity-sentinel-seal && npm run verify:release-closure && npm run verify:release-closure-seal && npm run verify:root-finality && npm run verify:root-finality-seal && npm run verify:privacy-perimeter && npm run verify:legal-privacy-perimeter && npm run verify:legal-privacy-perimeter-seal && npm run verify:legal-privacy-network && npm run verify:distribution-egress && npm run verify:distribution-egress-firewall && npm run verify:distribution-egress-firewall-seal",
+    "verify:all": "npm run verify && npm run verify:render && npm run verify:public && npm run verify:registry && npm run verify:readme && npm run verify:tf000002 && npm run verify:tf000003 && npm run verify:tf000004 && npm run verify:root && npm run verify:audit && npm run verify:hardening && npm run verify:network-seal && npm run verify:verification-index && npm run verify:index-seal && npm run verify:verification-atlas && npm run verify:atlas-seal && npm run verify:stack-closure && npm run verify:stack-closure-seal && npm run verify:continuity-sentinel && npm run verify:continuity-sentinel-seal && npm run verify:release-closure && npm run verify:release-closure-seal && npm run verify:root-finality && npm run verify:root-finality-seal && npm run verify:privacy-perimeter && npm run verify:legal-privacy-perimeter && npm run verify:legal-privacy-perimeter-seal && npm run verify:legal-privacy-network && npm run verify:distribution-egress && npm run verify:distribution-egress-firewall && npm run verify:distribution-egress-firewall-seal && npm run verify:distribution-egress-network",
     "verify:registry": "node scripts/verify-registry.js",
     "verify:readme": "node scripts/verify-readme-public-entry.js",
     "verify:tf000002": "node scripts/verify-tf-000002.js",
@@ -44,7 +44,8 @@
     "verify:distribution-egress": "node scripts/verify-distribution-egress.js",
     "generate:distribution-egress-firewall": "node scripts/generate-public-distribution-egress-firewall.js",
     "verify:distribution-egress-firewall": "node scripts/verify-public-distribution-egress-firewall.js",
-    "verify:distribution-egress-firewall-seal": "node scripts/verify-public-distribution-egress-firewall-seal.js"
+    "verify:distribution-egress-firewall-seal": "node scripts/verify-public-distribution-egress-firewall-seal.js",
+    "verify:distribution-egress-network": "node scripts/verify-public-distribution-egress-network.js"
   },
   "license": "UNLICENSED"
 }
