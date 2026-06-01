@@ -1,0 +1,32 @@
+{
+  "protocol": "TRUTHFRAMER_PUBLIC_VERIFIER_INTEGRITY_SEAL",
+  "version": "v1.8.0",
+  "status": "PUBLIC_VERIFIER_INTEGRITY_SEALED",
+  "public_inputs": {
+    "verifier_script_url": "https://truthframer.github.io/truthframer-platform/verifier/TRUTHFRAMER_PUBLIC_INDEPENDENT_VERIFIER.mjs",
+    "independent_verification_witness_url": "https://truthframer.github.io/truthframer-platform/verifier/TRUTHFRAMER_PUBLIC_INDEPENDENT_VERIFICATION_WITNESS.json"
+  },
+  "public_fetch": {
+    "verifier_script_public_fetch_ok": true,
+    "witness_public_fetch_ok": true
+  },
+  "sealed_public_digests": {
+    "verifier_script_raw_sha256": "204cb84108a8b554aa5fdf9afff463befee641c10af45138ab16b6e3e8fccd8c",
+    "witness_raw_bytes_sha256": "965ddea0f01158a9847c77e7e569ea879749b381e331772f49ad8d3cefabbea5",
+    "witness_canonical_json_sha256": "3af21a66c8bb2344de5a419170e28269e82fd65d76240a2844a9502ed07733ad",
+    "witness_declared_sha256": "132a366bc7aee1df8fddd0ebf87fc2d21d107afd915b51a489aaed13c12c2323",
+    "capsule_sha256": "957b92e87d6e6ca0f341702e367cb454347b66eba143e4046e3f0e4a8489fe17",
+    "receipt_sha256": "ae2b0b1e7867d76ffb2df7ff97ebc6135e5b7b3eed5857b99a5d2161b75945f2",
+    "receipt_sha256_basis": "computed_public_receipt_canonical_json_sha256",
+    "no_private_source_required": true
+  },
+  "assertions": {
+    "verifier_script_public_fetch_ok": true,
+    "witness_public_fetch_ok": true,
+    "witness_declares_sha256": true,
+    "witness_status_bound": true,
+    "verifier_status_pass": true,
+    "no_private_source_required": true
+  },
+  "seal_sha256": "406566d5565381d4d390f6584dfbe26775cd3958aacbf1a163d900a68e56b897"
+}
