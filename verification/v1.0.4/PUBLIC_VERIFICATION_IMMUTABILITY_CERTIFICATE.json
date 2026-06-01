@@ -1,0 +1,48 @@
+{
+  "certificate_version": "v1.0.4",
+  "status": "PUBLIC_VERIFICATION_IMMUTABILITY_CERTIFIED",
+  "base_release": "v1.0.3",
+  "repository": "TRUTHFRAMER/truthframer-platform",
+  "branch": "main",
+  "base_commit_sha": "2e0af2aa959ffdf333416007924f1a57af321a2e",
+  "base_tree_sha": "223d486ecb6c05014cee3d2a44c0f390a927d1ee",
+  "verification_purity_enforced": true,
+  "verify_all_side_effects_allowed": false,
+  "mutable_report_deadlock_closed": true,
+  "repaired_mutable_verifier": "scripts/verify-distribution-egress.js",
+  "certified_scripts": [
+    {
+      "path": "scripts/verify-distribution-egress.js",
+      "sha256": "1bc2f56158c2dbb456b8380d90e77b60a29baf687e02ad3053290b4572a48717"
+    },
+    {
+      "path": "scripts/verify-verification-purity.js",
+      "sha256": "ac117d0a92a65ab76d16cf2869168507ac0c20c383b3a8ae7687e3b777a8edca"
+    },
+    {
+      "path": "scripts/verify-public-distribution-egress-firewall.js",
+      "sha256": "1523cc0496dab02e9250f2fa1a7f01646399bc6defc01c97ea1e60e77c9a856f"
+    },
+    {
+      "path": "scripts/verify-public-distribution-egress-firewall-seal.js",
+      "sha256": "6b44052815bc642d4d8ef8fa81d22cf8ae9c5bf724b9e64536c47a583cdf6146"
+    },
+    {
+      "path": "scripts/verify-public-source-provenance.js",
+      "sha256": "fc6c2b663f25d5ade84287466bfdbb2135a3978880f5ea184cfe621fbb383b8a"
+    },
+    {
+      "path": "scripts/verify-public-source-provenance-seal.js",
+      "sha256": "dc0f21e95e7392a402f905fdc74dba5a4ca095ffa0e681d6619ecd3a818f2906"
+    }
+  ],
+  "claims": [
+    "verify:all includes a repository mutation detector",
+    "the mutation detector snapshots tracked and untracked file hashes",
+    "the mutation detector executes verify:all recursively with purity recursion disabled",
+    "verify:distribution-egress is pure and does not rewrite reports/current/distribution-egress-v1.0.2.json",
+    "verification may observe state but may not mutate tracked repository state",
+    "publication certificates remain historical objects, not mutable head-bound reports"
+  ],
+  "generated_at": "2026-06-01T13:18:17.080Z"
+}

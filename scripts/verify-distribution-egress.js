@@ -1,127 +1,76 @@
 #!/usr/bin/env node
-const fs = require("node:fs");
-const crypto = require("node:crypto");
 const cp = require("node:child_process");
+const crypto = require("node:crypto");
+const fs = require("node:fs");
 
 const VERSION = "v1.0.2";
 
+const REQUIRED_PACK_FILES = new Set([
+  "LICENSE.md",
+  "NOTICE.md",
+  "README.md",
+  "package.json"
+]);
+
 function fail(msg) {
-  console.error(`TRUTHFRAMER_DISTRIBUTION_EGRESS_FAIL=${msg}`);
+  console.error(`TRUTHFRAMER_DISTRIBUTION_EGRESS_FIREWALL_FAIL=${msg}`);
   process.exit(1);
 }
 
-function sha256File(file) {
-  return crypto.createHash("sha256").update(fs.readFileSync(file)).digest("hex");
+function sh(cmd) {
+  return cp.execSync(cmd, { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] }).trim();
 }
 
-function mustExist(file) {
-  if (!fs.existsSync(file)) fail(`MISSING_FILE:${file}`);
-}
-
-for (const file of ["package.json", ".gitignore", ".npmignore", ".dockerignore", "LICENSE.md", "NOTICE.md", "PRIVACY.md", "SECURITY.md"]) {
-  mustExist(file);
+function sha256Text(s) {
+  return crypto.createHash("sha256").update(s).digest("hex");
 }
 
 const pkg = JSON.parse(fs.readFileSync("package.json", "utf8"));
+
 if (pkg.private !== true) fail("PACKAGE_PRIVATE_NOT_TRUE");
 if (pkg.license !== "UNLICENSED") fail("PACKAGE_LICENSE_NOT_UNLICENSED");
 
-const requiredIgnoreFragments = [
-  ".env",
-  "*.pem",
-  "*.key",
-  "secrets/",
-  "credentials/",
-  ".npmrc",
-  "*.log",
-  ".DS_Store"
-];
+const trackedFiles = sh("git ls-files").split("\n").filter(Boolean).sort();
 
-for (const file of [".gitignore", ".npmignore", ".dockerignore"]) {
-  const text = fs.readFileSync(file, "utf8");
-  for (const fragment of requiredIgnoreFragments) {
-    if (!text.includes(fragment)) fail(`IGNORE_MISSING:${file}:${fragment}`);
-  }
+const forbiddenTracked = trackedFiles.filter((f) =>
+  /(^|\/)(\.env|\.env\..+|node_modules|dist|build|coverage|\.DS_Store|npm-debug\.log|\.turbo|\.next|\.vercel)(\/|$)/.test(f) ||
+  /\.(pem|key|p12|pfx|mobileprovision|keystore|jks|sqlite|db|dump|bak|tmp|log)$/i.test(f)
+);
+
+if (forbiddenTracked.length) {
+  fail(`FORBIDDEN_TRACKED_FILES:${forbiddenTracked.join(",")}`);
 }
 
-const denyPatterns = [
-  /(^|\/)\.env($|[.\-/])/i,
-  /\.pem$/i,
-  /\.key$/i,
-  /\.p12$/i,
-  /\.pfx$/i,
-  /(^|\/)id_rsa($|[.\-/])/i,
-  /(^|\/)secrets?($|\/|\.)/i,
-  /(^|\/)credentials?($|\/|\.)/i,
-  /(^|\/)\.npmrc$/i,
-  /(^|\/)\.pypirc$/i,
-  /(^|\/)\.netrc$/i,
-  /service[-_]?account.*\.json$/i
-];
-
-const tracked = cp.execFileSync("git", ["ls-files"], { encoding: "utf8" })
-  .split("\n")
-  .filter(Boolean);
-
-for (const file of tracked) {
-  for (const pattern of denyPatterns) {
-    if (pattern.test(file)) fail(`TRACKED_FORBIDDEN_PATH:${file}`);
-  }
-}
-
-let packOutput;
+let packJson;
 try {
-  packOutput = cp.execFileSync("npm", ["pack", "--dry-run", "--json"], {
-    encoding: "utf8",
-    stdio: ["ignore", "pipe", "pipe"]
-  });
-} catch (err) {
-  fail(`NPM_PACK_DRY_RUN_FAILED:${err.message}`);
+  packJson = JSON.parse(sh("npm pack --dry-run --json"));
+} catch (e) {
+  fail(`NPM_PACK_DRY_RUN_FAILED:${e.message}`);
 }
 
-const jsonStart = packOutput.indexOf("[");
-if (jsonStart < 0) fail("NPM_PACK_JSON_NOT_FOUND");
-const pack = JSON.parse(packOutput.slice(jsonStart));
-if (!Array.isArray(pack) || !pack[0] || !Array.isArray(pack[0].files)) {
-  fail("NPM_PACK_BAD_SHAPE");
+const packFiles = (packJson[0]?.files || [])
+  .map((x) => ({ path: x.path, size: x.size }))
+  .sort((a, b) => a.path.localeCompare(b.path));
+
+const packPaths = packFiles.map((x) => x.path).sort();
+
+const missingRequired = [...REQUIRED_PACK_FILES].filter((p) => !packPaths.includes(p));
+if (missingRequired.length) {
+  fail(`NPM_PACK_REQUIRED_FILE_MISSING:${missingRequired.join(",")}`);
 }
 
-const packFiles = pack[0].files.map((f) => f.path);
-for (const file of packFiles) {
-  for (const pattern of denyPatterns) {
-    if (pattern.test(file)) fail(`PACK_FORBIDDEN_PATH:${file}`);
-  }
+const unexpectedPackFiles = packPaths.filter((p) => !REQUIRED_PACK_FILES.has(p));
+if (unexpectedPackFiles.length) {
+  fail(`NPM_PACK_UNEXPECTED_EGRESS:${unexpectedPackFiles.join(",")}`);
 }
 
-const report = {
-  report_version: VERSION,
-  status: "DISTRIBUTION_EGRESS_FIREWALL_PASS",
-  package_name: pkg.name || null,
-  package_private: pkg.private,
-  package_license: pkg.license,
-  tracked_file_count: tracked.length,
-  npm_pack_file_count: packFiles.length,
-  ignore_files: [".gitignore", ".npmignore", ".dockerignore"].map((file) => ({
-    path: file,
-    sha256: sha256File(file),
-    bytes: fs.statSync(file).size
-  })),
-  pack_files_sha256: crypto.createHash("sha256").update(packFiles.sort().join("\n")).digest("hex"),
-  deny_policy: [
-    "env files",
-    "private keys",
-    "package credentials",
-    "service-account JSON",
-    "secrets directories",
-    "credentials directories"
-  ]
-};
-
-fs.mkdirSync("reports/current", { recursive: true });
-fs.writeFileSync(`reports/current/distribution-egress-${VERSION}.json`, JSON.stringify(report, null, 2) + "\n");
+const packFilesSha = sha256Text(JSON.stringify(packFiles));
+const packPathAllowlistSha = sha256Text(JSON.stringify(packPaths));
 
 console.log("TRUTHFRAMER_DISTRIBUTION_EGRESS_FIREWALL_PASS=true");
 console.log(`REPORT_VERSION=${VERSION}`);
-console.log(`TRACKED_FILE_COUNT=${tracked.length}`);
+console.log(`TRACKED_FILE_COUNT=${trackedFiles.length}`);
 console.log(`NPM_PACK_FILE_COUNT=${packFiles.length}`);
-console.log(`PACK_FILES_SHA256=${report.pack_files_sha256}`);
+console.log(`PACK_FILES_SHA256=${packFilesSha}`);
+console.log(`PACK_PATH_ALLOWLIST_SHA256=${packPathAllowlistSha}`);
+console.log("PACK_EGRESS_POLICY=ALLOWLIST_ONLY");

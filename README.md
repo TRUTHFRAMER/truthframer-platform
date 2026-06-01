@@ -245,3 +245,7 @@ TRUTHFRAMER verifies that proprietary/private source posture is not weakened by 
 ### TRUTHFRAMER v1.0.3 — Public Source Provenance Certificate
 
 TRUTHFRAMER publishes a source provenance certificate binding the protected main commit, tree SHA, legal/privacy perimeter, public finality perimeter, npm-pack surface, forbidden tracked-file absence, and distribution egress firewall into one sealed public provenance object.
+
+### TRUTHFRAMER v1.0.4 — Verification Immutability Certificate
+
+TRUTHFRAMER now certifies that verification is observational, not mutational. `verify:all` includes a purity guard that snapshots repository state, runs the full verification stack, and fails if verification rewrites tracked or untracked repository state.

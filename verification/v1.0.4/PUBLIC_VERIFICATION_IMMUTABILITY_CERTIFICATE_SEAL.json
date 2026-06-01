@@ -1,0 +1,7 @@
+{
+  "seal_version": "v1.0.4",
+  "status": "PUBLIC_VERIFICATION_IMMUTABILITY_CERTIFIED_SEALED",
+  "certificate_path": "docs/verification/PUBLIC_VERIFICATION_IMMUTABILITY_CERTIFICATE.json",
+  "certificate_sha256": "4632e775333d68e1a18ea2bb47c8a5bf8edbd2e8b5d140b31319049d7db34bd6",
+  "sealed_at": "2026-06-01T13:18:17.081Z"
+}
