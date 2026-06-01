@@ -5,12 +5,12 @@
   "package_private": true,
   "package_license": "UNLICENSED",
   "package_name": "truthframer-platform",
-  "tracked_file_count": 199,
+  "tracked_file_count": 210,
   "npm_pack_file_count": 4,
   "pack_files_sha256": "b361c7326256096abe19cca6a7491bb894a3d1dbd6b1a7699376decf0ca86124",
   "report": {
     "path": "reports/current/distribution-egress-v1.0.2.json",
-    "sha256": "4c64bc257732bfa14e304040908edb6f8b11714193b2be4713b2453b250c7771"
+    "sha256": "f4b985ab9ef040587f2ab4c1c9348ffb7f9933e579fe20abe6d8acbe3052c420"
   },
   "certified_ignore_files": [
     {
