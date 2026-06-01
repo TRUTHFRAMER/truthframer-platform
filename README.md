@@ -249,3 +249,11 @@ TRUTHFRAMER publishes a source provenance certificate binding the protected main
 ### TRUTHFRAMER v1.0.4 — Verification Immutability Certificate
 
 TRUTHFRAMER now certifies that verification is observational, not mutational. `verify:all` includes a purity guard that snapshots repository state, runs the full verification stack, and fails if verification rewrites tracked or untracked repository state.
+
+
+<!-- TRUTHFRAME_SYSTEM_SPINE_V110 -->
+## Truth Frame System Spine
+
+TRUTHFRAMER v1.1.0 makes the truth frame the canonical system spine.
+
+Certificates, seals, release ledgers, reports, and public pages are subordinate evidence surfaces. The system spine verifies that every truth frame has its case object, source manifest, replay manifest, terminal render, public render, and registry presence.
