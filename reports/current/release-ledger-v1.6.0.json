@@ -1,0 +1,18 @@
+{
+  "system": "TRUTHFRAMER",
+  "version": "v1.6.0",
+  "release": "TRUTHFRAMER v1.6.0 — Public Capsule Consumption Receipt",
+  "status": "PUBLIC_CAPSULE_CONSUMPTION_RECEIPT_LEDGERED",
+  "main_feature_sha": "8b883a9d2c784e29608193aece6a9ecbb4757eb6",
+  "pages_sha": "0a4957bdc2bc895c2a4bf9610cb46658831c8e66",
+  "public_receipt_url": "https://truthframer.github.io/truthframer-platform/receipt/TRUTHFRAMER_PUBLIC_CAPSULE_CONSUMPTION_RECEIPT.json",
+  "public_receipt_page_url": "https://truthframer.github.io/truthframer-platform/receipt/",
+  "consumed_capsule_url": "https://truthframer.github.io/truthframer-platform/capsule/TRUTHFRAMER_PUBLIC_VERIFICATION_CAPSULE.json",
+  "capsule_sha256": "957b92e87d6e6ca0f341702e367cb454347b66eba143e4046e3f0e4a8489fe17",
+  "receipt_sha256": "b628327fb196ef50729fe6833e0b0aba0abf3ba3106b0564846d5adb17a95532",
+  "capsule_sha256_match_basis": "expected_sha256_found_inside_public_capsule_json",
+  "no_private_source_required": true,
+  "truth_claim_created": false,
+  "admission_claim_created": false,
+  "external_reality_claim_created": false
+}
