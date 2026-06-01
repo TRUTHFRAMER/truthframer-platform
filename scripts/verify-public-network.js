@@ -180,7 +180,8 @@ async function must(label, candidates) {
     "v0.6.0",
     "v0.6.1",
     "v0.7.0",
-    "v0.8.0"
+    "v0.8.0",
+    "v0.9.0"
   ];
 
   for (const v of releases) {
@@ -189,6 +190,15 @@ async function must(label, candidates) {
       [`${REPO}/releases/tag/${v}`, v]
     ]);
   }
+
+
+  await must("PUBLIC_RELEASE_CLOSURE_LIVE", [
+    [`${BASE}/verification/PUBLIC_RELEASE_CLOSURE.json`, "PUBLIC_RELEASE_SELF_INCLUDED"]
+  ]);
+
+  await must("PUBLIC_RELEASE_CLOSURE_SEAL_LIVE", [
+    [`${BASE}/verification/PUBLIC_RELEASE_CLOSURE_SEAL.json`, "PUBLIC_RELEASE_SELF_INCLUDED_SEALED"]
+  ]);
 
   console.log("TRUTHFRAMER_PUBLIC_NETWORK_VERIFIER_PASS=true");
 })();
