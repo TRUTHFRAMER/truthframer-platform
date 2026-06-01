@@ -279,3 +279,15 @@ The proof injects adversarial orphan and incomplete truth-frame surfaces in temp
 ## Truth Frame Admission Closure Seal
 
 TRUTHFRAMER v1.4.0 closes the admission layer by sealing the positive admission gate and the adversarial refusal proof into one canonical admission closure object.
+
+## TRUTHFRAMER v1.5.0 — Public Verification Capsule
+
+TRUTHFRAMER v1.5.0 introduces a portable public verification capsule.
+
+The capsule binds the public verification perimeter into one machine-readable object:
+
+- local capsule: `capsule/TRUTHFRAMER_PUBLIC_VERIFICATION_CAPSULE.json`
+- public capsule: `https://truthframer.github.io/truthframer-platform/capsule/TRUTHFRAMER_PUBLIC_VERIFICATION_CAPSULE.json`
+- public capsule page: `https://truthframer.github.io/truthframer-platform/capsule/`
+
+The capsule does not claim brokerage status, financial advice, external factual truth, or market truth. Its scope is public artifact integrity and reachability.
