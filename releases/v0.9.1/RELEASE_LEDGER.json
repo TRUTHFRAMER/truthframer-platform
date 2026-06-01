@@ -1,0 +1,9 @@
+{
+  "version": "v0.9.1",
+  "status": "PUBLIC_RELEASE_SELF_INCLUDED",
+  "included_release": "v0.9.0",
+  "main_feature_sha": "cb3ea843807858fcf7fd916dc2c9502653ef1935",
+  "pages_sha": "c6481d69fe8b994d6a61f1f6ceb616df8738dfc4",
+  "public_release_closure_url": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_RELEASE_CLOSURE.json",
+  "public_release_closure_seal_url": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_RELEASE_CLOSURE_SEAL.json"
+}
