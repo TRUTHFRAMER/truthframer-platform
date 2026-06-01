@@ -1,0 +1,129 @@
+{
+  "version": "v1.2.0",
+  "status": "TRUTH_FRAME_ADMISSION_GATE_CLOSED",
+  "primary_object": "truth_frame",
+  "gate_function": "refuse_orphan_or_incomplete_truth_frame_surfaces",
+  "upstream_spine_status": "TRUTH_FRAME_SYSTEM_SPINE_CANONICAL",
+  "upstream_spine_sha256": "b18ece521235870d4eff5397c1a96c80d30661dc385109557efde4313fc6a66c",
+  "admission_rules": [
+    "A truth frame may not exist as a terminal render without a canonical case.",
+    "A truth frame may not exist as a public render without a canonical case.",
+    "A truth frame may not exist in the registry without a canonical case.",
+    "A truth frame may not exist in the spine without a canonical case.",
+    "A canonical case must contain TRUTH_FRAME.json, SOURCE_MANIFEST.json, and REPLAY_MANIFEST.json.",
+    "Frame identifiers must remain unique and contiguous.",
+    "Verification artifacts remain subordinate to admitted truth frames."
+  ],
+  "counts": {
+    "admitted_truth_frame_count": 4,
+    "terminal_render_count": 4,
+    "public_render_count": 4,
+    "registry_frame_count": 4,
+    "spine_frame_count": 4,
+    "admission_error_count": 0
+  },
+  "admitted_frames": [
+    {
+      "id": "tf-000001",
+      "case_slug": "tf-000001-cross-venue-prediction-lag",
+      "admission_status": "ADMITTED",
+      "required_surfaces": {
+        "truth_frame": "cases/tf-000001-cross-venue-prediction-lag/TRUTH_FRAME.json",
+        "source_manifest": "cases/tf-000001-cross-venue-prediction-lag/SOURCE_MANIFEST.json",
+        "replay_manifest": "cases/tf-000001-cross-venue-prediction-lag/REPLAY_MANIFEST.json",
+        "terminal_render": "apps/terminal/tf-000001.html",
+        "public_render": "docs/render/index.html",
+        "registry": "registry/TRUTH_FRAME_REGISTRY.json",
+        "docs_registry": "docs/registry/TRUTH_FRAME_REGISTRY.json",
+        "spine": "spine/TRUTH_FRAME_SYSTEM_SPINE.json",
+        "docs_case": null,
+        "public_surface_proof": null
+      },
+      "hashes": {
+        "truth_frame_sha256": "2a979ff5224a510b6635c195ec74ca9c2bb29e9c25e5758a21931f2a09587a33",
+        "source_manifest_sha256": "490c23ed14d37d8345fc350753764818a2cb2bec075dcbfa125cdd57ef617667",
+        "replay_manifest_sha256": "523e718fb19831de089c43c59de5187180b613389144baba7e79a7cb167cd4a6",
+        "terminal_render_sha256": "3f83c5bfa92f66039d4e1761c79cc53fb7b65c27339262062ee047fc7838ef68",
+        "public_render_sha256": "3f83c5bfa92f66039d4e1761c79cc53fb7b65c27339262062ee047fc7838ef68",
+        "public_surface_proof_sha256": null
+      }
+    },
+    {
+      "id": "tf-000002",
+      "case_slug": "tf-000002-level3-order-flow",
+      "admission_status": "ADMITTED",
+      "required_surfaces": {
+        "truth_frame": "cases/tf-000002-level3-order-flow/TRUTH_FRAME.json",
+        "source_manifest": "cases/tf-000002-level3-order-flow/SOURCE_MANIFEST.json",
+        "replay_manifest": "cases/tf-000002-level3-order-flow/REPLAY_MANIFEST.json",
+        "terminal_render": "apps/terminal/tf-000002.html",
+        "public_render": "docs/render/tf-000002/index.html",
+        "registry": "registry/TRUTH_FRAME_REGISTRY.json",
+        "docs_registry": "docs/registry/TRUTH_FRAME_REGISTRY.json",
+        "spine": "spine/TRUTH_FRAME_SYSTEM_SPINE.json",
+        "docs_case": "docs/case/tf-000002",
+        "public_surface_proof": "docs/proof/tf-000002/PUBLIC_SURFACE_PROOF.json"
+      },
+      "hashes": {
+        "truth_frame_sha256": "f866b69f74f20777a1f677a27ddbb2a606a64cda126f9c311c728c08c781c13f",
+        "source_manifest_sha256": "b06ccbac6c6785d72b0f325ca4851757792a075e35295159f87d20d298875070",
+        "replay_manifest_sha256": "b6ed9324febf2fed23319c1efd1ef1ae3f4e73a87caed9bf2cb35250896f55d3",
+        "terminal_render_sha256": "e3adda5e9411f8e517054abab49e8a238afd2d716e254e2eddd7a92ab2317d22",
+        "public_render_sha256": "e3adda5e9411f8e517054abab49e8a238afd2d716e254e2eddd7a92ab2317d22",
+        "public_surface_proof_sha256": "c4ca00d683a0dd8909318387242c5880155dac574df4a542f035cb68e5c3b5b6"
+      }
+    },
+    {
+      "id": "tf-000003",
+      "case_slug": "tf-000003-fpga-vs-cpu-latency-boundary",
+      "admission_status": "ADMITTED",
+      "required_surfaces": {
+        "truth_frame": "cases/tf-000003-fpga-vs-cpu-latency-boundary/TRUTH_FRAME.json",
+        "source_manifest": "cases/tf-000003-fpga-vs-cpu-latency-boundary/SOURCE_MANIFEST.json",
+        "replay_manifest": "cases/tf-000003-fpga-vs-cpu-latency-boundary/REPLAY_MANIFEST.json",
+        "terminal_render": "apps/terminal/tf-000003.html",
+        "public_render": "docs/render/tf-000003/index.html",
+        "registry": "registry/TRUTH_FRAME_REGISTRY.json",
+        "docs_registry": "docs/registry/TRUTH_FRAME_REGISTRY.json",
+        "spine": "spine/TRUTH_FRAME_SYSTEM_SPINE.json",
+        "docs_case": "docs/case/tf-000003",
+        "public_surface_proof": "docs/proof/tf-000003/PUBLIC_SURFACE_PROOF.json"
+      },
+      "hashes": {
+        "truth_frame_sha256": "94a5c9fe990cc195a7c5e4da76334322f79079e556a049da21d1e8c7312c9e1a",
+        "source_manifest_sha256": "1e55ac13e11c0c1c00468e3200831484822dfca111496b1d78d600888cf0d0eb",
+        "replay_manifest_sha256": "f1d5ab150c26ba5126ae9eb1dabf775ebdc6515b851622661cc1873c6d926928",
+        "terminal_render_sha256": "f9a4584a8feeda3a372669fefeae825e04ab475440c075a225f9dee2672bb029",
+        "public_render_sha256": "f9a4584a8feeda3a372669fefeae825e04ab475440c075a225f9dee2672bb029",
+        "public_surface_proof_sha256": "2715855687c8769a5a90848e8e719090d610d126f58ff93005ad24ff599ddd87"
+      }
+    },
+    {
+      "id": "tf-000004",
+      "case_slug": "tf-000004-correlation-regime-break",
+      "admission_status": "ADMITTED",
+      "required_surfaces": {
+        "truth_frame": "cases/tf-000004-correlation-regime-break/TRUTH_FRAME.json",
+        "source_manifest": "cases/tf-000004-correlation-regime-break/SOURCE_MANIFEST.json",
+        "replay_manifest": "cases/tf-000004-correlation-regime-break/REPLAY_MANIFEST.json",
+        "terminal_render": "apps/terminal/tf-000004.html",
+        "public_render": "docs/render/tf-000004/index.html",
+        "registry": "registry/TRUTH_FRAME_REGISTRY.json",
+        "docs_registry": "docs/registry/TRUTH_FRAME_REGISTRY.json",
+        "spine": "spine/TRUTH_FRAME_SYSTEM_SPINE.json",
+        "docs_case": "docs/case/tf-000004",
+        "public_surface_proof": "docs/proof/tf-000004/PUBLIC_SURFACE_PROOF.json"
+      },
+      "hashes": {
+        "truth_frame_sha256": "e31bd12747614ca0a76a974e750cb3230154e532df8dcf3b8b86d22eeb781d7c",
+        "source_manifest_sha256": "800456f2fb2aa3566dad31cdb799cbb6ca5d1703fb414f0dc2f80803d67f86fd",
+        "replay_manifest_sha256": "b7d3defc49d2198031346e02be744e36cb4e54eaff22411ae5d1ad61324fe5f6",
+        "terminal_render_sha256": "6465b95fb0c1506ec1abd876f1e877c3f9b533e0f46ee5f6274ddb07a85026c5",
+        "public_render_sha256": "6465b95fb0c1506ec1abd876f1e877c3f9b533e0f46ee5f6274ddb07a85026c5",
+        "public_surface_proof_sha256": "f7b7650e7298488c4443895739bc480a64d0cfc1241caa9e52505965d7f7c0b0"
+      }
+    }
+  ],
+  "admission_errors": [],
+  "gate_sha256": "5680ca53be278186a48cc2c42c9e0cc01bb84ede3557e7d937e4a80a0a472314"
+}
