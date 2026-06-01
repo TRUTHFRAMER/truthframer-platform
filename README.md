@@ -273,3 +273,9 @@ A frame cannot appear as a terminal render, public render, registry entry, or sp
 TRUTHFRAMER v1.3.0 proves the admission gate is not merely descriptive.
 
 The proof injects adversarial orphan and incomplete truth-frame surfaces in temporary worktrees and requires admission verification to fail.
+
+
+<!-- TRUTHFRAME_ADMISSION_CLOSURE_SEAL_V140 -->
+## Truth Frame Admission Closure Seal
+
+TRUTHFRAMER v1.4.0 closes the admission layer by sealing the positive admission gate and the adversarial refusal proof into one canonical admission closure object.
