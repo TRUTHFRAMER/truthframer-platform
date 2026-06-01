@@ -1,0 +1,92 @@
+{
+  "protocol": "TRUTHFRAMER",
+  "version": "v1.5.0",
+  "status": "PUBLIC_VERIFICATION_CAPSULE_BOUND",
+  "role": "portable_public_verification_capsule",
+  "generated_at": "2026-06-01T17:08:11.969Z",
+  "repository": "TRUTHFRAMER/truthframer-platform",
+  "source": {
+    "branch": "main",
+    "commit_sha": "2c6f23764f220624aaba58784d31951749c82052",
+    "tree_sha": "6c1c068ceb3fc11d252ab6c1cd49a0950efab498",
+    "base_release": "v1.4.0"
+  },
+  "public_surface": {
+    "capsule_url": "https://truthframer.github.io/truthframer-platform/capsule/TRUTHFRAMER_PUBLIC_VERIFICATION_CAPSULE.json",
+    "capsule_page_url": "https://truthframer.github.io/truthframer-platform/capsule/"
+  },
+  "boundary": {
+    "no_brokerage_claim": true,
+    "no_financial_advice_claim": true,
+    "no_external_truth_claim": true,
+    "verification_scope": "public_artifact_integrity_and_reachability"
+  },
+  "artifact_count": 8,
+  "artifacts": [
+    {
+      "id": "truth_frame_system_spine",
+      "path": "spine/TRUTH_FRAME_SYSTEM_SPINE.json",
+      "bytes": 5859,
+      "sha256": "eb69cb69044ea2a77d1b5b329806556f3f1902416f676c7954db0b9072552443",
+      "source_url": "https://raw.githubusercontent.com/TRUTHFRAMER/truthframer-platform/2c6f23764f220624aaba58784d31951749c82052/spine/TRUTH_FRAME_SYSTEM_SPINE.json",
+      "public_url": "https://truthframer.github.io/truthframer-platform/spine/TRUTH_FRAME_SYSTEM_SPINE.json"
+    },
+    {
+      "id": "truth_frame_admission_gate",
+      "path": "admission/TRUTH_FRAME_ADMISSION_GATE.json",
+      "bytes": 7136,
+      "sha256": "454475e01a2ae4963ed46611c1f03f4bb751d15845356c1fe94fcfad236e475c",
+      "source_url": "https://raw.githubusercontent.com/TRUTHFRAMER/truthframer-platform/2c6f23764f220624aaba58784d31951749c82052/admission/TRUTH_FRAME_ADMISSION_GATE.json",
+      "public_url": "https://truthframer.github.io/truthframer-platform/admission/TRUTH_FRAME_ADMISSION_GATE.json"
+    },
+    {
+      "id": "truth_frame_admission_refusal_proof",
+      "path": "admission/TRUTH_FRAME_ADMISSION_REFUSAL_PROOF.json",
+      "bytes": 1786,
+      "sha256": "b4c3451c0c492b7dae9a0b710dd3382ae13421f50c1014981195f65eb402cd24",
+      "source_url": "https://raw.githubusercontent.com/TRUTHFRAMER/truthframer-platform/2c6f23764f220624aaba58784d31951749c82052/admission/TRUTH_FRAME_ADMISSION_REFUSAL_PROOF.json",
+      "public_url": "https://truthframer.github.io/truthframer-platform/admission/TRUTH_FRAME_ADMISSION_REFUSAL_PROOF.json"
+    },
+    {
+      "id": "truth_frame_admission_closure_seal",
+      "path": "admission/TRUTH_FRAME_ADMISSION_CLOSURE_SEAL.json",
+      "bytes": 2043,
+      "sha256": "882d52a2d795f5ff07fd2534169bf3badf166e8297129c8b0ef01e5ee3cc8cce",
+      "source_url": "https://raw.githubusercontent.com/TRUTHFRAMER/truthframer-platform/2c6f23764f220624aaba58784d31951749c82052/admission/TRUTH_FRAME_ADMISSION_CLOSURE_SEAL.json",
+      "public_url": "https://truthframer.github.io/truthframer-platform/admission/TRUTH_FRAME_ADMISSION_CLOSURE_SEAL.json"
+    },
+    {
+      "id": "release_ledger_v1_4_0",
+      "path": "releases/v1.4.0/RELEASE_LEDGER.json",
+      "bytes": 637,
+      "sha256": "147173937b63561b75ba2b57c04e8fb1e3bfe146098bbf5fe19d313e4b783622",
+      "source_url": "https://raw.githubusercontent.com/TRUTHFRAMER/truthframer-platform/2c6f23764f220624aaba58784d31951749c82052/releases/v1.4.0/RELEASE_LEDGER.json",
+      "public_url": null
+    },
+    {
+      "id": "release_ledger_report_v1_4_0",
+      "path": "reports/current/release-ledger-v1.4.0.json",
+      "bytes": 637,
+      "sha256": "147173937b63561b75ba2b57c04e8fb1e3bfe146098bbf5fe19d313e4b783622",
+      "source_url": "https://raw.githubusercontent.com/TRUTHFRAMER/truthframer-platform/2c6f23764f220624aaba58784d31951749c82052/reports/current/release-ledger-v1.4.0.json",
+      "public_url": null
+    },
+    {
+      "id": "admission_closure_report_v1_4_0",
+      "path": "reports/current/truth-frame-admission-closure-seal-v1.4.0.json",
+      "bytes": 2043,
+      "sha256": "882d52a2d795f5ff07fd2534169bf3badf166e8297129c8b0ef01e5ee3cc8cce",
+      "source_url": "https://raw.githubusercontent.com/TRUTHFRAMER/truthframer-platform/2c6f23764f220624aaba58784d31951749c82052/reports/current/truth-frame-admission-closure-seal-v1.4.0.json",
+      "public_url": null
+    },
+    {
+      "id": "admission_refusal_report_v1_3_0",
+      "path": "reports/current/truth-frame-admission-refusal-proof-v1.3.0.json",
+      "bytes": 1786,
+      "sha256": "b4c3451c0c492b7dae9a0b710dd3382ae13421f50c1014981195f65eb402cd24",
+      "source_url": "https://raw.githubusercontent.com/TRUTHFRAMER/truthframer-platform/2c6f23764f220624aaba58784d31951749c82052/reports/current/truth-frame-admission-refusal-proof-v1.3.0.json",
+      "public_url": null
+    }
+  ],
+  "capsule_sha256": "957b92e87d6e6ca0f341702e367cb454347b66eba143e4046e3f0e4a8489fe17"
+}
