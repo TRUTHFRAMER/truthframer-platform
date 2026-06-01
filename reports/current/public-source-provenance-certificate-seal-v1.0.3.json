@@ -1,0 +1,7 @@
+{
+  "seal_version": "v1.0.3",
+  "status": "PUBLIC_SOURCE_PROVENANCE_CERTIFIED_SEALED",
+  "certificate_path": "docs/verification/PUBLIC_SOURCE_PROVENANCE_CERTIFICATE.json",
+  "certificate_sha256": "cfa0014a9c6e8536ab9c25033335b169d0b8e9493e12928e112beb09c7bfe64c",
+  "sealed_at": "2026-06-01T12:56:02.334Z"
+}

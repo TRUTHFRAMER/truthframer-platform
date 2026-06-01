@@ -241,3 +241,7 @@ The proprietary license and privacy perimeter are locally verified and publicly 
 
 TRUTHFRAMER verifies that proprietary/private source posture is not weakened by accidental npm package egress, Docker-context egress, tracked secret paths, credential files, or missing ignore boundaries.
 
+
+### TRUTHFRAMER v1.0.3 — Public Source Provenance Certificate
+
+TRUTHFRAMER publishes a source provenance certificate binding the protected main commit, tree SHA, legal/privacy perimeter, public finality perimeter, npm-pack surface, forbidden tracked-file absence, and distribution egress firewall into one sealed public provenance object.

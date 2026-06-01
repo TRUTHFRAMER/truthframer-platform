@@ -1,0 +1,102 @@
+{
+  "certificate_version": "v1.0.3",
+  "status": "PUBLIC_SOURCE_PROVENANCE_CERTIFIED",
+  "base_release": "v1.0.2",
+  "repository": "TRUTHFRAMER/truthframer-platform",
+  "branch": "main",
+  "main_commit_sha": "b750696bf7a3ad18f06095e5cf81354b45538cff",
+  "main_tree_sha": "a14f82cce9ea3ac81b050d6988638a51f5ec665e",
+  "package_private": true,
+  "package_license": "UNLICENSED",
+  "tracked_file_count": 214,
+  "forbidden_tracked_file_count": 0,
+  "npm_pack_file_count": 4,
+  "npm_pack_files_sha256": "4513348c740595e7538fbc3c1b3573933f8733cd9026cb7bf306fc96ad836c56",
+  "npm_pack_files": [
+    {
+      "path": "LICENSE.md",
+      "size": 3187
+    },
+    {
+      "path": "NOTICE.md",
+      "size": 419
+    },
+    {
+      "path": "package.json",
+      "size": 4899
+    },
+    {
+      "path": "README.md",
+      "size": 8397
+    }
+  ],
+  "certified_objects": [
+    {
+      "path": "LICENSE.md",
+      "sha256": "75822d94174f34d89c2fb141002e56041caacba2b794c1fe9446092ab66f22e6"
+    },
+    {
+      "path": "NOTICE.md",
+      "sha256": "000306f7cf1181ca89caddb6de146144bc0f07146976bf2c6fba69be388cde11"
+    },
+    {
+      "path": "PRIVACY.md",
+      "sha256": "0bcb000c39ebc39af5e9b9852905dff29e92168ff05832e67d88441ff9f1256f"
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "bb958ca7359450fe0ecddfe8853be20fd1724c90b85a6ef2a5a5c3a7a85ce13e"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "0d75a554243e499b67108ee117e77341f8e1b928e4edb2984f14bea1177183a0"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "a740e8215d07b4b73dc05cbd9636693447d6c9197b329febb53a3f86fa70c487"
+    },
+    {
+      "path": ".npmignore",
+      "sha256": "809cfa8cfe1c58850a605daac40b0790c6141fbc6b5db6f38b8ffab649b8c3ab"
+    },
+    {
+      "path": ".dockerignore",
+      "sha256": "4349802f0888c2778371dabad16d7d798e3357ae5024f20a067b512bdc0f8af1"
+    },
+    {
+      "path": "package.json",
+      "sha256": "f2bd846060c1e74ddf35b26941dc8e6536cfcb13589b0403159fc70a9e9c3f48"
+    },
+    {
+      "path": "docs/verification/PUBLIC_ROOT_FINALITY_CERTIFICATE.json",
+      "sha256": "f58d9c2c16d1b8179709bb0ab5c152a11d84d3a0b3c66aab6015afb37a40f7cd"
+    },
+    {
+      "path": "docs/verification/PUBLIC_LEGAL_PRIVACY_PERIMETER_CERTIFICATE.json",
+      "sha256": "1366524b60bb286d3c7acffe76cdf7c0da50b6aa1c84b8d5264fab75948d42b5"
+    },
+    {
+      "path": "docs/verification/PUBLIC_DISTRIBUTION_EGRESS_FIREWALL_CERTIFICATE.json",
+      "sha256": "0c7a73f8c63eb9bd71f10f9c92b32c7243f7db1476a4bed589e15022745a7b72"
+    },
+    {
+      "path": "docs/verification/PUBLIC_DISTRIBUTION_EGRESS_FIREWALL_CERTIFICATE_SEAL.json",
+      "sha256": "f9b61c49dd13b54b335e27a8412cee964715e307dcd28481ed2e7ea8528149c9"
+    },
+    {
+      "path": "releases/v1.0.2/RELEASE_LEDGER.json",
+      "sha256": "10fe40c5b83e59f2165b64720e1873b30509527f2904124f10d89ef055d6c38c"
+    }
+  ],
+  "provenance_claims": [
+    "main commit and tree are recorded",
+    "legal/privacy perimeter files are present and hashed",
+    "public root finality certificate is present and hashed",
+    "public legal privacy certificate is present and hashed",
+    "public distribution egress certificate is present and hashed",
+    "npm pack surface is enumerated and hashed",
+    "forbidden tracked secret/build/runtime outputs are absent",
+    "package is private and UNLICENSED"
+  ],
+  "generated_at": "2026-06-01T12:56:02.333Z"
+}
