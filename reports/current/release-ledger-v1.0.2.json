@@ -1,0 +1,20 @@
+{
+  "release_version": "v1.0.2",
+  "status": "PUBLIC_DISTRIBUTION_EGRESS_FIREWALL_RELEASE_LEDGERED",
+  "release_title": "TRUTHFRAMER v1.0.2 — Distribution Egress Firewall",
+  "main_feature_sha": "5e17308af891404e4c19e1773c49875a5b86b003",
+  "pages_sha": "e6fc022af3f9d236222c311a8beeadeeb212ea85",
+  "public_artifacts": {
+    "distribution_egress_firewall_certificate": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_DISTRIBUTION_EGRESS_FIREWALL_CERTIFICATE.json",
+    "distribution_egress_firewall_certificate_seal": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_DISTRIBUTION_EGRESS_FIREWALL_CERTIFICATE_SEAL.json"
+  },
+  "verified_posture": {
+    "package_private": true,
+    "package_license": "UNLICENSED",
+    "npm_pack_dry_run_checked": true,
+    "docker_context_ignore_checked": true,
+    "tracked_forbidden_path_scan_checked": true,
+    "historical_certificate_deadlock_repaired": true,
+    "public_certificate_status": "PUBLIC_DISTRIBUTION_EGRESS_FIREWALL_CERTIFIED"
+  }
+}
