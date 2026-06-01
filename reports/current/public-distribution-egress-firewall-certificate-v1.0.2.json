@@ -1,0 +1,46 @@
+{
+  "certificate_version": "v1.0.2",
+  "status": "PUBLIC_DISTRIBUTION_EGRESS_FIREWALL_CERTIFIED",
+  "closes_over": "package, npm-pack, docker-context, tracked-file egress perimeter",
+  "package_private": true,
+  "package_license": "UNLICENSED",
+  "package_name": "truthframer-platform",
+  "tracked_file_count": 199,
+  "npm_pack_file_count": 4,
+  "pack_files_sha256": "b361c7326256096abe19cca6a7491bb894a3d1dbd6b1a7699376decf0ca86124",
+  "report": {
+    "path": "reports/current/distribution-egress-v1.0.2.json",
+    "sha256": "4c64bc257732bfa14e304040908edb6f8b11714193b2be4713b2453b250c7771"
+  },
+  "certified_ignore_files": [
+    {
+      "path": ".gitignore",
+      "sha256": "a740e8215d07b4b73dc05cbd9636693447d6c9197b329febb53a3f86fa70c487",
+      "bytes": 2239
+    },
+    {
+      "path": ".npmignore",
+      "sha256": "809cfa8cfe1c58850a605daac40b0790c6141fbc6b5db6f38b8ffab649b8c3ab",
+      "bytes": 305
+    },
+    {
+      "path": ".dockerignore",
+      "sha256": "4349802f0888c2778371dabad16d7d798e3357ae5024f20a067b512bdc0f8af1",
+      "bytes": 410
+    }
+  ],
+  "deny_policy": [
+    "env files",
+    "private keys",
+    "package credentials",
+    "service-account JSON",
+    "secrets directories",
+    "credentials directories"
+  ],
+  "public_paths": {
+    "certificate": "verification/PUBLIC_DISTRIBUTION_EGRESS_FIREWALL_CERTIFICATE.json",
+    "seal": "verification/PUBLIC_DISTRIBUTION_EGRESS_FIREWALL_CERTIFICATE_SEAL.json",
+    "versioned_certificate": "verification/v1.0.2/PUBLIC_DISTRIBUTION_EGRESS_FIREWALL_CERTIFICATE.json",
+    "versioned_seal": "verification/v1.0.2/PUBLIC_DISTRIBUTION_EGRESS_FIREWALL_CERTIFICATE_SEAL.json"
+  }
+}

@@ -237,3 +237,7 @@ TRUTHFRAMER is proprietary source-available material. It is not open source. No 
 
 The proprietary license and privacy perimeter are locally verified and publicly certified by `PUBLIC_LEGAL_PRIVACY_PERIMETER_CERTIFICATE.json` with a sealed SHA-256 readback artifact.
 
+## Public Distribution Egress Firewall
+
+TRUTHFRAMER verifies that proprietary/private source posture is not weakened by accidental npm package egress, Docker-context egress, tracked secret paths, credential files, or missing ignore boundaries.
+
