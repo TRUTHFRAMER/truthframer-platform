@@ -8,7 +8,7 @@
     "verify": "node scripts/verify-truthframer.js",
     "verify:render": "node scripts/verify-render.js",
     "verify:public": "node scripts/verify-public-surface.js",
-    "verify:all": "npm run verify && npm run verify:render && npm run verify:public && npm run verify:registry && npm run verify:readme && npm run verify:tf000002 && npm run verify:tf000003 && npm run verify:tf000004 && npm run verify:root && npm run verify:audit && npm run verify:hardening && npm run verify:network-seal && npm run verify:verification-index && npm run verify:index-seal && npm run verify:verification-atlas && npm run verify:atlas-seal && npm run verify:stack-closure && npm run verify:stack-closure-seal && npm run verify:continuity-sentinel && npm run verify:continuity-sentinel-seal",
+    "verify:all": "npm run verify && npm run verify:render && npm run verify:public && npm run verify:registry && npm run verify:readme && npm run verify:tf000002 && npm run verify:tf000003 && npm run verify:tf000004 && npm run verify:root && npm run verify:audit && npm run verify:hardening && npm run verify:network-seal && npm run verify:verification-index && npm run verify:index-seal && npm run verify:verification-atlas && npm run verify:atlas-seal && npm run verify:stack-closure && npm run verify:stack-closure-seal && npm run verify:continuity-sentinel && npm run verify:continuity-sentinel-seal && npm run verify:release-closure && npm run verify:release-closure-seal",
     "verify:registry": "node scripts/verify-registry.js",
     "verify:readme": "node scripts/verify-readme-public-entry.js",
     "verify:tf000002": "node scripts/verify-tf-000002.js",
@@ -29,7 +29,10 @@
     "verify:stack-closure-seal": "node scripts/verify-public-stack-closure-seal.js",
     "generate:continuity-sentinel": "node scripts/generate-public-continuity-sentinel.js",
     "verify:continuity-sentinel": "node scripts/verify-public-continuity-sentinel.js",
-    "verify:continuity-sentinel-seal": "node scripts/verify-public-continuity-sentinel-seal.js"
+    "verify:continuity-sentinel-seal": "node scripts/verify-public-continuity-sentinel-seal.js",
+    "generate:release-closure": "node scripts/generate-public-release-closure.js",
+    "verify:release-closure": "node scripts/verify-public-release-closure.js",
+    "verify:release-closure-seal": "node scripts/verify-public-release-closure-seal.js"
   },
   "license": "Apache-2.0"
 }
