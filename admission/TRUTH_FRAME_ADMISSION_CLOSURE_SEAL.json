@@ -1,0 +1,45 @@
+{
+  "version": "v1.4.0",
+  "status": "TRUTH_FRAME_ADMISSION_LAYER_CLOSED_AND_SEALED",
+  "primary_object": "truth_frame",
+  "closure_function": "positive_admission_plus_negative_refusal",
+  "base_release": "v1.3.0",
+  "sealed_inputs": {
+    "admission_gate": {
+      "version": "v1.2.0",
+      "status": "TRUTH_FRAME_ADMISSION_GATE_CLOSED",
+      "gate_sha256": "5680ca53be278186a48cc2c42c9e0cc01bb84ede3557e7d937e4a80a0a472314",
+      "file_sha256": "454475e01a2ae4963ed46611c1f03f4bb751d15845356c1fe94fcfad236e475c"
+    },
+    "admission_refusal_proof": {
+      "version": "v1.3.0",
+      "status": "TRUTH_FRAME_ADMISSION_REFUSAL_PROVEN",
+      "scenario_count": 5,
+      "failed_scenario_count": 0,
+      "proof_sha256": "367f53a181086a57ab6f594543509721645a2d94ef382ff89595943cc239e104",
+      "file_sha256": "b4c3451c0c492b7dae9a0b710dd3382ae13421f50c1014981195f65eb402cd24"
+    },
+    "release_ledgers": {
+      "v1_2_0": {
+        "status": "TRUTH_FRAME_ADMISSION_GATE_RELEASED",
+        "main_sha": "7c9a12b3be20447e53ecb114f3998cdb071b39c8",
+        "pages_sha": "1831a611940f1a02b52d898a19490ba37b64d093",
+        "file_sha256": "e2d84e0c38b8d0befa9610ea5e6cd65073c1cbc0e3edb5ffb3cb8dc8a9327def"
+      },
+      "v1_3_0": {
+        "status": "TRUTH_FRAME_ADMISSION_REFUSAL_PROOF_RELEASED",
+        "main_sha": "72d3a45d0e95d58713e084ecb2f979d481234597",
+        "pages_sha": "26c32006d5cb201ec36ab19bfe02bcdf16e782ff",
+        "file_sha256": "07feac458583e189a9b45dcb1287cd44cf8c74e135766f81038fae81a044973c"
+      }
+    }
+  },
+  "invariants": [
+    "The admission gate exists as a sealed positive admission object.",
+    "The refusal proof exists as a sealed adversarial negative-control object.",
+    "Both admission and refusal are included in verify:all.",
+    "Both admission and refusal have public network verifiers.",
+    "The admission layer is closed only if both admission and refusal remain live and internally consistent."
+  ],
+  "closure_seal_sha256": "7925301d76d5b89fb16b979fe60666de8fa40f2176607eb85ffce141d2071156"
+}
