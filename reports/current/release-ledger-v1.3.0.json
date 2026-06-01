@@ -1,0 +1,11 @@
+{
+  "version": "v1.3.0",
+  "name": "TRUTHFRAMER v1.3.0 — Truth Frame Admission Refusal Proof",
+  "status": "TRUTH_FRAME_ADMISSION_REFUSAL_PROOF_RELEASED",
+  "main_sha": "72d3a45d0e95d58713e084ecb2f979d481234597",
+  "pages_sha": "26c32006d5cb201ec36ab19bfe02bcdf16e782ff",
+  "public_truth_frame_admission_refusal_proof_url": "https://truthframer.github.io/truthframer-platform/admission/TRUTH_FRAME_ADMISSION_REFUSAL_PROOF.json",
+  "public_truth_frame_admission_refusal_page_url": "https://truthframer.github.io/truthframer-platform/admission/",
+  "primary_object": "truth_frame",
+  "proof_function": "adversarial_negative_control_refusal"
+}
