@@ -228,3 +228,8 @@ TRUTHFRAMER v0.9.1 adds a public release self-inclusion closure. It records that
 
 - `docs/verification/PUBLIC_ROOT_FINALITY_CERTIFICATE.json`
 - `docs/verification/PUBLIC_ROOT_FINALITY_CERTIFICATE_SEAL.json`
+
+## Legal / License Perimeter
+
+TRUTHFRAMER is proprietary source-available material. It is not open source. No use, modification, redistribution, commercial deployment, package reuse, AI-training use, scraping, mirroring, or derivative work is permitted except by separate written agreement. See `LICENSE.md`, `NOTICE.md`, `PRIVACY.md`, and `SECURITY.md`.
+
