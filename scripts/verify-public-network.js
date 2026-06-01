@@ -200,5 +200,18 @@ async function must(label, candidates) {
     [`${BASE}/verification/PUBLIC_RELEASE_CLOSURE_SEAL.json`, "PUBLIC_RELEASE_SELF_INCLUDED_SEALED"]
   ]);
 
+
+  await must("PUBLIC_ROOT_FINALITY_CERTIFICATE_LIVE", [
+    [`${BASE}/verification/PUBLIC_ROOT_FINALITY_CERTIFICATE.json`, "PUBLIC_ROOT_FINALITY_CERTIFIED"]
+  ]);
+
+  await must("PUBLIC_ROOT_FINALITY_CERTIFICATE_SEAL_LIVE", [
+    [`${BASE}/verification/PUBLIC_ROOT_FINALITY_CERTIFICATE_SEAL.json`, "PUBLIC_ROOT_FINALITY_CERTIFIED_SEALED"]
+  ]);
+
+  await must("RELEASE_V0_9_1_LIVE", [
+    ["https://github.com/TRUTHFRAMER/truthframer-platform/releases/tag/v0.9.1", "v0.9.1"]
+  ]);
+
   console.log("TRUTHFRAMER_PUBLIC_NETWORK_VERIFIER_PASS=true");
 })();
