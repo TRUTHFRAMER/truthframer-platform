@@ -1,0 +1,126 @@
+{
+  "protocol": "TRUTHFRAMER",
+  "certificate_version": "v1.0.0",
+  "status": "PUBLIC_ROOT_FINALITY_CERTIFIED",
+  "closes_over_release": "v0.9.1",
+  "issued_at": "2026-06-01T11:45:35.544Z",
+  "base_main_sha": "35cc14fea55deb7c2cc1ec99b6d77f5b2ba8212c",
+  "base_pages_sha": "c6481d69fe8b994d6a61f1f6ceb616df8738dfc4",
+  "finality_scope": {
+    "statement": "This certificate closes over the v0.9.1 public evidence stack. It does not claim impossible self-inclusion of its own future release.",
+    "local_verification": true,
+    "public_pages_verification": true,
+    "release_verification": true,
+    "sealed_artifact_chain": true,
+    "continuity_sentinel_present": true,
+    "release_self_inclusion_present": true
+  },
+  "required_frames": [
+    "tf_000001",
+    "tf_000002",
+    "tf_000003",
+    "tf_000004"
+  ],
+  "covered_releases": [
+    "v0.1.0",
+    "v0.2.0",
+    "v0.3.0",
+    "v0.4.0",
+    "v0.4.1",
+    "v0.4.2",
+    "v0.5.0",
+    "v0.5.1",
+    "v0.6.0",
+    "v0.6.1",
+    "v0.7.0",
+    "v0.8.0",
+    "v0.9.0",
+    "v0.9.1"
+  ],
+  "covered_public_artifacts": [
+    {
+      "name": "PUBLIC_NETWORK_VERIFICATION_SEAL.json",
+      "path": "docs/verification/PUBLIC_NETWORK_VERIFICATION_SEAL.json",
+      "sha256": "71dad4118580dee53107f46eb658f177f6382ebc69755768cd5de13266803e3a",
+      "status": "PUBLIC_NETWORK_VERIFIABLE",
+      "version": "v0.5.1"
+    },
+    {
+      "name": "PUBLIC_VERIFICATION_INDEX.json",
+      "path": "docs/verification/PUBLIC_VERIFICATION_INDEX.json",
+      "sha256": "3824614634006e339b2fecce4f70380a9205af66f92979d7b95a5527ad146f7b",
+      "status": "PUBLIC_VERIFICATION_INDEXED",
+      "version": "v0.6.0"
+    },
+    {
+      "name": "PUBLIC_VERIFICATION_INDEX_SEAL.json",
+      "path": "docs/verification/PUBLIC_VERIFICATION_INDEX_SEAL.json",
+      "sha256": "17b82ef86dfcd7b6099b41c1807bc6520ee873833410bc59caf56d0dfb5ddf46",
+      "status": "PUBLIC_VERIFICATION_INDEX_SEALED",
+      "version": "v0.6.1"
+    },
+    {
+      "name": "PUBLIC_VERIFICATION_ATLAS.json",
+      "path": "docs/verification/PUBLIC_VERIFICATION_ATLAS.json",
+      "sha256": "46e038e149626e9220aa2c1ab9c30968fe1c8e47487ac03a28e8d2903f51a31c",
+      "status": "COMPLETE_PUBLIC_VERIFICATION_ATLAS",
+      "version": null
+    },
+    {
+      "name": "PUBLIC_VERIFICATION_ATLAS_SEAL.json",
+      "path": "docs/verification/PUBLIC_VERIFICATION_ATLAS_SEAL.json",
+      "sha256": "437391848285a913363143836f86ae99a71f2090ca7572347b91ee877824ba98",
+      "status": "COMPLETE_PUBLIC_VERIFICATION_ATLAS_SEALED",
+      "version": "v0.7.0"
+    },
+    {
+      "name": "PUBLIC_STACK_CLOSURE.json",
+      "path": "docs/verification/PUBLIC_STACK_CLOSURE.json",
+      "sha256": "02794a3a3d9189d23bf75ee22e6b025b2f2c98339e4d584a76e00dbe9eabff51",
+      "status": "TOTAL_PUBLIC_STACK_CLOSED",
+      "version": "v0.8.0"
+    },
+    {
+      "name": "PUBLIC_STACK_CLOSURE_SEAL.json",
+      "path": "docs/verification/PUBLIC_STACK_CLOSURE_SEAL.json",
+      "sha256": "f4f2f02889b7f2962956e10346ab064fba9f940ca23cd076583d9bb2fba6c857",
+      "status": "TOTAL_PUBLIC_STACK_CLOSURE_SEALED",
+      "version": "v0.8.0"
+    },
+    {
+      "name": "PUBLIC_CONTINUITY_SENTINEL.json",
+      "path": "docs/verification/PUBLIC_CONTINUITY_SENTINEL.json",
+      "sha256": "997e60b37acb57f69f903ff2707c72c11b832cdb6498cfe1e91e8d889398c9a5",
+      "status": "PUBLIC_CONTINUITY_SENTINEL_ACTIVE",
+      "version": null
+    },
+    {
+      "name": "PUBLIC_CONTINUITY_SENTINEL_SEAL.json",
+      "path": "docs/verification/PUBLIC_CONTINUITY_SENTINEL_SEAL.json",
+      "sha256": "9f361aa603aee341a4fba861b75cfd169903a8c25f0b1843cdb400c56e92bde0",
+      "status": "PUBLIC_CONTINUITY_SENTINEL_SEALED",
+      "version": "v0.9.0"
+    },
+    {
+      "name": "PUBLIC_RELEASE_CLOSURE.json",
+      "path": "docs/verification/PUBLIC_RELEASE_CLOSURE.json",
+      "sha256": "b887d1799ee10d7dffa3b47b6c08b98b0eca688d3bc72a62bed1cd88c324e8b6",
+      "status": "PUBLIC_RELEASE_SELF_INCLUDED",
+      "version": "v0.9.1"
+    },
+    {
+      "name": "PUBLIC_RELEASE_CLOSURE_SEAL.json",
+      "path": "docs/verification/PUBLIC_RELEASE_CLOSURE_SEAL.json",
+      "sha256": "75d525b9a3a0e6729f272bf96bd7af39aa58c34e1ecec5dd29df299c7055888d",
+      "status": "PUBLIC_RELEASE_SELF_INCLUDED_SEALED",
+      "version": "v0.9.1"
+    }
+  ],
+  "canonical_public_urls": {
+    "public_root": "https://truthframer.github.io/truthframer-platform/",
+    "verification_page": "https://truthframer.github.io/truthframer-platform/verification/",
+    "release_closure": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_RELEASE_CLOSURE.json",
+    "release_closure_seal": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_RELEASE_CLOSURE_SEAL.json"
+  },
+  "invariant": "TRUTHFRAMER public standing is complete only when frame evidence, public artifacts, release evidence, continuity evidence, and closure seals are jointly replayable."
+}

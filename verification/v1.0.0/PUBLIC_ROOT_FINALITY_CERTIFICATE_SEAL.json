@@ -1,0 +1,11 @@
+{
+  "protocol": "TRUTHFRAMER",
+  "seal_version": "v1.0.0",
+  "status": "PUBLIC_ROOT_FINALITY_CERTIFIED_SEALED",
+  "sealed_artifact": "PUBLIC_ROOT_FINALITY_CERTIFICATE.json",
+  "sealed_certificate_sha256": "f58d9c2c16d1b8179709bb0ab5c152a11d84d3a0b3c66aab6015afb37a40f7cd",
+  "closes_over_release": "v0.9.1",
+  "base_main_sha": "35cc14fea55deb7c2cc1ec99b6d77f5b2ba8212c",
+  "base_pages_sha": "c6481d69fe8b994d6a61f1f6ceb616df8738dfc4",
+  "issued_at": "2026-06-01T11:45:35.547Z"
+}
