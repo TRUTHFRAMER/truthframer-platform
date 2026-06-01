@@ -1,0 +1,35 @@
+{
+  "report_version": "v1.0.2",
+  "status": "DISTRIBUTION_EGRESS_FIREWALL_PASS",
+  "package_name": "truthframer-platform",
+  "package_private": true,
+  "package_license": "UNLICENSED",
+  "tracked_file_count": 210,
+  "npm_pack_file_count": 4,
+  "ignore_files": [
+    {
+      "path": ".gitignore",
+      "sha256": "a740e8215d07b4b73dc05cbd9636693447d6c9197b329febb53a3f86fa70c487",
+      "bytes": 2239
+    },
+    {
+      "path": ".npmignore",
+      "sha256": "809cfa8cfe1c58850a605daac40b0790c6141fbc6b5db6f38b8ffab649b8c3ab",
+      "bytes": 305
+    },
+    {
+      "path": ".dockerignore",
+      "sha256": "4349802f0888c2778371dabad16d7d798e3357ae5024f20a067b512bdc0f8af1",
+      "bytes": 410
+    }
+  ],
+  "pack_files_sha256": "b361c7326256096abe19cca6a7491bb894a3d1dbd6b1a7699376decf0ca86124",
+  "deny_policy": [
+    "env files",
+    "private keys",
+    "package credentials",
+    "service-account JSON",
+    "secrets directories",
+    "credentials directories"
+  ]
+}
