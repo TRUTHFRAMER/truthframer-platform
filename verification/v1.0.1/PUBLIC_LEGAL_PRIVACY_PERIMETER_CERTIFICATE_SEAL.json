@@ -1,0 +1,7 @@
+{
+  "seal_version": "v1.0.1",
+  "status": "PUBLIC_LEGAL_PRIVACY_PERIMETER_CERTIFIED_SEALED",
+  "sealed_certificate_sha256": "1366524b60bb286d3c7acffe76cdf7c0da50b6aa1c84b8d5264fab75948d42b5",
+  "certificate": "PUBLIC_LEGAL_PRIVACY_PERIMETER_CERTIFICATE.json",
+  "certified_file_count": 9
+}

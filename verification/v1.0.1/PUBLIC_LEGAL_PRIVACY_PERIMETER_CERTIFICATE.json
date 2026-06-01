@@ -1,0 +1,70 @@
+{
+  "certificate_version": "v1.0.1",
+  "status": "PUBLIC_LEGAL_PRIVACY_PERIMETER_CERTIFIED",
+  "posture": "PROPRIETARY_SOURCE_AVAILABLE_ALL_RIGHTS_RESERVED",
+  "public_license_grant": "NONE_BEYOND_GITHUB_PLATFORM_MINIMUM",
+  "open_source_license": false,
+  "commercial_use_permitted": false,
+  "redistribution_permitted": false,
+  "derivative_use_permitted": false,
+  "ai_training_use_permitted": false,
+  "package_posture": {
+    "private": true,
+    "license": "UNLICENSED",
+    "privacy_verifier": "verify:privacy-perimeter"
+  },
+  "certified_files": [
+    {
+      "path": "LICENSE.md",
+      "sha256": "75822d94174f34d89c2fb141002e56041caacba2b794c1fe9446092ab66f22e6",
+      "bytes": 3187
+    },
+    {
+      "path": "NOTICE.md",
+      "sha256": "000306f7cf1181ca89caddb6de146144bc0f07146976bf2c6fba69be388cde11",
+      "bytes": 419
+    },
+    {
+      "path": "PRIVACY.md",
+      "sha256": "0bcb000c39ebc39af5e9b9852905dff29e92168ff05832e67d88441ff9f1256f",
+      "bytes": 854
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "bb958ca7359450fe0ecddfe8853be20fd1724c90b85a6ef2a5a5c3a7a85ce13e",
+      "bytes": 418
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "0d75a554243e499b67108ee117e77341f8e1b928e4edb2984f14bea1177183a0",
+      "bytes": 464
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "022911faec5d357284be78b36c11cd797dd268a1016883b3d2736fd224522f14",
+      "bytes": 2003
+    },
+    {
+      "path": ".npmignore",
+      "sha256": "d8112e196d53e73ecb5cdaa1e91030673b529e66f146c8dc5a4b1e4236862c62",
+      "bytes": 50
+    },
+    {
+      "path": ".dockerignore",
+      "sha256": "776dd289389c59803744c13dee66fe294f9980465bd962529b5dad8475b1f990",
+      "bytes": 165
+    },
+    {
+      "path": "scripts/verify-privacy-perimeter.js",
+      "sha256": "dd74e8ff8a7fbefc95204ab4ab6f3f825130a9a5be7626d72ebdf9c2b24129b4",
+      "bytes": 3263
+    }
+  ],
+  "certified_file_count": 9,
+  "public_paths": {
+    "certificate": "verification/PUBLIC_LEGAL_PRIVACY_PERIMETER_CERTIFICATE.json",
+    "seal": "verification/PUBLIC_LEGAL_PRIVACY_PERIMETER_CERTIFICATE_SEAL.json",
+    "versioned_certificate": "verification/v1.0.1/PUBLIC_LEGAL_PRIVACY_PERIMETER_CERTIFICATE.json",
+    "versioned_seal": "verification/v1.0.1/PUBLIC_LEGAL_PRIVACY_PERIMETER_CERTIFICATE_SEAL.json"
+  }
+}
