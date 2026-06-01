@@ -1,0 +1,11 @@
+{
+  "version": "v1.2.0",
+  "name": "TRUTHFRAMER v1.2.0 — Truth Frame Admission Gate",
+  "status": "TRUTH_FRAME_ADMISSION_GATE_RELEASED",
+  "main_sha": "7c9a12b3be20447e53ecb114f3998cdb071b39c8",
+  "pages_sha": "1831a611940f1a02b52d898a19490ba37b64d093",
+  "public_truth_frame_admission_gate_url": "https://truthframer.github.io/truthframer-platform/admission/TRUTH_FRAME_ADMISSION_GATE.json",
+  "public_truth_frame_admission_gate_page_url": "https://truthframer.github.io/truthframer-platform/admission/",
+  "primary_object": "truth_frame",
+  "admission_policy": "refuse_orphan_or_incomplete_truth_frame_surfaces"
+}
