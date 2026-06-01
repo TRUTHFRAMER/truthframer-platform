@@ -1,0 +1,12 @@
+{
+  "release": "v1.0.3",
+  "title": "TRUTHFRAMER v1.0.3 — Public Source Provenance Certificate",
+  "status": "PUBLIC_SOURCE_PROVENANCE_CERTIFIED",
+  "base_release": "v1.0.2",
+  "main_sha": "a637f30632170e82ed737250ed9568952c2c22c6",
+  "pages_sha": "a4d4745efb274c39cd6fb3a704bd0fb931fae1a9",
+  "public_certificate_url": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_SOURCE_PROVENANCE_CERTIFICATE.json",
+  "public_certificate_seal_url": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_SOURCE_PROVENANCE_CERTIFICATE_SEAL.json",
+  "certificate": "docs/verification/PUBLIC_SOURCE_PROVENANCE_CERTIFICATE.json",
+  "certificate_seal": "docs/verification/PUBLIC_SOURCE_PROVENANCE_CERTIFICATE_SEAL.json"
+}
