@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>TRUTHFRAMER Truth Frame System Spine</title>
+  <title>TRUTHFRAMER Truth Frame Admission Gate</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     html{background:#050505;color:#d6d6d6;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
@@ -13,62 +13,50 @@
     th,td{border-bottom:1px solid #242424;padding:12px 10px;text-align:left;vertical-align:top}
     th{color:#f0f0f0;text-transform:uppercase;letter-spacing:.08em}
     code{color:#bdbdbd;word-break:break-all}
-    .seal{margin-top:24px;color:#8a8a8a}
+    .closed{color:#cfcfcf}
+    .muted{color:#7f7f7f}
   </style>
 </head>
 <body>
-  <h1>TRUTH FRAME SYSTEM SPINE</h1>
-  <p>The primary object of TRUTHFRAMER is the truth frame. Verification, certificates, releases, reports, and public pages are subordinate evidence surfaces.</p>
-  <p><strong>Status:</strong> TRUTH_FRAME_SYSTEM_SPINE_CANONICAL<br><strong>Version:</strong> v1.1.0<br><strong>Spine SHA256:</strong> <code>b18ece521235870d4eff5397c1a96c80d30661dc385109557efde4313fc6a66c</code></p>
+  <h1>TRUTH FRAME ADMISSION GATE</h1>
+  <p>The admission gate refuses orphan or incomplete truth-frame materialization. A frame is admitted only when case, source manifest, replay manifest, terminal render, public render, registry, and spine agree.</p>
+  <p><strong>Status:</strong> <span class="closed">TRUTH_FRAME_ADMISSION_GATE_CLOSED</span><br><strong>Version:</strong> v1.2.0<br><strong>Gate SHA256:</strong> <code>5680ca53be278186a48cc2c42c9e0cc01bb84ede3557e7d937e4a80a0a472314</code></p>
   <table>
     <thead>
       <tr>
         <th>Frame</th>
         <th>Case</th>
+        <th>Status</th>
         <th>Truth Frame SHA256</th>
-        <th>Source Manifest SHA256</th>
-        <th>Replay Manifest SHA256</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>tf-000001</td>
         <td>tf-000001-cross-venue-prediction-lag</td>
+        <td>ADMITTED</td>
         <td><code>2a979ff5224a510b6635c195ec74ca9c2bb29e9c25e5758a21931f2a09587a33</code></td>
-        <td><code>490c23ed14d37d8345fc350753764818a2cb2bec075dcbfa125cdd57ef617667</code></td>
-        <td><code>523e718fb19831de089c43c59de5187180b613389144baba7e79a7cb167cd4a6</code></td>
       </tr>
       <tr>
         <td>tf-000002</td>
         <td>tf-000002-level3-order-flow</td>
+        <td>ADMITTED</td>
         <td><code>f866b69f74f20777a1f677a27ddbb2a606a64cda126f9c311c728c08c781c13f</code></td>
-        <td><code>b06ccbac6c6785d72b0f325ca4851757792a075e35295159f87d20d298875070</code></td>
-        <td><code>b6ed9324febf2fed23319c1efd1ef1ae3f4e73a87caed9bf2cb35250896f55d3</code></td>
       </tr>
       <tr>
         <td>tf-000003</td>
         <td>tf-000003-fpga-vs-cpu-latency-boundary</td>
+        <td>ADMITTED</td>
         <td><code>94a5c9fe990cc195a7c5e4da76334322f79079e556a049da21d1e8c7312c9e1a</code></td>
-        <td><code>1e55ac13e11c0c1c00468e3200831484822dfca111496b1d78d600888cf0d0eb</code></td>
-        <td><code>f1d5ab150c26ba5126ae9eb1dabf775ebdc6515b851622661cc1873c6d926928</code></td>
       </tr>
       <tr>
         <td>tf-000004</td>
         <td>tf-000004-correlation-regime-break</td>
+        <td>ADMITTED</td>
         <td><code>e31bd12747614ca0a76a974e750cb3230154e532df8dcf3b8b86d22eeb781d7c</code></td>
-        <td><code>800456f2fb2aa3566dad31cdb799cbb6ca5d1703fb414f0dc2f80803d67f86fd</code></td>
-        <td><code>b7d3defc49d2198031346e02be744e36cb4e54eaff22411ae5d1ad61324fe5f6</code></td>
       </tr>
     </tbody>
   </table>
-  <p class="seal">TRUTHFRAMER v1.1.0 — Truth Frame System Spine</p>
-
-<!-- TRUTHFRAME_ADMISSION_GATE_V120 -->
-<section>
-  <h2>Truth Frame Admission Gate</h2>
-  <p>Frames are refused unless case, source, replay, render, registry, and spine agree.</p>
-  <p><a href="../admission/">Open Truth Frame Admission Gate</a></p>
-</section>
-
+  <p class="muted">TRUTHFRAMER v1.2.0 — Truth Frame Admission Gate</p>
 </body>
 </html>
