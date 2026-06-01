@@ -1,0 +1,17 @@
+{
+  "version": "v1.8.0",
+  "name": "TRUTHFRAMER v1.8.0 — Public Verifier Integrity Seal",
+  "status": "PUBLIC_VERIFIER_INTEGRITY_SEAL_CLOSED",
+  "main_sha": "3173c214e8836bb567fb779a3857cf9f7c633698",
+  "pages_sha": "4c6d4b95a2c470f72f25f4f1259a30e4bbe3a204",
+  "public_verifier_integrity_seal_url": "https://truthframer.github.io/truthframer-platform/verifier/TRUTHFRAMER_PUBLIC_VERIFIER_INTEGRITY_SEAL.json",
+  "public_verifier_page_url": "https://truthframer.github.io/truthframer-platform/verifier/",
+  "public_independent_verifier_script_url": "https://truthframer.github.io/truthframer-platform/verifier/TRUTHFRAMER_PUBLIC_INDEPENDENT_VERIFIER.mjs",
+  "public_independent_verification_witness_url": "https://truthframer.github.io/truthframer-platform/verifier/TRUTHFRAMER_PUBLIC_INDEPENDENT_VERIFICATION_WITNESS.json",
+  "verifier_script_raw_sha256": "204cb84108a8b554aa5fdf9afff463befee641c10af45138ab16b6e3e8fccd8c",
+  "witness_sha256": "132a366bc7aee1df8fddd0ebf87fc2d21d107afd915b51a489aaed13c12c2323",
+  "capsule_sha256": "957b92e87d6e6ca0f341702e367cb454347b66eba143e4046e3f0e4a8489fe17",
+  "receipt_sha256": "ae2b0b1e7867d76ffb2df7ff97ebc6135e5b7b3eed5857b99a5d2161b75945f2",
+  "seal_sha256": "406566d5565381d4d390f6584dfbe26775cd3958aacbf1a163d900a68e56b897",
+  "no_private_source_required": true
+}

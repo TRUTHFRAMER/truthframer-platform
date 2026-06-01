@@ -1,0 +1,18 @@
+# TRUTHFRAMER v1.8.0 — Public Verifier Integrity Seal
+
+This release closes the public verifier integrity layer.
+
+It seals the public verifier script byte identity against the public independent verification witness.
+
+```text
+TRUTHFRAMER_V180_PUBLIC_VERIFIER_INTEGRITY_SEAL_PASS=true
+VERSION=v1.8.0
+MAIN_SHA=3173c214e8836bb567fb779a3857cf9f7c633698
+PAGES_SHA=4c6d4b95a2c470f72f25f4f1259a30e4bbe3a204
+VERIFIER_SCRIPT_RAW_SHA256=204cb84108a8b554aa5fdf9afff463befee641c10af45138ab16b6e3e8fccd8c
+WITNESS_SHA256=132a366bc7aee1df8fddd0ebf87fc2d21d107afd915b51a489aaed13c12c2323
+CAPSULE_SHA256=957b92e87d6e6ca0f341702e367cb454347b66eba143e4046e3f0e4a8489fe17
+RECEIPT_SHA256=ae2b0b1e7867d76ffb2df7ff97ebc6135e5b7b3eed5857b99a5d2161b75945f2
+SEAL_SHA256=406566d5565381d4d390f6584dfbe26775cd3958aacbf1a163d900a68e56b897
+NO_PRIVATE_SOURCE_REQUIRED=true
+```
