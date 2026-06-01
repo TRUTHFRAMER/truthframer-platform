@@ -233,3 +233,7 @@ TRUTHFRAMER v0.9.1 adds a public release self-inclusion closure. It records that
 
 TRUTHFRAMER is proprietary source-available material. It is not open source. No use, modification, redistribution, commercial deployment, package reuse, AI-training use, scraping, mirroring, or derivative work is permitted except by separate written agreement. See `LICENSE.md`, `NOTICE.md`, `PRIVACY.md`, and `SECURITY.md`.
 
+## Public Legal / Privacy Certificate
+
+The proprietary license and privacy perimeter are locally verified and publicly certified by `PUBLIC_LEGAL_PRIVACY_PERIMETER_CERTIFICATE.json` with a sealed SHA-256 readback artifact.
+
