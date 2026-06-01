@@ -1,0 +1,51 @@
+{
+  "protocol": "TRUTHFRAMER_PUBLIC_INDEPENDENT_VERIFICATION_WITNESS",
+  "version": "v1.7.0",
+  "status": "PUBLIC_INDEPENDENT_VERIFICATION_WITNESS_BOUND",
+  "closure_claim": "A third party can verify TRUTHFRAMER public truth-frame continuity from public URLs only, without private source, local repository state, maintainer terminal output, or hidden context.",
+  "public_console_path": "/verifier/",
+  "public_verifier_script": "TRUTHFRAMER_PUBLIC_INDEPENDENT_VERIFIER.mjs",
+  "public_checked_url_count": 2,
+  "verifier": {
+    "protocol": "TRUTHFRAMER_PUBLIC_INDEPENDENT_VERIFIER",
+    "version": "v1.7.0",
+    "status": "PUBLIC_INDEPENDENT_VERIFICATION_PASS",
+    "public_inputs": {
+      "public_verification_capsule_url": "https://truthframer.github.io/truthframer-platform/capsule/TRUTHFRAMER_PUBLIC_VERIFICATION_CAPSULE.json",
+      "public_capsule_consumption_receipt_url": "https://truthframer.github.io/truthframer-platform/receipt/TRUTHFRAMER_PUBLIC_CAPSULE_CONSUMPTION_RECEIPT.json"
+    },
+    "public_object_digests": {
+      "capsule_raw_bytes_sha256": "8f1b6dc9cf953c91f1f300ee28d4b66378059d44c464989d00aa385f3c3163e4",
+      "capsule_canonical_json_sha256": "7d252db39d7f98ca1f239d3ecac2abaca0cfcad050c471e6efe1a1b7ec00f028",
+      "receipt_raw_bytes_sha256": "94ee2f308b5a3c3415534b9439b0ad394dd338d41e8d6eb8eebb9563c7b1df48",
+      "receipt_canonical_json_sha256": "ae2b0b1e7867d76ffb2df7ff97ebc6135e5b7b3eed5857b99a5d2161b75945f2"
+    },
+    "observed_public_claims": {
+      "capsule_sha256": "957b92e87d6e6ca0f341702e367cb454347b66eba143e4046e3f0e4a8489fe17",
+      "receipt_sha256": "ae2b0b1e7867d76ffb2df7ff97ebc6135e5b7b3eed5857b99a5d2161b75945f2",
+      "receipt_sha256_basis": "computed_public_receipt_canonical_json_sha256",
+      "receipt_capsule_sha256": "957b92e87d6e6ca0f341702e367cb454347b66eba143e4046e3f0e4a8489fe17",
+      "capsule_fetched_from_public_url": true,
+      "capsule_sha256_match": true,
+      "capsule_sha256_match_basis": "expected_sha256_found_inside_public_capsule_json",
+      "capsule_artifacts_live": true,
+      "release_tag_bound": true,
+      "no_private_source_required": true
+    },
+    "assertions": {
+      "capsule_public_fetch_ok": true,
+      "receipt_public_fetch_ok": true,
+      "capsule_declares_sha256": true,
+      "receipt_has_public_sha256_basis": true,
+      "receipt_capsule_sha256_matches_capsule": true,
+      "receipt_claims_capsule_public_fetch": true,
+      "receipt_claims_capsule_sha256_match": true,
+      "receipt_claims_capsule_artifacts_live": true,
+      "receipt_claims_release_tag_bound": true,
+      "receipt_claims_no_private_source_required": true,
+      "receipt_sha_basis_is_public_capsule_internal_digest": true
+    },
+    "verifier_result_sha256": "3de5138348ac2a3227ec2f60c3c062afeddf209a837664b8881f7f020529b2f1"
+  },
+  "witness_sha256": "132a366bc7aee1df8fddd0ebf87fc2d21d107afd915b51a489aaed13c12c2323"
+}

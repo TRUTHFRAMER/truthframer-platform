@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TRUTHFRAMER Public Independent Verification Console</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    :root { color-scheme: dark; background:#050505; color:#d8d8d8; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    body { margin:0; padding:32px; }
+    main { max-width:1120px; margin:0 auto; }
+    h1 { font-size:18px; font-weight:600; letter-spacing:.04em; color:#f2f2f2; }
+    p { color:#9a9a9a; line-height:1.5; max-width:880px; }
+    pre { white-space:pre-wrap; word-break:break-word; background:#0b0b0b; border:1px solid #242424; padding:20px; border-radius:10px; }
+    .pass { color:#8ff0a4; }
+    .fail { color:#ff9b9b; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>TRUTHFRAMER Public Independent Verification Console</h1>
+  <p>
+    This page verifies the public capsule and public consumption receipt from public URLs only.
+    No private source, local repository state, maintainer terminal output, or hidden context is required.
+  </p>
+  <p id="status">VERIFYING...</p>
+  <pre id="output"></pre>
+</main>
+<script type="module">
+  import { verifyTruthframerPublicIndependently } from "./TRUTHFRAMER_PUBLIC_INDEPENDENT_VERIFIER.mjs";
+
+  const status = document.getElementById("status");
+  const output = document.getElementById("output");
+
+  try {
+    const result = await verifyTruthframerPublicIndependently();
+    status.textContent = result.status;
+    status.className = result.status.endsWith("_PASS") ? "pass" : "fail";
+    output.textContent = JSON.stringify(result, null, 2);
+  } catch (error) {
+    status.textContent = "PUBLIC_INDEPENDENT_VERIFICATION_ERROR";
+    status.className = "fail";
+    output.textContent = String(error && error.stack ? error.stack : error);
+  }
+</script>
+</body>
+</html>
