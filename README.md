@@ -222,3 +222,9 @@ TRUTHFRAMER v0.9.1 adds a public release self-inclusion closure. It records that
 
 - Public release closure: https://truthframer.github.io/truthframer-platform/verification/PUBLIC_RELEASE_CLOSURE.json
 - Public release closure seal: https://truthframer.github.io/truthframer-platform/verification/PUBLIC_RELEASE_CLOSURE_SEAL.json
+
+
+## Public Root Finality Certificate
+
+- `docs/verification/PUBLIC_ROOT_FINALITY_CERTIFICATE.json`
+- `docs/verification/PUBLIC_ROOT_FINALITY_CERTIFICATE_SEAL.json`
