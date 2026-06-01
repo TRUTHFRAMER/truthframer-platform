@@ -1,0 +1,11 @@
+{
+  "version": "v1.4.0",
+  "name": "TRUTHFRAMER v1.4.0 — Truth Frame Admission Closure Seal",
+  "status": "TRUTH_FRAME_ADMISSION_CLOSURE_SEAL_RELEASED",
+  "main_sha": "bba04078848742ed3e4898a88c5c1751ea5e9783",
+  "pages_sha": "e1e3dee38bbcd5d85c6df6bf65c1dcf58fea073c",
+  "public_truth_frame_admission_closure_seal_url": "https://truthframer.github.io/truthframer-platform/admission/TRUTH_FRAME_ADMISSION_CLOSURE_SEAL.json",
+  "public_truth_frame_admission_page_url": "https://truthframer.github.io/truthframer-platform/admission/",
+  "primary_object": "truth_frame",
+  "closure_function": "positive_admission_plus_negative_refusal"
+}
