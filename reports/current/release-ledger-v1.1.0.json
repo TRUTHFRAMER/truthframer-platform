@@ -1,0 +1,11 @@
+{
+  "version": "v1.1.0",
+  "name": "TRUTHFRAMER v1.1.0 — Truth Frame System Spine",
+  "status": "TRUTH_FRAME_SYSTEM_SPINE_RELEASED",
+  "main_sha": "e7f7ce89893d872d77dfa32392a35b290d64f55e",
+  "pages_sha": "4330cde86dc1076017d67505f705010b16b57f87",
+  "public_truth_frame_system_spine_url": "https://truthframer.github.io/truthframer-platform/spine/TRUTH_FRAME_SYSTEM_SPINE.json",
+  "public_truth_frame_system_spine_page_url": "https://truthframer.github.io/truthframer-platform/spine/",
+  "primary_object": "truth_frame",
+  "verification_role": "subordinate_evidence_surface"
+}
