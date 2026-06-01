@@ -265,3 +265,11 @@ Certificates, seals, release ledgers, reports, and public pages are subordinate 
 TRUTHFRAMER v1.2.0 closes admission around the truth-frame object.
 
 A frame cannot appear as a terminal render, public render, registry entry, or spine entry unless it is backed by a canonical case with TRUTH_FRAME.json, SOURCE_MANIFEST.json, and REPLAY_MANIFEST.json.
+
+
+<!-- TRUTHFRAME_ADMISSION_REFUSAL_PROOF_V130 -->
+## Truth Frame Admission Refusal Proof
+
+TRUTHFRAMER v1.3.0 proves the admission gate is not merely descriptive.
+
+The proof injects adversarial orphan and incomplete truth-frame surfaces in temporary worktrees and requires admission verification to fail.

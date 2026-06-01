@@ -1,0 +1,55 @@
+{
+  "version": "v1.3.0",
+  "status": "TRUTH_FRAME_ADMISSION_REFUSAL_PROVEN",
+  "primary_object": "truth_frame",
+  "proof_function": "adversarial_negative_control_refusal",
+  "refusal_boundary": "orphan_or_incomplete_truth_frame_materialization",
+  "scenario_count": 5,
+  "failed_scenario_count": 0,
+  "scenarios": [
+    {
+      "id": "orphan_terminal_render",
+      "expected_token": "TERMINAL_RENDER_ORPHAN:tf-999999",
+      "observed_failure": true,
+      "expected_token_present": true,
+      "refusal_pass": true
+    },
+    {
+      "id": "orphan_public_render",
+      "expected_token": "PUBLIC_RENDER_ORPHAN:tf-999998",
+      "observed_failure": true,
+      "expected_token_present": true,
+      "refusal_pass": true
+    },
+    {
+      "id": "orphan_registry_entry",
+      "expected_token": "REGISTRY_ORPHAN:tf-999997",
+      "observed_failure": true,
+      "expected_token_present": true,
+      "refusal_pass": true
+    },
+    {
+      "id": "orphan_spine_entry",
+      "expected_token": "SPINE_ORPHAN:tf-999996",
+      "observed_failure": true,
+      "expected_token_present": true,
+      "refusal_pass": true
+    },
+    {
+      "id": "incomplete_canonical_case",
+      "expected_token": "REQUIRED_FILE_MISSING:tf-000005:cases/tf-000005-admission-refusal-probe/SOURCE_MANIFEST.json",
+      "observed_failure": true,
+      "expected_token_present": true,
+      "refusal_pass": true
+    }
+  ],
+  "guarantees": [
+    "An orphan terminal render is refused.",
+    "An orphan public render is refused.",
+    "An orphan registry entry is refused.",
+    "An orphan spine entry is refused.",
+    "An incomplete canonical case is refused.",
+    "The refusal proof mutates only temporary worktrees."
+  ],
+  "proof_sha256": "367f53a181086a57ab6f594543509721645a2d94ef382ff89595943cc239e104"
+}
