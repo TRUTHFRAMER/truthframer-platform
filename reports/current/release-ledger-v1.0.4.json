@@ -1,0 +1,14 @@
+{
+  "release": "v1.0.4",
+  "title": "TRUTHFRAMER v1.0.4 — Verification Immutability Certificate",
+  "status": "PUBLIC_VERIFICATION_IMMUTABILITY_CERTIFIED",
+  "base_release": "v1.0.3",
+  "main_sha": "baa41c6afa518a03fd795167f50a8a193a4ce2ba",
+  "pages_sha": "9b2c0e61b7e3ab86bfea761841884919694098ef",
+  "public_certificate_url": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_VERIFICATION_IMMUTABILITY_CERTIFICATE.json",
+  "public_certificate_seal_url": "https://truthframer.github.io/truthframer-platform/verification/PUBLIC_VERIFICATION_IMMUTABILITY_CERTIFICATE_SEAL.json",
+  "certificate": "docs/verification/PUBLIC_VERIFICATION_IMMUTABILITY_CERTIFICATE.json",
+  "certificate_seal": "docs/verification/PUBLIC_VERIFICATION_IMMUTABILITY_CERTIFICATE_SEAL.json",
+  "verification_side_effects_allowed": false,
+  "pack_egress_policy": "ALLOWLIST_ONLY"
+}
