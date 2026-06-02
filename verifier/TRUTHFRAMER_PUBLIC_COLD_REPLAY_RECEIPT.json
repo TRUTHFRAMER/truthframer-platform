@@ -1,0 +1,41 @@
+{
+  "version": "v1.9.0",
+  "status": "PUBLIC_COLD_REPLAY_RECEIPT_BOUND",
+  "generated_at": "2026-06-02T06:02:24.635Z",
+  "public_only_inputs": {
+    "verifier_integrity_seal": "https://truthframer.github.io/truthframer-platform/verifier/TRUTHFRAMER_PUBLIC_VERIFIER_INTEGRITY_SEAL.json",
+    "independent_verifier_script": "https://truthframer.github.io/truthframer-platform/verifier/TRUTHFRAMER_PUBLIC_INDEPENDENT_VERIFIER.mjs",
+    "independent_verification_witness": "https://truthframer.github.io/truthframer-platform/verifier/TRUTHFRAMER_PUBLIC_INDEPENDENT_VERIFICATION_WITNESS.json",
+    "public_verification_capsule": "https://truthframer.github.io/truthframer-platform/capsule/TRUTHFRAMER_PUBLIC_VERIFICATION_CAPSULE.json",
+    "public_capsule_consumption_receipt": "https://truthframer.github.io/truthframer-platform/receipt/TRUTHFRAMER_PUBLIC_CAPSULE_CONSUMPTION_RECEIPT.json"
+  },
+  "observed_public_digests": {
+    "verifier_script_raw_sha256": "204cb84108a8b554aa5fdf9afff463befee641c10af45138ab16b6e3e8fccd8c",
+    "witness_sha256": "132a366bc7aee1df8fddd0ebf87fc2d21d107afd915b51a489aaed13c12c2323",
+    "capsule_sha256": "957b92e87d6e6ca0f341702e367cb454347b66eba143e4046e3f0e4a8489fe17",
+    "witness_receipt_sha256": "ae2b0b1e7867d76ffb2df7ff97ebc6135e5b7b3eed5857b99a5d2161b75945f2",
+    "capsule_consumption_receipt_sha256": "b628327fb196ef50729fe6833e0b0aba0abf3ba3106b0564846d5adb17a95532",
+    "seal_sha256": "406566d5565381d4d390f6584dfbe26775cd3958aacbf1a163d900a68e56b897"
+  },
+  "integrity_checks": {
+    "verifier_integrity_seal_public_fetch_ok": true,
+    "independent_verifier_script_public_fetch_ok": true,
+    "independent_verification_witness_public_fetch_ok": true,
+    "public_verification_capsule_public_fetch_ok": true,
+    "public_capsule_consumption_receipt_public_fetch_ok": true,
+    "verifier_script_sha256_matches_integrity_seal": true,
+    "witness_sha256_matches_integrity_seal": true,
+    "capsule_sha256_matches_integrity_seal": true,
+    "witness_receipt_sha256_matches_integrity_seal": true,
+    "public_capsule_consumption_receipt_sha256_observed": true,
+    "verifier_integrity_seal_declares_no_private_source": true,
+    "witness_declares_no_private_source": true,
+    "capsule_receipt_public_consumption_bound": true,
+    "capsule_receipt_no_private_source_if_declared": true,
+    "cold_replay_used_public_urls_only": true,
+    "private_source_accessed": false
+  },
+  "private_source_accessed": false,
+  "no_private_source_required": true,
+  "cold_replay_receipt_sha256": "5d37e5a6db71050ba709b1f0367a31ad186c15b1866b90e8ec07d718da7bf8aa"
+}
